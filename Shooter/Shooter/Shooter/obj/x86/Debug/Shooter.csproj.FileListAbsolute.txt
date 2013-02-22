@@ -1,0 +1,6 @@
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.exe
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.pdb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.csprojResolveAssemblyReference.cache
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb

@@ -23,6 +23,8 @@ namespace Shooter
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = 900;
+            graphics.PreferredBackBufferHeight = 600;
         }
 
         /// <summary>
@@ -44,10 +46,13 @@ namespace Shooter
         /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            Engine.SpriteBatch = spriteBatch;
+            Engine.WindowWidth = graphics.PreferredBackBufferWidth;
+            Engine.WindowHeight = graphics.PreferredBackBufferHeight;
 
-            // TODO: use this.Content to load your game content here
+            Engine.CurrentScene = new Menu();
+            Engine.CurrentScene.Load();
         }
 
         /// <summary>
@@ -70,7 +75,13 @@ namespace Shooter
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
+            MouseState mouse = Mouse.GetState();
+            Engine.MousePosition = new Vector2(mouse.X, mouse.Y);
+            Engine.MouseLastDown = Engine.MouseDown;
+            Engine.MouseDown = mouse.LeftButton == ButtonState.Pressed;
+            Engine.GameTimeInSec = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            Engine.CurrentScene.Update();
 
             base.Update(gameTime);
         }
@@ -84,6 +95,10 @@ namespace Shooter
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+
+            spriteBatch.Begin();
+            Engine.CurrentScene.Draw();
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
