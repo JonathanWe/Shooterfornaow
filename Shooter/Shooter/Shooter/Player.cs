@@ -12,5 +12,20 @@ namespace Shooter
         public Weapon Weapon;
         public Vector2 Position;
         public Vector2 Size;
+
+        Character character;
+
+        public void Load() 
+        {
+            character = Character.Player();
+        }
+        public void Update() 
+        {
+            character.Update(true, false);
+        }
+        public void Draw() 
+        {
+            character.Draw(Position);
+        }
     }
 }

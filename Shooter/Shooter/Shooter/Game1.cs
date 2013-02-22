@@ -36,7 +36,7 @@ namespace Shooter
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            this.IsMouseVisible = true;
             base.Initialize();
         }
 
@@ -47,6 +47,7 @@ namespace Shooter
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            Engine.Content = Content;
             Engine.SpriteBatch = spriteBatch;
             Engine.WindowWidth = graphics.PreferredBackBufferWidth;
             Engine.WindowHeight = graphics.PreferredBackBufferHeight;

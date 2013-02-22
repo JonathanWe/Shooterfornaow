@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 
 namespace Shooter
 {
     public static class Engine
     {
         public static IScene CurrentScene;
+        public static ContentManager Content;
         public static SpriteBatch SpriteBatch;
         public static float GameTimeInSec = 0;
         public static int WindowWidth;
