@@ -15,17 +15,17 @@ namespace Shooter
 
         public void Load()
         {
-            throw new NotImplementedException();
+            player.Load();
         }
 
         public void Update()
         {
-            throw new NotImplementedException();
+            player.Update();
         }
 
         public void Draw()
         {
-            throw new NotImplementedException();
+            player.Draw();
         }
     }
 }

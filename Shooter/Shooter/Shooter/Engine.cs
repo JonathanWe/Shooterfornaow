@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Input;
 
 namespace Shooter
 {
@@ -20,6 +21,18 @@ namespace Shooter
         public static bool MouseDown;
         public static bool MouseLastDown;
         public static bool MouseClick { get { return MouseDown == false && MouseLastDown == true; } }
+
+        static internal List<Keys> keysDown = new List<Keys>();
+        static internal List<Keys> keysLastDown = new List<Keys>();
+
+        public static bool KeyDown(Keys Key) 
+        {
+            return keysDown.Contains(Key);
+        }
+        public static bool KeyClick(Keys Key) 
+        {
+            return !keysDown.Contains(Key) && keysLastDown.Contains(Key);
+        }
 
         public static bool Collide(Vector2 Position1, Vector2 Size1, Vector2 Position2, Vector2 Size2)
         {

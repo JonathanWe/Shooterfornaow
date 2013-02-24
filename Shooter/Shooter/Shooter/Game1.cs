@@ -77,10 +77,15 @@ namespace Shooter
                 this.Exit();
 
             MouseState mouse = Mouse.GetState();
+            KeyboardState keyboard = Keyboard.GetState();
             Engine.MousePosition = new Vector2(mouse.X, mouse.Y);
             Engine.MouseLastDown = Engine.MouseDown;
             Engine.MouseDown = mouse.LeftButton == ButtonState.Pressed;
             Engine.GameTimeInSec = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            Engine.keysLastDown.Clear();
+            Engine.keysLastDown.AddRange(Engine.keysDown);
+            Engine.keysDown.Clear();
+            Engine.keysDown.AddRange(keyboard.GetPressedKeys());
 
             Engine.CurrentScene.Update();
 

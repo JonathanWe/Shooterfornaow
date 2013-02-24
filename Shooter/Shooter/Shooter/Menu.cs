@@ -14,11 +14,14 @@ namespace Shooter
         Texture2D buttonPlayUp;
         Texture2D buttonPlayOver;
         Texture2D gunShoot;
+        Texture2D fadeTexture;
         Vector2 buttonPlayPosition = new Vector2(300, 250);
         Vector2 buttonPlaySize = new Vector2(300, 100);
         Vector2 gunShootSize = new Vector2(100, 100);
         Vector2 mouseClickPosition;
         float timer = 0;
+
+        const float fadeTime = 3f;
 
         public void Load() 
         {
@@ -26,10 +29,11 @@ namespace Shooter
             buttonPlayUp = Engine.Content.Load<Texture2D>("Menu1");
             buttonPlayOver = Engine.Content.Load<Texture2D>("Menu2");
             gunShoot = Engine.Content.Load<Texture2D>("bullethole");
+            fadeTexture = Engine.Content.Load<Texture2D>("White");
         }
         public void Update() 
         {
-            if (timer > 3)
+            if (timer > fadeTime)
             {
                 Engine.CurrentScene = new Shooter();
                 Engine.CurrentScene.Load();
@@ -50,7 +54,11 @@ namespace Shooter
         {
             Engine.SpriteBatch.Draw(background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), Color.White);
             Engine.SpriteBatch.Draw(buttonPlay, new Rectangle((int)buttonPlayPosition.X, (int)buttonPlayPosition.Y, (int)buttonPlaySize.X, (int)buttonPlaySize.Y), Color.White);
-            if (timer != 0) Engine.SpriteBatch.Draw(gunShoot, new Rectangle((int)(mouseClickPosition.X - (gunShootSize.X / 2)), (int)(mouseClickPosition.Y - (gunShootSize.X / 2)), (int)gunShootSize.X, (int)gunShootSize.Y), Color.White);
+            if (timer != 0)
+            {
+                Engine.SpriteBatch.Draw(gunShoot, new Rectangle((int)(mouseClickPosition.X - (gunShootSize.X / 2)), (int)(mouseClickPosition.Y - (gunShootSize.X / 2)), (int)gunShootSize.X, (int)gunShootSize.Y), Color.White);
+                Engine.SpriteBatch.Draw(fadeTexture, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), new Color(0, 0, 0, timer / fadeTime));
+            }
         }
     }
 }
