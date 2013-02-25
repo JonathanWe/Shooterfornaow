@@ -11,12 +11,13 @@ namespace Shooter
     {
         public int Healt = 100;
         public Weapon Weapon;
-        public Vector2 Position;
+        public Vector2 Position { get { return character.Position; } set { character.Position = value; } }
         public Vector2 Size;
 
         Character character;
-        Vector2 acceleration;
         float maxSpeed = 300;
+        float jumpStrength = 300;
+        float gravity = 200;
         float degrees;
 
         public void Load() 
@@ -30,30 +31,38 @@ namespace Shooter
             //Input
             if (Engine.KeyDown(Keys.Left))
             {
-                acceleration.X += -500 * Engine.GameTimeInSec;
-                if (acceleration.X < -maxSpeed) acceleration.X = -maxSpeed;
+                character.Acceleration.X += -500 * Engine.GameTimeInSec;
+                if (character.Acceleration.X < -maxSpeed) character.Acceleration.X = -maxSpeed;
             }
             if (Engine.KeyDown(Keys.Right))
             {
-                acceleration.X += 500 * Engine.GameTimeInSec;
-                if (acceleration.X > maxSpeed) acceleration.X = maxSpeed;
+                character.Acceleration.X += 500 * Engine.GameTimeInSec;
+                if (character.Acceleration.X > maxSpeed) character.Acceleration.X = maxSpeed;
+            }
+            if (Engine.KeyDown(Keys.Up) && character.Acceleration.Y == 0)
+            {
+                character.Acceleration.Y = -jumpStrength;
             }
             Vector2 gunDir = Engine.MousePosition - (Position + character.HandOffset);
             degrees = (float)Math.Atan2(gunDir.Y, gunDir.X);
 
 
             //Movement
-            if (acceleration.X > 0)
+            if (character.Acceleration.X > 0)
             {
-                acceleration.X -= 200 * Engine.GameTimeInSec;
-                if (acceleration.X < 0) acceleration.X = 0;
+                character.Acceleration.X -= 200 * Engine.GameTimeInSec;
+                if (character.Acceleration.X < 0) character.Acceleration.X = 0;
             }
-            else if (acceleration.X < 0)
+            else if (character.Acceleration.X < 0)
             {
-                acceleration.X -= -200 * Engine.GameTimeInSec;
-                if (acceleration.X > 0) acceleration.X = 0;
+                character.Acceleration.X -= -200 * Engine.GameTimeInSec;
+                if (character.Acceleration.X > 0) character.Acceleration.X = 0;
             }
-            Position += acceleration * Engine.GameTimeInSec;
+            //Jump
+            character.Acceleration.Y += gravity * Engine.GameTimeInSec;
+
+            Position += character.Acceleration * Engine.GameTimeInSec;
+            Engine.Map.UpdateCharacterCollision(character);
         }
         public void Draw() 
         {

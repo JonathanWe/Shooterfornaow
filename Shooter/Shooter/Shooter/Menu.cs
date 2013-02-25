@@ -52,12 +52,12 @@ namespace Shooter
         }
         public void Draw() 
         {
-            Engine.SpriteBatch.Draw(background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), Color.White);
-            Engine.SpriteBatch.Draw(buttonPlay, new Rectangle((int)buttonPlayPosition.X, (int)buttonPlayPosition.Y, (int)buttonPlaySize.X, (int)buttonPlaySize.Y), Color.White);
+            Engine.SpriteBatch.Draw(background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);
+            Engine.SpriteBatch.Draw(buttonPlay, new Rectangle((int)buttonPlayPosition.X, (int)buttonPlayPosition.Y, (int)buttonPlaySize.X, (int)buttonPlaySize.Y), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.1f);
             if (timer != 0)
             {
-                Engine.SpriteBatch.Draw(gunShoot, new Rectangle((int)(mouseClickPosition.X - (gunShootSize.X / 2)), (int)(mouseClickPosition.Y - (gunShootSize.X / 2)), (int)gunShootSize.X, (int)gunShootSize.Y), Color.White);
-                Engine.SpriteBatch.Draw(fadeTexture, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), new Color(0, 0, 0, timer / fadeTime));
+                Engine.SpriteBatch.Draw(gunShoot, new Rectangle((int)(mouseClickPosition.X - (gunShootSize.X / 2)), (int)(mouseClickPosition.Y - (gunShootSize.X / 2)), (int)gunShootSize.X, (int)gunShootSize.Y), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                Engine.SpriteBatch.Draw(fadeTexture, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, new Color(0, 0, 0, timer / fadeTime), 0, Vector2.Zero, SpriteEffects.None, 0.2f);
             }
         }
     }

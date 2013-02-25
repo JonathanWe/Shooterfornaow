@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 
 namespace Shooter
 {
     public class Shooter : IScene
     {
-        Texture2D background;
         Player player = new Player();
         List<Enemy> enemies = new List<Enemy>();
 
 
         public void Load()
         {
+            Engine.Map = new Map();
+            Engine.Map.Load("TestBackground", "TestMap", new Rectangle[] { new Rectangle(0, Engine.WindowHeight - 45, Engine.WindowWidth, 45) }, new Vector2(Engine.WindowWidth, Engine.WindowHeight));
             player.Load();
         }
 
@@ -25,6 +27,7 @@ namespace Shooter
 
         public void Draw()
         {
+            Engine.Map.Draw();
             player.Draw();
         }
     }

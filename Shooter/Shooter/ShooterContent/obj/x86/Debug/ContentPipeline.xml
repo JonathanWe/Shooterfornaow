@@ -145,6 +145,24 @@
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\White.xnb</Output>
       <Time>2013-02-24T21:20:54.2898398+01:00</Time>
     </Item>
+    <Item>
+      <Source>TestMap.png</Source>
+      <Name>TestMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestMap.xnb</Output>
+      <Time>2013-02-25T18:00:50.0457251+01:00</Time>
+    </Item>
+    <Item>
+      <Source>TestBackground.png</Source>
+      <Name>TestBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestBackground.xnb</Output>
+      <Time>2013-02-25T18:01:40.4563684+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

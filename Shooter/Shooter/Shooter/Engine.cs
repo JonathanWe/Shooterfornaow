@@ -12,6 +12,8 @@ namespace Shooter
     public static class Engine
     {
         public static IScene CurrentScene;
+        public static Map Map;
+        public static Camera Camera = new Camera();
         public static ContentManager Content;
         public static SpriteBatch SpriteBatch;
         public static float GameTimeInSec = 0;

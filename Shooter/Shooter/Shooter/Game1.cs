@@ -102,7 +102,7 @@ namespace Shooter
 
             // TODO: Add your drawing code here
 
-            spriteBatch.Begin();
+            spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.AlphaBlend);
             Engine.CurrentScene.Draw();
             spriteBatch.End();
 
