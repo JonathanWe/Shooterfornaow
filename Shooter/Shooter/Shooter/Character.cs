@@ -28,7 +28,7 @@ namespace Shooter
         internal Vector2 bodyOffset = new Vector2(0, 45);
         internal Vector2 handOffset = new Vector2(40, 85);
         internal Vector2 feetOffset = new Vector2(5, 155);
-        Vector2 gunOrigin = new Vector2(-88, 20);
+        Vector2 gunOrigin = new Vector2(-60, 20);
         Vector2 boundingBox = new Vector2(110, 185);
 
         public Vector2 HeadOffset { get { return headOffset; } }

@@ -16,8 +16,8 @@ namespace Shooter
 
         Character character;
         float maxSpeed = 300;
-        float jumpStrength = 300;
-        float gravity = 200;
+        float jumpStrength = 700;
+        float gravity = 1000;
         float degrees;
 
         public void Load() 
@@ -29,17 +29,17 @@ namespace Shooter
             character.Update(true, false);
 
             //Input
-            if (Engine.KeyDown(Keys.Left))
+            if (Engine.KeyDown(Keys.Left) | Engine.KeyDown(Keys.A))
             {
                 character.Acceleration.X += -500 * Engine.GameTimeInSec;
                 if (character.Acceleration.X < -maxSpeed) character.Acceleration.X = -maxSpeed;
             }
-            if (Engine.KeyDown(Keys.Right))
+            if (Engine.KeyDown(Keys.Right) || Engine.KeyDown(Keys.D))
             {
                 character.Acceleration.X += 500 * Engine.GameTimeInSec;
                 if (character.Acceleration.X > maxSpeed) character.Acceleration.X = maxSpeed;
             }
-            if (Engine.KeyDown(Keys.Up) && character.Acceleration.Y == 0)
+            if ((Engine.KeyDown(Keys.Up) || Engine.KeyDown(Keys.W)) && character.Acceleration.Y == 0)
             {
                 character.Acceleration.Y = -jumpStrength;
             }
