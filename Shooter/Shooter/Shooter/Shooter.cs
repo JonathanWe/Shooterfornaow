@@ -9,26 +9,36 @@ namespace Shooter
 {
     public class Shooter : IScene
     {
-        Player player = new Player();
-        List<Enemy> enemies = new List<Enemy>();
+        public Player Player = new Player();
+        public List<Enemy> Enemies = new List<Enemy>();
 
 
         public void Load()
         {
             Engine.Map = new Map();
             Engine.Map.Load("TestBackground", "TestMap", new Rectangle[] { new Rectangle(0, Engine.WindowHeight - 45, Engine.WindowWidth, 45) }, new Vector2(Engine.WindowWidth, Engine.WindowHeight));
-            player.Load();
+            Player.Load();
+            Enemies.Add(new Enemy());
+            Enemies[0].Load();
         }
 
         public void Update()
         {
-            player.Update();
+            Player.Update();
+            for (int i = 0; i < Enemies.Count; i++)
+            {
+                Enemies[i].Update();
+            }
         }
 
         public void Draw()
         {
             Engine.Map.Draw();
-            player.Draw();
+            Player.Draw();
+            for (int i = 0; i < Enemies.Count; i++)
+            {
+                Enemies[i].Draw();
+            }
         }
     }
 }

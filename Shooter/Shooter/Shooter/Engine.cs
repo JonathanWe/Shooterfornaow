@@ -13,6 +13,7 @@ namespace Shooter
     {
         public static IScene CurrentScene;
         public static Map Map;
+        public static Shooter Game;
         public static Camera Camera = new Camera();
         public static ContentManager Content;
         public static SpriteBatch SpriteBatch;

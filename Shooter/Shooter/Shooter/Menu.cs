@@ -35,7 +35,8 @@ namespace Shooter
         {
             if (timer > fadeTime)
             {
-                Engine.CurrentScene = new Shooter();
+                Engine.Game = new Shooter();
+                Engine.CurrentScene = Engine.Game;
                 Engine.CurrentScene.Load();
             }
             else if (timer != 0) timer += Engine.GameTimeInSec;
