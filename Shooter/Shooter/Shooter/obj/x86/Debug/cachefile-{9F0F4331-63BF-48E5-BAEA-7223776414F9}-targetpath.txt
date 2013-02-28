@@ -39,3 +39,6 @@ Content\Characters\Player\Shiro\Shiro_head1.xnb
 Content\Characters\Player\Shiro\Shiro_head2.xnb
 Content\Characters\Player\Shiro\Shiro_head3.xnb
 Content\Characters\Player\Shiro\Shiro_head4.xnb
+Content\Player Selec Screen1.xnb
+Content\Player Selec Screen2.xnb
+Content\Player Selec Screen3.xnb

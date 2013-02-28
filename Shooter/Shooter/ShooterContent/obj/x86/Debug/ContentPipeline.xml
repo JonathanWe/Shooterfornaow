@@ -370,6 +370,33 @@
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head4.xnb</Output>
       <Time>2013-02-28T16:08:11.9790987+01:00</Time>
     </Item>
+    <Item>
+      <Source>Player Selec Screen1.png</Source>
+      <Name>Player Selec Screen1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen1.xnb</Output>
+      <Time>2013-02-28T16:08:11.9951094+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Player Selec Screen2.png</Source>
+      <Name>Player Selec Screen2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen2.xnb</Output>
+      <Time>2013-02-28T16:08:12.0131214+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Player Selec Screen3.png</Source>
+      <Name>Player Selec Screen3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen3.xnb</Output>
+      <Time>2013-02-28T16:08:12.0261308+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
