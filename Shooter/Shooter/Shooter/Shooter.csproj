@@ -111,6 +111,7 @@
     <Compile Include="Animation.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="Cursor.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="IScene.cs" />

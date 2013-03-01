@@ -271,6 +271,16 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Cursor\cursor.png">
+      <Name>cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Cursor\crosshair.png">
+      <Name>crosshair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Content Include="Weapons\Guns.sht">
       <Name>Guns</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

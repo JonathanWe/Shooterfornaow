@@ -11,6 +11,7 @@ namespace Shooter
     {
         public Player Player = new Player();
         public List<Enemy> Enemies = new List<Enemy>();
+        public Cursor Cursor = new Cursor();
 
 
         public void Load()
@@ -20,6 +21,7 @@ namespace Shooter
             Player.Load();
             Enemies.Add(new Enemy());
             Enemies[0].Load();
+            Cursor.Load();
         }
 
         public void Update()
@@ -29,6 +31,7 @@ namespace Shooter
             {
                 Enemies[i].Update();
             }
+            Cursor.Update();
         }
 
         public void Draw()
@@ -39,6 +42,7 @@ namespace Shooter
             {
                 Enemies[i].Draw();
             }
+            Cursor.Draw();
         }
     }
 }
