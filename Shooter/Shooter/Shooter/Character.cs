@@ -84,8 +84,17 @@ namespace Shooter
 
             if (Acceleration.X != 0)
             {
-                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headOffset.X), (int)(Position.Y + headOffset.Y), headSize.X, headSize.Y), sheet.GetSprite("Head"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
-                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyOffset.X), (int)(Position.Y + bodyOffset.Y), bodySize.X, bodySize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                if (Acceleration.X > 0)
+                {
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headOffset.X), (int)(Position.Y + headOffset.Y), headSize.X, headSize.Y), sheet.GetSprite("Head"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyOffset.X), (int)(Position.Y + bodyOffset.Y), bodySize.X, bodySize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                }
+                else
+                {
+                    Vector2 realHeadOffset = headOffset + new Vector2(headSize.X, headSize.Y) - new Vector2(bodySize.X, bodySize.Y);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X - realHeadOffset.X), (int)(Position.Y + headOffset.Y), headSize.X, headSize.Y), sheet.GetSprite("Head"), Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyOffset.X), (int)(Position.Y + bodyOffset.Y), bodySize.X, bodySize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0.11f);
+                }
             }
             else
             {
@@ -93,7 +102,6 @@ namespace Shooter
                 Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandOffset.X), (int)(Position.Y + bodyStandOffset.Y), bodyStandSize.X, bodyStandSize.Y), sheet.GetSprite("Stand"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
             }
             Weapon.Draw(Position + handOffset, degrees);
-            //Engine.SpriteBatch.Draw(handTexture, new Rectangle((int)(Position.X + handOffset.X), (int)(Position.Y + handOffset.Y), handSize.X, handSize.Y), null, Color.White, degrees, gunOrigin * (new Vector2(handTexture.Width, handTexture.Height) / new Vector2(handSize.X, handSize.Y)), SpriteEffects.None, 0.2f);
         }
 
         public void MoveLeft() 
