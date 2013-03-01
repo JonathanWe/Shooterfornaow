@@ -195,53 +195,28 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Characters\Player\Kuro\Kuro_head1.png">
-      <Name>Kuro_head1</Name>
+    <Compile Include="Characters\Player\Kuro\Run0.png">
+      <Name>Run0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Characters\Player\Kuro\Kuro_head2.png">
-      <Name>Kuro_head2</Name>
+    <Compile Include="Characters\Player\Kuro\Run1.png">
+      <Name>Run1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Characters\Player\Kuro\Kuro_head3.png">
-      <Name>Kuro_head3</Name>
+    <Compile Include="Characters\Player\Kuro\Run2.png">
+      <Name>Run2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Characters\Player\Kuro\Kuro_head4.png">
-      <Name>Kuro_head4</Name>
+    <Compile Include="Characters\Player\Kuro\Run3.png">
+      <Name>Run3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Characters\Player\Kuro\Kuro_head5.png">
-      <Name>Kuro_head5</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Srun_motion2.png">
-      <Name>Srun_motion2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Srun_motion3.png">
-      <Name>Srun_motion3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Srun_motion4.png">
-      <Name>Srun_motion4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Srun_motion5.png">
-      <Name>Srun_motion5</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Srun_motion6.png">
-      <Name>Srun_motion6</Name>
+    <Compile Include="Characters\Player\Kuro\Run4.png">
+      <Name>Run4</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -282,6 +257,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Characters\Player\Kuro\KuroSpriteSheet.sht">
+      <Name>KuroSpriteSheet</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 

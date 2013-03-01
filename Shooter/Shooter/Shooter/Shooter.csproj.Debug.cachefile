@@ -25,16 +25,6 @@ Content\Characters\NPC_mob\Z_head1.xnb
 Content\Characters\NPC_mob\Z_head2.xnb
 Content\Characters\NPC_mob\Z_head3.xnb
 Content\Characters\NPC_mob\Z_head4.xnb
-Content\Characters\Player\Kuro\Kuro_head1.xnb
-Content\Characters\Player\Kuro\Kuro_head2.xnb
-Content\Characters\Player\Kuro\Kuro_head3.xnb
-Content\Characters\Player\Kuro\Kuro_head4.xnb
-Content\Characters\Player\Kuro\Kuro_head5.xnb
-Content\Characters\Player\Kuro\Srun_motion2.xnb
-Content\Characters\Player\Kuro\Srun_motion3.xnb
-Content\Characters\Player\Kuro\Srun_motion4.xnb
-Content\Characters\Player\Kuro\Srun_motion5.xnb
-Content\Characters\Player\Kuro\Srun_motion6.xnb
 Content\Characters\Player\Shiro\Shiro_head1.xnb
 Content\Characters\Player\Shiro\Shiro_head2.xnb
 Content\Characters\Player\Shiro\Shiro_head3.xnb
@@ -42,3 +32,9 @@ Content\Characters\Player\Shiro\Shiro_head4.xnb
 Content\Player Selec Screen1.xnb
 Content\Player Selec Screen2.xnb
 Content\Player Selec Screen3.xnb
+Content\Characters\Player\Kuro\Run0.xnb
+Content\Characters\Player\Kuro\Run1.xnb
+Content\Characters\Player\Kuro\Run2.xnb
+Content\Characters\Player\Kuro\Run3.xnb
+Content\Characters\Player\Kuro\Run4.xnb
+Content\Characters\Player\Kuro\KuroSpriteSheet.sht

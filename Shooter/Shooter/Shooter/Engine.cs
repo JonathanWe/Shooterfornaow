@@ -17,6 +17,7 @@ namespace Shooter
         public static Camera Camera = new Camera();
         public static ContentManager Content;
         public static SpriteBatch SpriteBatch;
+        public static GraphicsDevice Device;
         public static float GameTimeInSec = 0;
         public static int WindowWidth;
         public static int WindowHeight;

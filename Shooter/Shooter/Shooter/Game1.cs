@@ -46,6 +46,7 @@ namespace Shooter
         /// </summary>
         protected override void LoadContent()
         {
+            Engine.Device = GraphicsDevice;
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Engine.Content = Content;
             Engine.SpriteBatch = spriteBatch;
