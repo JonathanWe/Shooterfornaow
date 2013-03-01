@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 
+
 namespace Shooter
 {
     public class Animation
@@ -13,25 +14,25 @@ namespace Shooter
         public bool Animating = false;
         public float AnimationSpeed = 1.0f;
         public bool Loop = true;
-        public int CurrentFrame = 1;
+        public int CurrentFrame = 0;
 
-        public Animation() 
+        public Animation()
         {
         }
-        public Animation(RectangleF[] Rectangles) 
+        public Animation(RectangleF[] Rectangles)
         {
             animationFrames.AddRange(Rectangles);
         }
 
-        public void AddFrame(RectangleF Rect) 
+        public void AddFrame(RectangleF Rect)
         {
             animationFrames.Add(Rect);
         }
-        public void AddFrames(RectangleF[] Frames) 
+        public void AddFrames(RectangleF[] Frames)
         {
             animationFrames.AddRange(Frames);
         }
-        public void AddFrames(Point SpriteSize, Point SpriteFrames, int StartFrame, int StopFrame) 
+        public void AddFrames(Point SpriteSize, Point SpriteFrames, int StartFrame, int StopFrame)
         {
             int x = 0;
             int y = 0;
@@ -51,20 +52,20 @@ namespace Shooter
                 animationFrames.Add(new RectangleF(frameWidth * x, frameHeight * y, frameWidth, frameHeight));
             }
         }
-        public void Clear() 
+        public void Clear()
         {
             animationFrames.Clear();
         }
-        public void NextFrame() 
+        public void NextFrame()
         {
             CurrentFrame++;
-            if (CurrentFrame > animationFrames.Count)
+            if (CurrentFrame >= animationFrames.Count)
             {
-                CurrentFrame = 1;
+                CurrentFrame = 0;
             }
         }
         float timer = 0;
-        public void Update() 
+        public void Update()
         {
             if (Animating)
             {
@@ -76,9 +77,13 @@ namespace Shooter
                 }
             }
         }
-        public RectangleF GetSourceRectangle() 
+        /// <summary>
+        /// Get the cuurent frame of the animation
+        /// </summary>
+        /// <returns></returns>
+        public RectangleF GetFrame()
         {
-            return animationFrames[CurrentFrame - 1];
+            return animationFrames[CurrentFrame];
         }
     }
 }

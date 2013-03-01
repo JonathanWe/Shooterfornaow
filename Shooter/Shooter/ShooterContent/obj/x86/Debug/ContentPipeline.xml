@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\AK.xnb</Output>
-      <Time>2013-02-22T15:19:59.6586509+01:00</Time>
+      <Time>2013-03-01T12:48:05.8131373+01:00</Time>
     </Item>
     <Item>
       <Source>Gun.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Gun.xnb</Output>
-      <Time>2013-02-22T15:19:59.6606487+01:00</Time>
+      <Time>2013-03-01T12:48:05.9791729+01:00</Time>
     </Item>
     <Item>
       <Source>Shotgun.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Shotgun.xnb</Output>
-      <Time>2013-02-22T15:19:59.6766589+01:00</Time>
+      <Time>2013-03-01T12:48:06.0614326+01:00</Time>
     </Item>
     <Item>
       <Source>Sniper.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sniper.xnb</Output>
-      <Time>2013-02-22T15:19:59.6786607+01:00</Time>
+      <Time>2013-03-01T12:48:06.062425+01:00</Time>
     </Item>
     <Item>
       <Source>sub.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\sub.xnb</Output>
-      <Time>2013-02-22T15:19:59.6866656+01:00</Time>
+      <Time>2013-03-01T12:48:06.1032951+01:00</Time>
     </Item>
     <Item>
       <Source>Menu2.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu2.xnb</Output>
-      <Time>2013-02-22T15:19:59.6726612+01:00</Time>
+      <Time>2013-03-01T12:48:05.998749+01:00</Time>
     </Item>
     <Item>
       <Source>bullethole.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bullethole.xnb</Output>
-      <Time>2013-02-22T15:19:59.6806616+01:00</Time>
+      <Time>2013-03-01T12:48:06.0836615+01:00</Time>
     </Item>
     <Item>
       <Source>Menu1.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu1.xnb</Output>
-      <Time>2013-02-22T15:19:59.668654+01:00</Time>
+      <Time>2013-03-01T12:48:05.9899087+01:00</Time>
     </Item>
     <Item>
       <Source>MenuBackground.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
-      <Time>2013-02-22T15:46:32.8503586+01:00</Time>
+      <Time>2013-03-01T12:48:06.0108766+01:00</Time>
     </Item>
     <Item>
       <Source>Pl_Body.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Body.xnb</Output>
-      <Time>2013-02-22T16:44:18.4990642+01:00</Time>
+      <Time>2013-03-01T12:48:06.0158793+01:00</Time>
     </Item>
     <Item>
       <Source>Pl_Feet.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Feet.xnb</Output>
-      <Time>2013-02-22T16:44:18.501066+01:00</Time>
+      <Time>2013-03-01T12:48:06.0209185+01:00</Time>
     </Item>
     <Item>
       <Source>Pl_Head.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Head.xnb</Output>
-      <Time>2013-02-22T16:44:18.5040722+01:00</Time>
+      <Time>2013-03-01T12:48:06.0261465+01:00</Time>
     </Item>
     <Item>
       <Source>En_Body.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Body.xnb</Output>
-      <Time>2013-02-22T16:44:18.4910588+01:00</Time>
+      <Time>2013-03-01T12:48:05.9553041+01:00</Time>
     </Item>
     <Item>
       <Source>En_Feet.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Feet.xnb</Output>
-      <Time>2013-02-22T16:44:18.4930602+01:00</Time>
+      <Time>2013-03-01T12:48:05.9693313+01:00</Time>
     </Item>
     <Item>
       <Source>En_Head.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Head.xnb</Output>
-      <Time>2013-02-22T16:44:18.4970633+01:00</Time>
+      <Time>2013-03-01T12:48:05.9750114+01:00</Time>
     </Item>
     <Item>
       <Source>White.jpg</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\White.xnb</Output>
-      <Time>2013-02-24T21:20:54.2898398+01:00</Time>
+      <Time>2013-03-01T12:48:06.0771278+01:00</Time>
     </Item>
     <Item>
       <Source>TestMap.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestMap.xnb</Output>
-      <Time>2013-02-25T18:00:50.0457251+01:00</Time>
+      <Time>2013-03-01T12:48:06.0731198+01:00</Time>
     </Item>
     <Item>
       <Source>TestBackground.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestBackground.xnb</Output>
-      <Time>2013-02-25T18:01:40.4563684+01:00</Time>
+      <Time>2013-03-01T12:48:06.0686463+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Body.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Body.xnb</Output>
-      <Time>2013-02-28T16:08:11.7049159+01:00</Time>
+      <Time>2013-03-01T12:48:05.8179476+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk1.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk1.xnb</Output>
-      <Time>2013-02-28T16:08:11.758952+01:00</Time>
+      <Time>2013-03-01T12:48:05.853791+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk2.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk2.xnb</Output>
-      <Time>2013-02-28T16:08:11.7639564+01:00</Time>
+      <Time>2013-03-01T12:48:05.8579663+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk3.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk3.xnb</Output>
-      <Time>2013-02-28T16:08:11.7679578+01:00</Time>
+      <Time>2013-03-01T12:48:05.8620199+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk4.png</Source>
@@ -206,7 +206,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk4.xnb</Output>
-      <Time>2013-02-28T16:08:11.7779649+01:00</Time>
+      <Time>2013-03-01T12:48:05.8660275+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head1.png</Source>
@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head1.xnb</Output>
-      <Time>2013-02-28T16:08:11.7209275+01:00</Time>
+      <Time>2013-03-01T12:48:05.8266892+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head2.png</Source>
@@ -224,7 +224,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head2.xnb</Output>
-      <Time>2013-02-28T16:08:11.7319337+01:00</Time>
+      <Time>2013-03-01T12:48:05.8342194+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head3.png</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head3.xnb</Output>
-      <Time>2013-02-28T16:08:11.7409404+01:00</Time>
+      <Time>2013-03-01T12:48:05.8404764+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head4.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head4.xnb</Output>
-      <Time>2013-02-28T16:08:11.752948+01:00</Time>
+      <Time>2013-03-01T12:48:05.8490788+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head1.png</Source>
@@ -251,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head1.xnb</Output>
-      <Time>2013-02-28T16:08:11.9280653+01:00</Time>
+      <Time>2013-03-01T12:48:05.9198079+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head2.png</Source>
@@ -260,7 +260,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head2.xnb</Output>
-      <Time>2013-02-28T16:08:11.9460768+01:00</Time>
+      <Time>2013-03-01T12:48:05.9297347+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head3.png</Source>
@@ -269,7 +269,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head3.xnb</Output>
-      <Time>2013-02-28T16:08:11.9620884+01:00</Time>
+      <Time>2013-03-01T12:48:05.9398074+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head4.png</Source>
@@ -278,7 +278,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head4.xnb</Output>
-      <Time>2013-02-28T16:08:11.9790987+01:00</Time>
+      <Time>2013-03-01T12:48:05.9506049+01:00</Time>
     </Item>
     <Item>
       <Source>Player Selec Screen1.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen1.xnb</Output>
-      <Time>2013-02-28T16:08:11.9951094+01:00</Time>
+      <Time>2013-03-01T12:48:06.0339908+01:00</Time>
     </Item>
     <Item>
       <Source>Player Selec Screen2.png</Source>
@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen2.xnb</Output>
-      <Time>2013-02-28T16:08:12.0131214+01:00</Time>
+      <Time>2013-03-01T12:48:06.0439346+01:00</Time>
     </Item>
     <Item>
       <Source>Player Selec Screen3.png</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen3.xnb</Output>
-      <Time>2013-02-28T16:08:12.0261308+01:00</Time>
+      <Time>2013-03-01T12:48:06.0531041+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run0.png</Source>
@@ -314,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run0.xnb</Output>
-      <Time>2013-02-28T16:52:44.6256684+01:00</Time>
+      <Time>2013-03-01T15:20:02.3900384+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run1.png</Source>
@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run1.xnb</Output>
-      <Time>2013-02-28T16:53:06.8508316+01:00</Time>
+      <Time>2013-03-01T12:50:39.5262748+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run2.png</Source>
@@ -332,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run2.xnb</Output>
-      <Time>2013-02-28T16:53:31.0736798+01:00</Time>
+      <Time>2013-03-01T12:50:39.5292771+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run3.png</Source>
@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run3.xnb</Output>
-      <Time>2013-02-28T16:53:47.9971711+01:00</Time>
+      <Time>2013-03-01T12:50:39.5332793+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run4.png</Source>
@@ -350,7 +350,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run4.xnb</Output>
-      <Time>2013-02-28T16:54:03.6568696+01:00</Time>
+      <Time>2013-03-01T12:50:39.5362775+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\Player\Kuro\Stand.png</Source>
+      <Name>Characters\Player\Kuro\Stand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Stand.xnb</Output>
+      <Time>2013-03-01T12:50:29.9315308+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

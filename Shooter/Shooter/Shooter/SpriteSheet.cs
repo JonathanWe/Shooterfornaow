@@ -61,7 +61,7 @@ namespace Shooter
         public RectangleF[] GetAnimationRectangles(string AnimationName)
         {
             List<RectangleF> rects = new List<RectangleF>();
-            int i = 1;
+            int i = 0;
             while (true)
             {
                 if (Sprites.ContainsKey(AnimationName + i))

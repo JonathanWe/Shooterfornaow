@@ -21,7 +21,7 @@ namespace Shooter
         Vector2 mouseClickPosition;
         float timer = 0;
 
-        const float fadeTime = 3f;
+        const float fadeTime = 0.3f;
 
         public void Load() 
         {

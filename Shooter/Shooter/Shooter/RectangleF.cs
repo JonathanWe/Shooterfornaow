@@ -9,6 +9,7 @@ namespace Shooter
     
     public struct RectangleF
     {
+        public static implicit operator Rectangle(RectangleF value) { return new Rectangle((int)value.X, (int)value.Y, (int)value.Width, (int)value.Height); }
         public static bool operator ==(RectangleF left, RectangleF right)
         {
             return left.Equals(right);
@@ -50,7 +51,6 @@ namespace Shooter
             this.Width = Size.X;
             this.Height = Size.Y;
         }
-
 
         public static bool MakeInside(Vector2 Position, Vector2 Size, RectangleF Inside, RectangleF Frame, out Vector2 NewPosition, out Vector2 NewSize, out RectangleF NewFrame)
         {
