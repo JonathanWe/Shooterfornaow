@@ -263,6 +263,11 @@
       <Name>Kuro</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Compile Include="Characters\Player\Kuro\KuroHand.png">
+      <Name>KuroHand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Content Include="Characters\Player\Kuro\KuroSpriteSheet.sht">
       <Name>KuroSpriteSheet</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -272,6 +277,15 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Compile Include="Characters\Player\Shiro\ShiroHand.png">
+      <Name>ShiroHand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Content Include="Weapons\M4A1.txt">
+      <Name>M4A1</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cursor\cursor.png">
@@ -296,6 +310,12 @@
   <ItemGroup>
     <Content Include="Characters\Player\Shiro\ShiroSpriteSheet.sht">
       <Name>ShiroSpriteSheet</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Weapons\M4A1.sht">
+      <Name>M4A1</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

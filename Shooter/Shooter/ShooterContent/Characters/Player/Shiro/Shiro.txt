@@ -1,12 +1,12 @@
 Texture = Content/Characters/Player/Shiro/ShiroSpriteSheet.sht;
 
-BoundingBox = 140, 215; 
+BoundingBox = 130, 215; 
 
 
 // Head
 
 Head.Size = 80,80;
-Head.Position = 60,12; 
+Head.Position = 30,12; 
 
 HeadR1.Size = 80, 80;
 HeadR1.Position = 50,10;
@@ -17,18 +17,18 @@ HeadL1.Position = 50,10;
 // Body
 
 BodyRunR.Size = 125, 135;
-BodyRunR.Position = 12,78;
+BodyRunR.Position = 10,78;
 BodyRunL.Size = 125, 135;
-BodyRunL.Position = 12,78;
+BodyRunL.Position = 45,78;
 
 BodyStandR.Size = 85, 135;
-BodyStandR.Position = 55, 80;
+BodyStandR.Position = 25, 80;
 BodyStandL.Size = 85, 135;
-BodyStandL.Position = 55, 80;
+BodyStandL.Position = 50, 80;
 
 //Weapon
-Weapon.MountPoint = 40, 85;
-Weapon.Distance = 60;
+Weapon.MountPoint = 85, 85;
+Weapon.Distance = 80;
 
 
 

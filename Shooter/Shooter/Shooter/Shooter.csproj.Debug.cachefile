@@ -40,8 +40,12 @@ Content\Player Selec Screen3.xnb
 Content\Characters\Player\Kuro\Stand.xnb
 Content\Cursor\cursor.xnb
 Content\Cursor\crosshair.xnb
+Content\Characters\Player\Kuro\KuroHand.xnb
+Content\Characters\Player\Shiro\ShiroHand.xnb
 Content\Characters\Player\Kuro\Kuro.txt
 Content\Characters\Player\Kuro\KuroSpriteSheet.sht
+Content\Weapons\M4A1.txt
 Content\Characters\Player\Shiro\Shiro.txt
 Content\Weapons\Guns.sht
 Content\Characters\Player\Shiro\ShiroSpriteSheet.sht
+Content\Weapons\M4A1.sht
