@@ -41,4 +41,5 @@ Content\Characters\Player\Kuro\Stand.xnb
 Content\Cursor\cursor.xnb
 Content\Cursor\crosshair.xnb
 Content\Characters\Player\Kuro\KuroSpriteSheet.sht
+Content\Characters\Player\Shiro\ShiroSpriteSheet.sht
 Content\Weapons\Guns.sht

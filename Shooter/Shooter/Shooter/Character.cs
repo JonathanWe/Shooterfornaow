@@ -126,6 +126,10 @@ namespace Shooter
         {
             return new Character(new SpriteSheet("Content/Characters/Player/Kuro/KuroSpriteSheet.sht"));
         }
+        public static Character Shiro()
+        {
+            return new Character(new SpriteSheet("Content/Characters/Player/Shiro/ShiroSpriteSheet.sht"));
+        }
         public static Character Enemy1()
         {
             Character character = new Character(new SpriteSheet("Content/Characters/Player/Kuro/KuroSpriteSheet.sht"));

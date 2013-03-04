@@ -18,7 +18,7 @@ namespace Shooter
 
         public void Load() 
         {
-            character = Character.Player();
+            character = Character.Shiro();
         }
         public void Update() 
         {
