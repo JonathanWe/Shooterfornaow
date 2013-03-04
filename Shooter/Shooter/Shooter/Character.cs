@@ -11,7 +11,8 @@ namespace Shooter
     public class Character
     {
         SpriteSheet sheet;
-        Animation runAnimation;
+        Animation runAnimationR;
+        Animation runAnimationL;
 
         Point headR1Size = new Point(55, 55);
         Point headL1Size = new Point(55, 55);
@@ -49,10 +50,10 @@ namespace Shooter
         public Character(SpriteSheet Sheet)
         {
             this.sheet = Sheet;
-            runAnimation = sheet.GetAnimation("Run");
-            runAnimation.Loop = true;
-            runAnimation.AnimationSpeed = 0.1f;
-            runAnimation.Animating = true;
+            //runAnimation = sheet.GetAnimation("Run");
+            //runAnimation.Loop = true;
+            //runAnimation.AnimationSpeed = 0.1f;
+            //runAnimation.Animating = true;
 
             Weapon = Weapon.DefaultWeapon();
         }
@@ -217,10 +218,15 @@ namespace Shooter
                 }
             }
             //Initializes animations and gives it a weapn
-            runAnimation = sheet.GetAnimation("Run");
-            runAnimation.Loop = true;
-            runAnimation.AnimationSpeed = 0.1f;
-            runAnimation.Animating = true;
+            runAnimationR = sheet.GetAnimation("RunR");
+            runAnimationR.Loop = true;
+            runAnimationR.AnimationSpeed = 0.1f;
+            runAnimationR.Animating = true;
+
+            runAnimationL = sheet.GetAnimation("RunL");
+            runAnimationL.Loop = true;
+            runAnimationL.AnimationSpeed = 0.1f;
+            runAnimationL.Animating = true;
 
             Weapon = Weapon.DefaultWeapon();
         }
@@ -236,15 +242,19 @@ namespace Shooter
             {
                 Acceleration.X -= 200 * Engine.GameTimeInSec;
                 if (Acceleration.X < 0) Acceleration.X = 0;
-                runAnimation.Update();
+                runAnimationR.Update();
             }
             else if (Acceleration.X < 0)
             {
                 Acceleration.X -= -200 * Engine.GameTimeInSec;
                 if (Acceleration.X > 0) Acceleration.X = 0;
-                runAnimation.Update();
+                runAnimationL.Update();
             }
-            else runAnimation.CurrentFrame = 0;
+            else
+            {
+                runAnimationR.CurrentFrame = 0;
+                runAnimationL.CurrentFrame = 0;
+            }
             //Jump
             Acceleration.Y += Gravity * Engine.GameTimeInSec;
 
@@ -253,20 +263,19 @@ namespace Shooter
         }
         public void Draw(Vector2 Position) 
         {
-            var runFrame = runAnimation.GetFrame();
-
             if (Acceleration.X != 0)
             {
                 if (Acceleration.X > 0)
                 {
+                    var runFrame = runAnimationR.GetFrame();
                     Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR1Offset.X), (int)(Position.Y + headR1Offset.Y), headR1Size.X, headR1Size.Y), sheet.GetSprite("HeadR1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
                     Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunROffset.X), (int)(Position.Y + bodyRunROffset.Y), bodyRunRSize.X, bodyRunRSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
                 }
                 else
                 {
-                    Vector2 realHeadOffset = headL1Offset + new Vector2(headL1Size.X, headL1Size.Y) - new Vector2(bodyRunLSize.X, bodyRunLSize.Y);
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X - headL1Offset.X), (int)(Position.Y + headL1Offset.Y), headL1Size.X, headL1Size.Y), sheet.GetSprite("HeadL1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunLOffset.X), (int)(Position.Y + bodyRunLOffset.Y), bodyRunLSize.X, bodyRunLSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0.11f);
+                    var runFrame = runAnimationL.GetFrame();
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headL1Offset.X), (int)(Position.Y + headL1Offset.Y), headL1Size.X, headL1Size.Y), sheet.GetSprite("HeadL1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunLOffset.X), (int)(Position.Y + bodyRunLOffset.Y), bodyRunLSize.X, bodyRunLSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
                 }
             }
             else
