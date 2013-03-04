@@ -96,3 +96,5 @@ C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\De
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.exe
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Shooter.pdb
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\cursor.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb
