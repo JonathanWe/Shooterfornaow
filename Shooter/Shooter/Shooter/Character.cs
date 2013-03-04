@@ -13,23 +13,24 @@ namespace Shooter
         SpriteSheet sheet;
         Animation runAnimation;
 
-        Point head1Size = new Point(55, 55);
-        Point head2Size = new Point(55, 55);
-        Point head3Size = new Point(55, 55);
-        Point head4Size = new Point(55, 55);
-        Point head5Size = new Point(55, 55);
-        Point head6Size = new Point(55, 55);
-        Vector2 head1Offset = new Vector2(47, 10);
-        Vector2 head2Offset = new Vector2(47, 10);
-        Vector2 head3Offset = new Vector2(47, 10);
-        Vector2 head4Offset = new Vector2(47, 10);
-        Vector2 head5Offset = new Vector2(47, 10);
-        Vector2 head6Offset = new Vector2(47, 10);
+        Point headR1Size = new Point(55, 55);
+        Point headL1Size = new Point(55, 55);
+        Point headR2Size = new Point(55, 55);
+        Point headL2Size = new Point(55, 55);
+        Vector2 headR1Offset = new Vector2(47, 10);
+        Vector2 headL1Offset = new Vector2(47, 10);
+        Vector2 headR2Offset = new Vector2(47, 10);
+        Vector2 headL2Offset = new Vector2(47, 10);
 
-        Point bodyRunSize = new Point(90, 110);
-        Point bodyStandSize = new Point(60, 110);
-        Vector2 bodyRunOffset = new Vector2(0, 45);
-        Vector2 bodyStandOffset = new Vector2(55, 47);
+        Point bodyRunRSize = new Point(90, 110);
+        Point bodyStandRSize = new Point(60, 110);
+        Vector2 bodyRunROffset = new Vector2(0, 45);
+        Vector2 bodyStandROffset = new Vector2(55, 47);
+        Point bodyRunLSize = new Point(90, 110);
+        Point bodyStandLSize = new Point(60, 110);
+        Vector2 bodyRunLOffset = new Vector2(0, 45);
+        Vector2 bodyStandLOffset = new Vector2(55, 47);
+
 
 
         Vector2 boundingBox = new Vector2(110, 155);
@@ -80,6 +81,14 @@ namespace Shooter
                 {
                     sheet = new SpriteSheet(value);
                 }
+                if (name == "speed") 
+                {
+                    MaxSpeed = float.Parse(value);
+                }
+                if (name == "jumpstrength")
+                {
+                    JumpStrength = float.Parse(value);
+                }
                 if (name == "boundingbox")
                 {
                     split = value.Split(',');
@@ -97,114 +106,114 @@ namespace Shooter
                 else if (name == "head.position")
                 {
                     split = value.Split(',');
-                    head1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
-                    head2Offset = head1Offset;
-                    head3Offset = head1Offset;
-                    head4Offset = head1Offset;
-                    head5Offset = head1Offset;
-                    head6Offset = head1Offset;
+                    headR1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headL1Offset = headR1Offset;
+                    headR2Offset = headR1Offset;
+                    headL2Offset = headR1Offset;
                 }
                 else if (name == "head.size")
                 {
                     split = value.Split(',');
-                    head1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
-                    head2Size = head1Size;
-                    head3Size = head1Size;
-                    head4Size = head1Size;
-                    head5Size = head1Size;
-                    head6Size = head1Size;
+                    headR1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    headL1Size = headR1Size;
+                    headR2Size = headR1Size;
+                    headL2Size = headR1Size;
                 }
-                else if (name == "head1.position")
+                else if (name == "headr1.position")
                 {
                     split = value.Split(',');
-                    head1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headR1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
-                else if (name == "head1.size")
+                else if (name == "headr1.size")
                 {
                     split = value.Split(',');
-                    head1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    headR1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
-                else if (name == "head2.position")
+                else if (name == "headl1.position")
                 {
                     split = value.Split(',');
-                    head2Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headL1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
-                else if (name == "head2.size")
+                else if (name == "headl1.size")
                 {
                     split = value.Split(',');
-                    head2Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    headL1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
-                else if (name == "head3.position")
+                else if (name == "headr2.position")
                 {
                     split = value.Split(',');
-                    head3Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headR2Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
-                else if (name == "head3.size")
+                else if (name == "headr2.size")
                 {
                     split = value.Split(',');
-                    head3Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    headR2Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
-                else if (name == "head4.position")
+                else if (name == "headl2.position")
                 {
                     split = value.Split(',');
-                    head4Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headL2Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
-                else if (name == "head4.size")
+                else if (name == "headl2.size")
                 {
                     split = value.Split(',');
-                    head4Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
-                }
-                else if (name == "head5.position")
-                {
-                    split = value.Split(',');
-                    head5Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
-                }
-                else if (name == "head5.size")
-                {
-                    split = value.Split(',');
-                    head5Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
-                }
-                else if (name == "head6.position")
-                {
-                    split = value.Split(',');
-                    head6Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
-                }
-                else if (name == "head6.size")
-                {
-                    split = value.Split(',');
-                    head6Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    headL2Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
                 else if (name == "body.position")
                 {
                     split = value.Split(',');
-                    bodyRunOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
-                    bodyStandOffset = bodyRunOffset;
+                    bodyRunROffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyStandROffset = bodyRunROffset;
+                    bodyRunLOffset = bodyRunROffset;
+                    bodyStandLOffset = bodyRunROffset;
                 }
                 else if (name == "body.size")
                 {
                     split = value.Split(',');
-                    bodyRunSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
-                    bodyStandSize = bodyRunSize;
+                    bodyRunRSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    bodyStandRSize = bodyRunRSize;
+                    bodyRunLSize = bodyRunRSize;
+                    bodyStandLSize = bodyRunRSize;
                 }
-                else if (name == "bodyrun.position")
+                else if (name == "bodyrunr.position")
                 {
                     split = value.Split(',');
-                    bodyRunOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyRunROffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
-                else if (name == "bodyrun.size")
+                else if (name == "bodyrunr.size")
                 {
                     split = value.Split(',');
-                    bodyRunSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    bodyRunRSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
-                else if (name == "bodystand.position")
+                else if (name == "bodystandr.position")
                 {
                     split = value.Split(',');
-                    bodyStandOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyStandROffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
-                else if (name == "bodystand.size")
+                else if (name == "bodystandr.size")
                 {
                     split = value.Split(',');
-                    bodyStandSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    bodyStandRSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                }
+                else if (name == "bodyrunl.position")
+                {
+                    split = value.Split(',');
+                    bodyRunLOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                }
+                else if (name == "bodyrunl.size")
+                {
+                    split = value.Split(',');
+                    bodyRunLSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                }
+                else if (name == "bodystandl.position")
+                {
+                    split = value.Split(',');
+                    bodyStandLOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                }
+                else if (name == "bodystandl.size")
+                {
+                    split = value.Split(',');
+                    bodyStandLSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
             }
             //Initializes animations and gives it a weapn
@@ -250,22 +259,22 @@ namespace Shooter
             {
                 if (Acceleration.X > 0)
                 {
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + head1Offset.X), (int)(Position.Y + head1Offset.Y), head1Size.X, head1Size.Y), sheet.GetSprite("Head1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunOffset.X), (int)(Position.Y + bodyRunOffset.Y), bodyRunSize.X, bodyRunSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR1Offset.X), (int)(Position.Y + headR1Offset.Y), headR1Size.X, headR1Size.Y), sheet.GetSprite("HeadR1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunROffset.X), (int)(Position.Y + bodyRunROffset.Y), bodyRunRSize.X, bodyRunRSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
                 }
                 else
                 {
-                    Vector2 realHeadOffset = head2Offset + new Vector2(head2Size.X, head2Size.Y) - new Vector2(bodyRunSize.X, bodyRunSize.Y);
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X - realHeadOffset.X), (int)(Position.Y + head2Offset.Y), head2Size.X, head2Size.Y), sheet.GetSprite("Head2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunOffset.X), (int)(Position.Y + bodyRunOffset.Y), bodyRunSize.X, bodyRunSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0.11f);
+                    Vector2 realHeadOffset = headL1Offset + new Vector2(headL1Size.X, headL1Size.Y) - new Vector2(bodyRunLSize.X, bodyRunLSize.Y);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X - headL1Offset.X), (int)(Position.Y + headL1Offset.Y), headL1Size.X, headL1Size.Y), sheet.GetSprite("HeadL1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunLOffset.X), (int)(Position.Y + bodyRunLOffset.Y), bodyRunLSize.X, bodyRunLSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.FlipHorizontally, 0.11f);
                 }
             }
             else
             {
-                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + head3Offset.X), (int)(Position.Y + head3Offset.Y), head3Size.X, head3Size.Y), sheet.GetSprite("Head3"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
-                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandOffset.X), (int)(Position.Y + bodyStandOffset.Y), bodyStandSize.X, bodyStandSize.Y), sheet.GetSprite("Stand"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite("HeadR2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandROffset.X), (int)(Position.Y + bodyStandROffset.Y), bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandR"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
             }
-            Weapon.Draw(Position + WeaponMountPoint, degrees);
+            Weapon.Draw(Position + WeaponMountPoint, WeaponDistance, degrees);
         }
 
         public void MoveLeft() 
