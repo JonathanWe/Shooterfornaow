@@ -259,6 +259,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Characters\Player\Kuro\Kuro.txt">
+      <Name>Kuro</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Characters\Player\Kuro\KuroSpriteSheet.sht">
       <Name>KuroSpriteSheet</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -280,6 +284,10 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Content Include="Characters\Player\Shiro\Shiro.txt">
+      <Name>Shiro</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Weapons\Guns.sht">
       <Name>Guns</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
