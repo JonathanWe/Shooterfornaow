@@ -21,7 +21,7 @@ namespace Shooter
         public bool Automatic = false;
         public SpriteSheet WeaponSheet;
         public Animation ShootAnimation = new Animation();
-        public Vector2 OffsetPosition = new Vector2();
+        public Vector2 GunPosition = new Vector2();
         public Point GunSize = new Point(70, 40);
 
         public Weapon(string File) 
@@ -42,7 +42,7 @@ namespace Shooter
                 else if (name == "position")
                 {
                     string[] split = value.Split(',');
-                    OffsetPosition = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    GunPosition = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
                 else if (name == "size")
                 {
@@ -116,11 +116,14 @@ namespace Shooter
             if (timer < RateOfFire) timer += Engine.GameTimeInSec;
         }
 
-        public void Draw(Vector2 Position, float Distance, float Degrees) 
+        public void Draw(Vector2 Position, float Degrees) 
         {
-            Position += OffsetPosition;
+            Position.Y += GunPosition.Y;
             Rectangle frame = ShootAnimation.GetFrame();
-            Engine.SpriteBatch.Draw(WeaponSheet.Texture, new Rectangle((int)(Position.X), (int)(Position.Y), GunSize.X, GunSize.Y), frame, Color.White, Degrees, new Vector2(-Distance, GunSize.Y / 2) * (new Vector2(frame.Width, frame.Height) / new Vector2(GunSize.X, GunSize.Y)), SpriteEffects.None, 0.2f);
+            SpriteEffects spriteEffect;
+            if (AdamoMath.ToRadians(90) > Degrees && AdamoMath.ToRadians(-90) < Degrees) spriteEffect = SpriteEffects.None;
+            else spriteEffect = SpriteEffects.FlipVertically;
+            Engine.SpriteBatch.Draw(WeaponSheet.Texture, new Rectangle((int)(Position.X), (int)(Position.Y), GunSize.X, GunSize.Y), frame, Color.White, Degrees, new Vector2(-GunPosition.X, GunSize.Y / 2) * (new Vector2(frame.Width, frame.Height) / new Vector2(GunSize.X, GunSize.Y)), spriteEffect, 0.2f);
         }
 
 

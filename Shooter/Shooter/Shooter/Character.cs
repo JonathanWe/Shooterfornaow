@@ -36,10 +36,10 @@ namespace Shooter
 
         Vector2 boundingBox = new Vector2(110, 155);
         float degrees = 0;
+        bool lookRight = true;
 
         public Weapon Weapon;
         public Vector2 WeaponMountPoint;
-        public float WeaponDistance;
         public Vector2 Position;
         public Vector2 Size { get { return boundingBox; } }
         public Vector2 Acceleration = new Vector2();
@@ -115,10 +115,6 @@ namespace Shooter
                 {
                     split = value.Split(',');
                     WeaponMountPoint = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
-                }
-                else if (name == "weapon.distance")
-                {
-                    WeaponDistance = float.Parse(value);
                 }
                 else if (name == "head.position")
                 {
@@ -250,6 +246,8 @@ namespace Shooter
             Vector2 gunDir = Engine.MousePosition - (Position + WeaponMountPoint);
             degrees = (float)Math.Atan2(gunDir.Y, gunDir.X);
 
+            lookRight = AdamoMath.ToRadians(90) > degrees && AdamoMath.ToRadians(-90) < degrees;
+
             if (Weapon != null) Weapon.Update(Engine.MouseDown);
 
             //Movement
@@ -257,18 +255,22 @@ namespace Shooter
             {
                 Acceleration.X -= 200 * Engine.GameTimeInSec;
                 if (Acceleration.X < 0) Acceleration.X = 0;
-                runAnimationR.Update();
             }
             else if (Acceleration.X < 0)
             {
                 Acceleration.X -= -200 * Engine.GameTimeInSec;
                 if (Acceleration.X > 0) Acceleration.X = 0;
-                runAnimationL.Update();
             }
             else
             {
                 runAnimationR.CurrentFrame = 0;
                 runAnimationL.CurrentFrame = 0;
+            }
+            //Animation
+            if (Acceleration.X != 0)
+            {
+                if (lookRight) runAnimationR.Update();
+                else runAnimationL.Update();
             }
             //Jump
             Acceleration.Y += Gravity * Engine.GameTimeInSec;
@@ -276,11 +278,11 @@ namespace Shooter
             Position += Acceleration * Engine.GameTimeInSec;
             Engine.Map.UpdateCharacterCollision(this);
         }
-        public void Draw(Vector2 Position) 
+        public void Draw(Vector2 Position)
         {
             if (Acceleration.X != 0)
             {
-                if (Acceleration.X > 0)
+                if (lookRight)
                 {
                     var runFrame = runAnimationR.GetFrame();
                     Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR1Offset.X), (int)(Position.Y + headR1Offset.Y), headR1Size.X, headR1Size.Y), sheet.GetSprite("HeadR1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
@@ -295,10 +297,18 @@ namespace Shooter
             }
             else
             {
-                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite("HeadR2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
-                Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandROffset.X), (int)(Position.Y + bodyStandROffset.Y), bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandR"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                if (lookRight)
+                {
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite("HeadR2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandROffset.X), (int)(Position.Y + bodyStandROffset.Y), bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandR"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                }
+                else 
+                {
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite("HeadL2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandROffset.X), (int)(Position.Y + bodyStandROffset.Y), bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandL"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                }
             }
-            Weapon.Draw(Position + WeaponMountPoint, WeaponDistance, degrees);
+            Weapon.Draw(Position + WeaponMountPoint, degrees);
         }
 
         public void MoveLeft() 

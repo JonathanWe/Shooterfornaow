@@ -28,7 +28,6 @@ BodyStandL.Position = 50, 80;
 
 //Weapon
 Weapon.MountPoint = 85, 85;
-Weapon.Distance = 80;
 
 
 
