@@ -1,0 +1,19 @@
+Texture = Content/Weapon/Glock1.sht;
+Animation.ShootSpeed = 0.06;
+
+ShopPrice = 700;
+AmmoPrice = 25;
+
+MaxAmmo = 75;
+StartAmmo = 42;
+AmmoPerClip = 14;
+
+RateOfFire = 0.33;
+ReloadTime = 2.0;
+
+Damage = 2;
+
+Automatic = true;
+
+
+

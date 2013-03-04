@@ -44,8 +44,10 @@ Content\Cursor\cursor.xnb
 Content\Cursor\crosshair.xnb
 Content\Characters\Player\Kuro\Kuro.txt
 Content\Characters\Player\Kuro\KuroSpriteSheet.sht
+Content\Weapons\Glock1.txt
 Content\Weapons\M4A1.txt
 Content\Characters\Player\Shiro\Shiro.txt
 Content\Weapons\Guns.sht
 Content\Characters\Player\Shiro\ShiroSpriteSheet.sht
 Content\Weapons\M4A1.sht
+Content\Weapons\Glock1
