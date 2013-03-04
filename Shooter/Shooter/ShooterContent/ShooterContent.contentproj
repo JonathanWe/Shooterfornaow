@@ -270,12 +270,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Characters\Player\Shiro\ShiroSpriteSheet.sht">
-      <Name>ShiroSpriteSheet</Name>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Cursor\cursor.png">
       <Name>cursor</Name>
       <Importer>TextureImporter</Importer>
@@ -288,6 +282,12 @@
     </Compile>
     <Content Include="Weapons\Guns.sht">
       <Name>Guns</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Characters\Player\Shiro\ShiroSpriteSheet.sht">
+      <Name>ShiroSpriteSheet</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

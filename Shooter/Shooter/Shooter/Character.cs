@@ -128,7 +128,9 @@ namespace Shooter
         }
         public static Character Shiro()
         {
-            return new Character(new SpriteSheet("Content/Characters/Player/Shiro/ShiroSpriteSheet.sht"));
+            Character Shiro = new Character(new SpriteSheet("Content/Characters/Player/Shiro/ShiroSpriteSheet.sht"));
+            Shiro.bodySize = new Point(100, 110);
+            return Shiro;
         }
         public static Character Enemy1()
         {
