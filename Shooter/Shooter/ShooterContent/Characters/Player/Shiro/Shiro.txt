@@ -1,4 +1,4 @@
-Texture = Content/Characters/Player/Shiro/ShiroSpriteSheet.sht
+Texture = Content/Characters/Player/Shiro/ShiroSpriteSheet.sht;
 
 BoundingBox = 90, 155; 
 

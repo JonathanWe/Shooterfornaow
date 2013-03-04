@@ -19,8 +19,8 @@ namespace Shooter
             Engine.Map = new Map();
             Engine.Map.Load("TestBackground", "TestMap", new Rectangle[] { new Rectangle(0, Engine.WindowHeight - 45, Engine.WindowWidth, 45) }, new Vector2(Engine.WindowWidth, Engine.WindowHeight));
             Player.Load();
-            Enemies.Add(new Enemy());
-            Enemies[0].Load();
+            //Enemies.Add(new Enemy());
+            //Enemies[0].Load();
             Cursor.Load();
         }
 

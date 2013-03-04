@@ -55,18 +55,28 @@ namespace Shooter
 
             Weapon = Weapon.DefaultWeapon();
         }
-        public Character(string File) 
+        public Character(string File)
         {
-            string[] code = TextHelper.RemoveDoubble(System.IO.File.ReadAllText(File).Replace("\n", "").Replace("\r", "").Replace("\t"," "), ' ').ToLower().Split(';');
+            string text = System.IO.File.ReadAllText(File);
+            {
+                string[] split = text.Split('\n');
+                text = "";
+                for (int i = 0; i < split.Length; i++)
+                {
+                    if (split[i].Trim().StartsWith("//")) continue;
+                    else text += split[i] + "\n";
+                }
+            }
+            string[] code = TextHelper.RemoveDoubble(text.Replace("\n", "").Replace("\r", "").Replace("\t", " "), ' ').ToLower().Split(';');
 
             for (int i = 0; i < code.Length; i++)
             {
                 string[] split = code[i].Trim().Split('=');
-                if (split.Length < 2) throw new Exception("Error while parsing " + File);
-                string name = split[0];
-                string value = split[1];
+                if (split.Length < 2) continue;
+                string name = split[0].Trim();
+                string value = split[1].Trim();
 
-                if (name == "texture") 
+                if (name == "texture")
                 {
                     sheet = new SpriteSheet(value);
                 }
@@ -109,7 +119,7 @@ namespace Shooter
                     split = value.Split(',');
                     head1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
-                else if (name == "head1.size") 
+                else if (name == "head1.size")
                 {
                     split = value.Split(',');
                     head1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
@@ -282,7 +292,7 @@ namespace Shooter
         }
         public static Character Shiro()
         {
-            return new Character(new SpriteSheet("Content/Characters/Player/Shiro/ShiroSpriteSheet.sht"));
+            return new Character("Content/Characters/Player/Shiro/Shiro.txt");
         }
         public static Character Enemy1()
         {
