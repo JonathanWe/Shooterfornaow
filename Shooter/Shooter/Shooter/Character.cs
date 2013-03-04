@@ -250,6 +250,7 @@ namespace Shooter
             Vector2 gunDir = Engine.MousePosition - (Position + WeaponMountPoint);
             degrees = (float)Math.Atan2(gunDir.Y, gunDir.X);
 
+            if (Weapon != null) Weapon.Update(Engine.MouseDown);
 
             //Movement
             if (Acceleration.X > 0)

@@ -7,8 +7,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\AK.xnb</Output>
       <Time>2013-03-04T16:56:07.1214713+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\AK.xnb</Output>
+      <Time>2013-03-01T12:48:05.8131373+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Gun.png</Source>
@@ -16,8 +21,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Gun.xnb</Output>
       <Time>2013-03-04T16:56:07.2226717+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Gun.xnb</Output>
+      <Time>2013-03-01T12:48:05.9791729+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Shotgun.png</Source>
@@ -25,8 +35,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Shotgun.xnb</Output>
       <Time>2013-03-04T16:56:07.2509698+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Shotgun.xnb</Output>
+      <Time>2013-03-01T12:48:06.0614326+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Sniper.png</Source>
@@ -34,8 +49,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sniper.xnb</Output>
       <Time>2013-03-04T16:56:07.2519707+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sniper.xnb</Output>
+      <Time>2013-03-01T12:48:06.062425+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>sub.png</Source>
@@ -43,8 +63,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\sub.xnb</Output>
       <Time>2013-03-04T16:56:07.2899964+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\sub.xnb</Output>
+      <Time>2013-03-01T12:48:06.1032951+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Menu2.png</Source>
@@ -52,8 +77,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu2.xnb</Output>
       <Time>2013-03-04T16:56:07.2299556+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu2.xnb</Output>
+      <Time>2013-03-01T12:48:05.998749+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>bullethole.png</Source>
@@ -61,8 +91,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bullethole.xnb</Output>
       <Time>2013-03-04T16:56:07.2849915+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bullethole.xnb</Output>
+      <Time>2013-03-01T12:48:06.0836615+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Menu1.png</Source>
@@ -70,8 +105,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu1.xnb</Output>
       <Time>2013-03-04T16:56:07.2256762+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu1.xnb</Output>
+      <Time>2013-03-01T12:48:05.9899087+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>MenuBackground.png</Source>
@@ -79,8 +119,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
       <Time>2013-03-04T16:56:07.2419637+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
+      <Time>2013-03-01T12:48:06.0108766+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Pl_Body.png</Source>
@@ -88,8 +133,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Body.xnb</Output>
       <Time>2013-03-04T16:56:07.2419637+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Body.xnb</Output>
+      <Time>2013-03-01T12:48:06.0158793+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Pl_Feet.png</Source>
@@ -97,8 +147,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Feet.xnb</Output>
       <Time>2013-03-04T16:56:07.2419637+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Feet.xnb</Output>
+      <Time>2013-03-01T12:48:06.0209185+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Pl_Head.png</Source>
@@ -106,8 +161,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Head.xnb</Output>
       <Time>2013-03-04T16:56:07.2429635+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Head.xnb</Output>
+      <Time>2013-03-01T12:48:06.0261465+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>En_Body.png</Source>
@@ -115,8 +175,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Body.xnb</Output>
       <Time>2013-03-04T16:56:07.220672+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Body.xnb</Output>
+      <Time>2013-03-01T12:48:05.9553041+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>En_Feet.png</Source>
@@ -124,8 +189,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Feet.xnb</Output>
       <Time>2013-03-04T16:56:07.220672+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Feet.xnb</Output>
+      <Time>2013-03-01T12:48:05.9693313+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>En_Head.png</Source>
@@ -133,8 +203,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Head.xnb</Output>
       <Time>2013-03-04T16:56:07.2216712+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Head.xnb</Output>
+      <Time>2013-03-01T12:48:05.9750114+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>White.jpg</Source>
@@ -142,8 +217,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\White.xnb</Output>
       <Time>2013-03-04T16:56:07.283993+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\White.xnb</Output>
+      <Time>2013-03-01T12:48:06.0771278+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>TestMap.png</Source>
@@ -151,8 +231,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestMap.xnb</Output>
       <Time>2013-03-04T16:56:07.2539717+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestMap.xnb</Output>
+      <Time>2013-03-01T12:48:06.0731198+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>TestBackground.png</Source>
@@ -160,8 +245,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestBackground.xnb</Output>
       <Time>2013-03-04T16:56:07.2529702+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestBackground.xnb</Output>
+      <Time>2013-03-01T12:48:06.0686463+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Body.png</Source>
@@ -169,8 +259,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Body.xnb</Output>
       <Time>2013-03-04T16:56:07.1224728+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Body.xnb</Output>
+      <Time>2013-03-01T12:48:05.8179476+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk1.png</Source>
@@ -178,8 +273,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk1.xnb</Output>
       <Time>2013-03-04T16:56:07.1304772+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk1.xnb</Output>
+      <Time>2013-03-01T12:48:05.853791+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk2.png</Source>
@@ -187,8 +287,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk2.xnb</Output>
       <Time>2013-03-04T16:56:07.1304772+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk2.xnb</Output>
+      <Time>2013-03-01T12:48:05.8579663+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk3.png</Source>
@@ -196,8 +301,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk3.xnb</Output>
       <Time>2013-03-04T16:56:07.131479+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk3.xnb</Output>
+      <Time>2013-03-01T12:48:05.8620199+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk4.png</Source>
@@ -205,8 +315,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk4.xnb</Output>
       <Time>2013-03-04T16:56:07.131479+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk4.xnb</Output>
+      <Time>2013-03-01T12:48:05.8660275+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head1.png</Source>
@@ -214,8 +329,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head1.xnb</Output>
       <Time>2013-03-04T16:56:07.1234737+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head1.xnb</Output>
+      <Time>2013-03-01T12:48:05.8266892+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head2.png</Source>
@@ -223,8 +343,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head2.xnb</Output>
       <Time>2013-03-04T16:56:07.125475+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head2.xnb</Output>
+      <Time>2013-03-01T12:48:05.8342194+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head3.png</Source>
@@ -232,8 +357,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head3.xnb</Output>
       <Time>2013-03-04T16:56:07.1264748+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head3.xnb</Output>
+      <Time>2013-03-01T12:48:05.8404764+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head4.png</Source>
@@ -241,8 +371,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head4.xnb</Output>
       <Time>2013-03-04T16:56:07.1274753+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head4.xnb</Output>
+      <Time>2013-03-01T12:48:05.8490788+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run0.png</Source>
@@ -250,8 +385,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run0.xnb</Output>
       <Time>2013-03-04T16:56:07.1655007+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run0.xnb</Output>
+      <Time>2013-03-01T15:20:02.3900384+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run1.png</Source>
@@ -259,8 +399,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run1.xnb</Output>
       <Time>2013-03-04T16:56:07.1685032+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run1.xnb</Output>
+      <Time>2013-03-01T12:50:39.5262748+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run2.png</Source>
@@ -268,8 +413,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run2.xnb</Output>
       <Time>2013-03-04T16:56:07.1717073+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run2.xnb</Output>
+      <Time>2013-03-01T12:50:39.5292771+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run3.png</Source>
@@ -277,8 +427,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run3.xnb</Output>
       <Time>2013-03-04T16:56:07.1737093+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run3.xnb</Output>
+      <Time>2013-03-01T12:50:39.5332793+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run4.png</Source>
@@ -286,8 +441,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run4.xnb</Output>
       <Time>2013-03-04T16:56:07.1747102+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run4.xnb</Output>
+      <Time>2013-03-01T12:50:39.5362775+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head1.png</Source>
@@ -295,8 +455,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head1.xnb</Output>
       <Time>2013-03-04T16:56:07.201093+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head1.xnb</Output>
+      <Time>2013-03-01T12:48:05.9198079+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head2.png</Source>
@@ -304,8 +469,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head2.xnb</Output>
       <Time>2013-03-04T16:56:07.2136649+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head2.xnb</Output>
+      <Time>2013-03-01T12:48:05.9297347+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head3.png</Source>
@@ -313,8 +483,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head3.xnb</Output>
       <Time>2013-03-04T16:56:07.2156672+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head3.xnb</Output>
+      <Time>2013-03-01T12:48:05.9398074+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head4.png</Source>
@@ -322,8 +497,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head4.xnb</Output>
       <Time>2013-03-04T16:56:07.2186707+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head4.xnb</Output>
+      <Time>2013-03-01T12:48:05.9506049+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Player Selec Screen1.png</Source>
@@ -331,8 +511,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen1.xnb</Output>
       <Time>2013-03-04T16:56:07.243965+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen1.xnb</Output>
+      <Time>2013-03-01T12:48:06.0339908+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Player Selec Screen2.png</Source>
@@ -340,8 +525,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen2.xnb</Output>
       <Time>2013-03-04T16:56:07.2469672+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen2.xnb</Output>
+      <Time>2013-03-01T12:48:06.0439346+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Player Selec Screen3.png</Source>
@@ -349,35 +539,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen3.xnb</Output>
       <Time>2013-03-04T16:56:07.2479677+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Characters\Player\Kuro\Stand.png</Source>
-      <Name>Characters\Player\Kuro\Stand</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Stand.xnb</Output>
-      <Time>2013-03-04T16:56:07.1820802+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Cursor\cursor.png</Source>
-      <Name>Cursor\cursor</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\cursor.xnb</Output>
-      <Time>2013-03-04T16:56:07.2196699+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Cursor\crosshair.png</Source>
-      <Name>Cursor\crosshair</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb</Output>
-      <Time>2013-03-04T16:56:07.2186707+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen3.xnb</Output>
+      <Time>2013-03-01T12:48:06.0531041+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\KuroHand.png</Source>
@@ -385,8 +553,27 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\KuroHand.xnb</Output>
-      <Time>2013-03-04T16:57:48.9945267+01:00</Time>
+<<<<<<< HEAD
+      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Stand.xnb</Output>
+      <Time>2013-03-04T16:56:07.1820802+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\KuroHand.xnb</Output>
+      <Time>2013-03-04T17:00:19.1262726+01:00</Time>
+>>>>>>> sync commit
+    </Item>
+    <Item>
+      <Source>Characters\Player\Kuro\Stand.png</Source>
+      <Name>Characters\Player\Kuro\Stand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+<<<<<<< HEAD
+      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\cursor.xnb</Output>
+      <Time>2013-03-04T16:56:07.2196699+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Stand.xnb</Output>
+      <Time>2013-03-01T12:50:29.9315308+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\ShiroHand.png</Source>
@@ -394,8 +581,41 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
+      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb</Output>
+      <Time>2013-03-04T16:56:07.2186707+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\ShiroHand.xnb</Output>
+      <Time>2013-03-04T17:00:19.130967+01:00</Time>
+>>>>>>> sync commit
+    </Item>
+    <Item>
+      <Source>Cursor\cursor.png</Source>
+      <Name>Cursor\cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+<<<<<<< HEAD
+      <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\KuroHand.xnb</Output>
+      <Time>2013-03-04T16:57:48.9945267+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\cursor.xnb</Output>
+      <Time>2013-03-04T11:00:56.0083012+01:00</Time>
+>>>>>>> sync commit
+    </Item>
+    <Item>
+      <Source>Cursor\crosshair.png</Source>
+      <Name>Cursor\crosshair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\ShiroHand.xnb</Output>
       <Time>2013-03-04T16:57:48.9955276+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb</Output>
+      <Time>2013-03-04T11:00:56.0031593+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -403,10 +623,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\ShooterContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\ShooterContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\ShooterContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\ShooterContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -435,7 +655,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-02-07T08:22:09.0316756+01:00</Value>
+        <Value>2013-02-07T12:59:03.4393821+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

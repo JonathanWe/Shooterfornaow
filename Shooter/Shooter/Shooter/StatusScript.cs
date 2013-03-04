@@ -33,7 +33,11 @@ namespace Shooter
             while (i < Code.Length)
             {
                 string[] split = Code[i].Trim().Split('=');
-                if (split.Length < 2) continue;
+                if (split.Length < 2) 
+                {
+                    i++;
+                    continue;
+                }
                 Name = split[0].Trim();
                 Value = split[1].Trim();
                 i++;
