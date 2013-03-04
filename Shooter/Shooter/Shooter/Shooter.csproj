@@ -124,6 +124,7 @@
     <Compile Include="RectangleF.cs" />
     <Compile Include="Shooter.cs" />
     <Compile Include="SpriteSheet.cs" />
+    <Compile Include="StatusScript.cs" />
     <Compile Include="TextHelper.cs" />
     <Compile Include="Weapon.cs" />
   </ItemGroup>

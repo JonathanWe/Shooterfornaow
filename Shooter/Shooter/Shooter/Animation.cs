@@ -15,6 +15,7 @@ namespace Shooter
         public float AnimationSpeed = 1.0f;
         public bool Loop = true;
         public int CurrentFrame = 0;
+        public event EventHandler OnFinished;
 
         public Animation()
         {
@@ -61,7 +62,12 @@ namespace Shooter
             CurrentFrame++;
             if (CurrentFrame >= animationFrames.Count)
             {
-                CurrentFrame = 0;
+                if (OnFinished != null)
+                {
+                    Animating = false;
+                    OnFinished(this, EventArgs.Empty);
+                }
+                if (Loop) CurrentFrame = 0;
             }
         }
         float timer = 0;

@@ -11,8 +11,8 @@ namespace Shooter
     public class Character
     {
         SpriteSheet sheet;
-        Animation runAnimationR;
-        Animation runAnimationL;
+        Animation runAnimationR = new Animation();
+        Animation runAnimationL = new Animation();
 
         Point headR1Size = new Point(55, 55);
         Point headL1Size = new Point(55, 55);
@@ -59,6 +59,9 @@ namespace Shooter
         }
         public Character(string File)
         {
+            runAnimationR.AnimationSpeed = 0.1f;
+            runAnimationL.AnimationSpeed = 0.1f;
+
             string text = System.IO.File.ReadAllText(File);
             {
                 string[] split = text.Split('\n');
@@ -81,6 +84,19 @@ namespace Shooter
                 if (name == "texture")
                 {
                     sheet = new SpriteSheet(value);
+                }
+                if (name == "animation.runspeed")
+                {
+                    runAnimationR.AnimationSpeed = float.Parse(value);
+                    runAnimationL.AnimationSpeed = runAnimationR.AnimationSpeed;
+                }
+                if (name == "animation.runspeedr") 
+                {
+                    runAnimationR.AnimationSpeed = float.Parse(value);
+                }
+                if (name == "animation.runspeedl")
+                {
+                    runAnimationL.AnimationSpeed = float.Parse(value);
                 }
                 if (name == "speed") 
                 {
@@ -218,14 +234,12 @@ namespace Shooter
                 }
             }
             //Initializes animations and gives it a weapn
-            runAnimationR = sheet.GetAnimation("RunR");
+            runAnimationR.AddFrames(sheet.GetAnimationRectangles("RunR"));
             runAnimationR.Loop = true;
-            runAnimationR.AnimationSpeed = 0.1f;
             runAnimationR.Animating = true;
 
-            runAnimationL = sheet.GetAnimation("RunL");
+            runAnimationL.AddFrames(sheet.GetAnimationRectangles("RunL"));
             runAnimationL.Loop = true;
-            runAnimationL.AnimationSpeed = 0.1f;
             runAnimationL.Animating = true;
 
             Weapon = Weapon.DefaultWeapon();
