@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using System.Globalization;
 
 namespace Shooter
 {
@@ -51,7 +52,7 @@ namespace Shooter
                 }
                 else if (name == "damage")
                 {
-                    Damage = float.Parse(value);
+                    Damage = float.Parse(value, CultureInfo.InvariantCulture);
                 }
                 else if (name == "shopprice")
                 {
@@ -71,11 +72,11 @@ namespace Shooter
                 }
                 else if (name == "rateoffire")
                 {
-                    RateOfFire = float.Parse(value);
+                    RateOfFire = float.Parse(value, CultureInfo.InvariantCulture);
                 }
                 else if (name == "reloadtime")
                 {
-                    ReloadTime = float.Parse(value);
+                    ReloadTime = float.Parse(value, CultureInfo.InvariantCulture);
                 }
                 else if (name == "automatic")
                 {
@@ -83,7 +84,7 @@ namespace Shooter
                 }
                 else if (name == "animation.shootspeed") 
                 {
-                    ShootAnimation.AnimationSpeed = float.Parse(value);
+                    ShootAnimation.AnimationSpeed = float.Parse(value, CultureInfo.InvariantCulture);
                 }
             }
             ShootAnimation.AddFrames(WeaponSheet.GetAnimationRectangles("Shoot"));

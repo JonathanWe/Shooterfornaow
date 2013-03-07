@@ -282,6 +282,11 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Compile Include="Sounds\Background sounds\BackgroundSound.mp3">
+      <Name>BackgroundSound</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
     <Content Include="Weapons\Glock1.txt">
       <Name>Glock1</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -12,6 +12,7 @@ namespace Shooter
         public Player Player = new Player();
         public List<Enemy> Enemies = new List<Enemy>();
         public Cursor Cursor = new Cursor();
+        public BackgroundSound bgSound = new BackgroundSound();
 
 
         public void Load()
@@ -21,6 +22,7 @@ namespace Shooter
             Player.Load();
             //Enemies.Add(new Enemy());
             //Enemies[0].Load();
+            bgSound.Load();
             Cursor.Load();
         }
 
@@ -31,6 +33,7 @@ namespace Shooter
             {
                 Enemies[i].Update();
             }
+            bgSound.Update();
             Cursor.Update();
         }
 
