@@ -282,7 +282,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Sounds\Background sounds\BackgroundSound.mp3">
       <Name>BackgroundSound</Name>
       <Importer>Mp3Importer</Importer>
@@ -294,13 +293,11 @@
       <Processor>SoundEffectProcessor</Processor>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-=======
     <Compile Include="Cursor\MenuCursor.png">
       <Name>MenuCursor</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
->>>>>>> Changes for 07.03.2013
     <Content Include="Weapons\Glock1.txt">
       <Name>Glock1</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

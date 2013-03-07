@@ -11,11 +11,8 @@ namespace Shooter
     {
         public Player Player = new Player();
         public List<Enemy> Enemies = new List<Enemy>();
-<<<<<<< HEAD
         public Cursor Cursor = new Cursor();
         public BackgroundSound bgSound = new BackgroundSound();
-=======
->>>>>>> Changes for 07.03.2013
 
 
         public void Load()
@@ -25,12 +22,8 @@ namespace Shooter
             Player.Load();
             //Enemies.Add(new Enemy());
             //Enemies[0].Load();
-<<<<<<< HEAD
             bgSound.Load();
-            Cursor.Load();
-=======
             Engine.Cursor = Cursor.GameCursor();
->>>>>>> Changes for 07.03.2013
         }
 
         public void Update()
@@ -40,11 +33,7 @@ namespace Shooter
             {
                 Enemies[i].Update();
             }
-<<<<<<< HEAD
             bgSound.Update();
-            Cursor.Update();
-=======
->>>>>>> Changes for 07.03.2013
         }
 
         public void Draw()

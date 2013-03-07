@@ -25,17 +25,14 @@ namespace Shooter
         public Vector2 GunPosition = new Vector2();
         public Point GunSize = new Point(70, 40);
 
-<<<<<<< HEAD
         //Test of GunEffect
         public GameSoundEffect M4A1 = new GameSoundEffect();
 
-=======
 
         public Weapon(SpriteSheet Sheet)
         {
             this.WeaponSheet = Sheet;
         }
->>>>>>> Changes for 07.03.2013
         public Weapon(string File) 
         {
             
