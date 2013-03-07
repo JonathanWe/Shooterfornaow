@@ -126,6 +126,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="RectangleF.cs" />
     <Compile Include="Shooter.cs" />
+    <Compile Include="GameSoundEffect.cs" />
     <Compile Include="SpriteSheet.cs" />
     <Compile Include="StatusScript.cs" />
     <Compile Include="TextHelper.cs" />

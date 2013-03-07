@@ -25,8 +25,15 @@ namespace Shooter
         public Vector2 GunPosition = new Vector2();
         public Point GunSize = new Point(70, 40);
 
+        //Test of GunEffect
+        public GameSoundEffect M4A1 = new GameSoundEffect();
+
         public Weapon(string File) 
         {
+            
+            //Test of gunfire sounds
+            M4A1.Load("Content/Sounds/Weapons/M4A1Fire.wav");
+
             ShootAnimation.AnimationSpeed = 0.1f;
 
             StatusScript script = new StatusScript(System.IO.File.ReadAllText(File));
@@ -111,6 +118,9 @@ namespace Shooter
                     playShootAnimation = true;
                     ShootAnimation.CurrentFrame = 0;
                     ShootAnimation.Animating = true;
+
+                    //Test of gunfire sounds
+                    M4A1.Play();
                 }
             }
             if (playShootAnimation) ShootAnimation.Update();

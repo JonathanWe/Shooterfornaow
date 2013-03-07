@@ -46,6 +46,7 @@ Content\Sounds\Background sounds\BackgroundSound.xnb
 Content\Sounds\Background sounds\BackgroundSound.wma
 Content\Characters\Player\Kuro\Kuro.txt
 Content\Characters\Player\Kuro\KuroSpriteSheet.sht
+Content\Sounds\Weapons\M4A1Fire.wav
 Content\Weapons\Glock1.txt
 Content\Weapons\M4A1.txt
 Content\Characters\Player\Shiro\Shiro.txt

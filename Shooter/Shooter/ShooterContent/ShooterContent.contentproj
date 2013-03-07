@@ -287,6 +287,12 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>
+    <Content Include="Sounds\Weapons\M4A1Fire.wav">
+      <Name>M4A1Fire</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Weapons\Glock1.txt">
       <Name>Glock1</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

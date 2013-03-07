@@ -10,7 +10,7 @@ MaxAmmo = 130;
 StartAmmo = 75;
 AmmoPerClip = 30;
 
-RateOfFire = 0.25;
+RateOfFire = 0.14;
 ReloadTime = 2.0;
 
 Damage = 3;

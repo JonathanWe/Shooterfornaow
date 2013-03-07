@@ -58,3 +58,4 @@ C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\
 C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
 C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
+C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Weapons\M4A1Fire.wav
