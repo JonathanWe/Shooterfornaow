@@ -27,7 +27,7 @@ namespace Shooter
         public Vector2 XY { get { return new Vector2(X, Y); } }
         public Vector2 WH { get { return new Vector2(Width, Height); } }
         public Vector4 XYWH { get { return new Vector4(X, Y, Width, Height); } }
-        public bool IsNull { get { return Width <= 0 && Height <= 0; } }
+        public bool IsNull { get { return Width <= 0 || Height <= 0; } }
 
         public Vector2[] Quad(Point TextureSize)
         {

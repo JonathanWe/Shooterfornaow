@@ -5,17 +5,16 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using Shooter.GUI;
 
 namespace Shooter
 {
     public class Menu : IScene
     {
         Texture2D background;
-        Texture2D buttonPlay;
-        Texture2D buttonPlayUp;
-        Texture2D buttonPlayOver;
         Texture2D gunShoot;
         Texture2D fadeTexture;
+        Button btnPlay = new Button("Start");
         Vector2 buttonPlayPosition = new Vector2(300, 250);
         Vector2 buttonPlaySize = new Vector2(300, 100);
         Vector2 gunShootSize = new Vector2(100, 100);
@@ -27,10 +26,19 @@ namespace Shooter
         public void Load() 
         {
             background = Engine.Content.Load<Texture2D>("MenuBackground");
-            buttonPlayUp = Engine.Content.Load<Texture2D>("Menu1");
-            buttonPlayOver = Engine.Content.Load<Texture2D>("Menu2");
             gunShoot = Engine.Content.Load<Texture2D>("bullethole");
             fadeTexture = Engine.Content.Load<Texture2D>("White");
+
+            btnPlay.Position = new Vector2(300, 250);
+            btnPlay.Size = new Vector2(300, 100);
+            btnPlay.Z = 0.01f;
+            btnPlay.OnClick += new EventHandler(btnPlay_OnClick);
+        }
+
+        void btnPlay_OnClick(object sender, EventArgs e)
+        {
+            timer += 0.1f;
+            mouseClickPosition = Engine.MousePosition;
         }
         public void Update() 
         {
@@ -41,16 +49,7 @@ namespace Shooter
                 Engine.CurrentScene.Load();
             }
             else if (timer != 0) timer += Engine.GameTimeInSec;
-            else if (Engine.Collide(buttonPlayPosition, buttonPlaySize, Engine.MousePosition, new Vector2(1, 1)))
-            {
-                if (Engine.MouseClick)
-                {
-                    timer += 0.1f;
-                    mouseClickPosition = Engine.MousePosition;
-                }
-                else buttonPlay = buttonPlayOver;
-            }
-            else buttonPlay = buttonPlayUp;
+            else btnPlay.Update();
             if (Engine.KeyClick(Keys.F2))
             {
                 Engine.CurrentScene = new Modding.ModMenu();
@@ -60,7 +59,7 @@ namespace Shooter
         public void Draw() 
         {
             Engine.SpriteBatch.Draw(background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);
-            Engine.SpriteBatch.Draw(buttonPlay, new Rectangle((int)buttonPlayPosition.X, (int)buttonPlayPosition.Y, (int)buttonPlaySize.X, (int)buttonPlaySize.Y), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.1f);
+            btnPlay.Draw();
             if (timer != 0)
             {
                 Engine.SpriteBatch.Draw(gunShoot, new Rectangle((int)(mouseClickPosition.X - (gunShootSize.X / 2)), (int)(mouseClickPosition.Y - (gunShootSize.X / 2)), (int)gunShootSize.X, (int)gunShootSize.Y), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);

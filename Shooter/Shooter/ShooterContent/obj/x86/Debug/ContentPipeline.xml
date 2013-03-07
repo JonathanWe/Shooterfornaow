@@ -407,6 +407,24 @@
       <Extra>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Background sounds\BackgroundSound.wma</Extra>
       <Time>2013-03-07T12:33:43.2806784+01:00</Time>
     </Item>
+    <Item>
+      <Source>Font\DefaultFont.spritefont</Source>
+      <Name>Font\DefaultFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Font\DefaultFont.xnb</Output>
+      <Time>2013-03-04T19:46:05.2851204+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Cursor\MenuCursor.png</Source>
+      <Name>Cursor\MenuCursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\MenuCursor.xnb</Output>
+      <Time>2013-03-07T12:14:57.2970548+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

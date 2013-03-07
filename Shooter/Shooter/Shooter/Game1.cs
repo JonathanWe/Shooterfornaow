@@ -51,6 +51,9 @@ namespace Shooter
             Engine.SpriteBatch = spriteBatch;
             Engine.WindowWidth = graphics.PreferredBackBufferWidth;
             Engine.WindowHeight = graphics.PreferredBackBufferHeight;
+            Engine.GUISheet = new SpriteSheet("Content/GUISheet.sht");
+            Engine.DefaultFont = Content.Load<SpriteFont>("Font/DefaultFont");
+            Engine.Cursor = Cursor.MenuCursor();
 
             Engine.CurrentScene = new Menu();
             Engine.CurrentScene.Load();
@@ -104,6 +107,7 @@ namespace Shooter
 
             spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.AlphaBlend);
             Engine.CurrentScene.Draw();
+            Engine.Cursor.Draw();
             spriteBatch.End();
 
             base.Draw(gameTime);

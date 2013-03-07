@@ -15,9 +15,12 @@ namespace Shooter
         public static Map Map;
         public static Shooter Game;
         public static Camera Camera = new Camera();
+        public static Cursor Cursor;
         public static ContentManager Content;
         public static SpriteBatch SpriteBatch;
         public static GraphicsDevice Device;
+        public static SpriteSheet GUISheet;
+        public static SpriteFont DefaultFont;
         public static float GameTimeInSec = 0;
         public static int WindowWidth;
         public static int WindowHeight;
