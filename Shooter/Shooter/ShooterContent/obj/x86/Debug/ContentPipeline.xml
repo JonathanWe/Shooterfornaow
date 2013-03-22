@@ -79,8 +79,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
       <Time>2013-03-04T16:56:07.2419637+01:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
+      <Time>2013-03-08T15:52:19.6586135+01:00</Time>
+>>>>>>> sync commit
     </Item>
     <Item>
       <Source>Pl_Body.png</Source>

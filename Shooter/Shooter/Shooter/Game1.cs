@@ -51,6 +51,7 @@ namespace Shooter
             Engine.SpriteBatch = spriteBatch;
             Engine.WindowWidth = graphics.PreferredBackBufferWidth;
             Engine.WindowHeight = graphics.PreferredBackBufferHeight;
+            Engine.WhiteTexture = Content.Load<Texture2D>("White");
             Engine.GUISheet = new SpriteSheet("Content/GUISheet.sht");
             Engine.DefaultFont = Content.Load<SpriteFont>("Font/DefaultFont");
             Engine.Cursor = Cursor.MenuCursor();

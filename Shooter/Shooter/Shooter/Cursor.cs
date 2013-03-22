@@ -12,7 +12,7 @@ namespace Shooter
     {
         private Texture2D cursorTex;
         Vector2 Size = new Vector2(32, 32);
-        Vector2 Origin = new Vector2(16, 16);
+        Vector2 Origin = new Vector2(0, 0);
 
         public void Load(string Cursor) 
         {
@@ -20,7 +20,7 @@ namespace Shooter
         }
         public void Draw() 
         {
-            Engine.SpriteBatch.Draw(cursorTex, new RectangleF(Engine.MousePosition, Size), null, Color.White, 0, Origin * (new Vector2(cursorTex.Width, cursorTex.Height) / Size), SpriteEffects.None, 0.1f);
+            Engine.SpriteBatch.Draw(cursorTex, new RectangleF(Engine.MousePosition, Size), null, Color.White, 0, Origin * (new Vector2(cursorTex.Width, cursorTex.Height) / Size), SpriteEffects.None, 0.9f);
         }
 
         public static Cursor GameCursor() 

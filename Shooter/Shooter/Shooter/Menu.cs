@@ -14,7 +14,7 @@ namespace Shooter
         Texture2D background;
         Texture2D gunShoot;
         Texture2D fadeTexture;
-        Button btnPlay = new Button("Start");
+        Button btnPlay = new Button("PlayButton");
         Vector2 buttonPlayPosition = new Vector2(300, 250);
         Vector2 buttonPlaySize = new Vector2(300, 100);
         Vector2 gunShootSize = new Vector2(100, 100);

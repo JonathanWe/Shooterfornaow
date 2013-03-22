@@ -11,7 +11,6 @@ namespace Shooter
     {
         public Player Player = new Player();
         public List<Enemy> Enemies = new List<Enemy>();
-        public Cursor Cursor = new Cursor();
         public BackgroundSound bgSound = new BackgroundSound();
 
 

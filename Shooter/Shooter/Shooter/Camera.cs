@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Shooter
 {
     public class Camera
     {
-        Vector2 position;
-        public Vector2 Offset;
-        public Vector2 Position { get { return position; } 
-            set
-            {
-                position = value;
-                
-            } 
+        public Vector2 Position;
+        public float Zoom = 1;
+        public Vector2 RenderingPosition;
+        public Vector2 RenderingSize;
+
+        public void Draw(Texture2D Texture, Vector2 Position, Vector2 Size, Rectangle? Frame, Color Color, float Z) 
+        {
+            Draw(Texture, Position, Size, Frame, Color, Z, Vector2.Zero, 0);
+        }
+        public void Draw(Texture2D Texture, Vector2 Position, Vector2 Size, Rectangle? Frame, Color Color, float Z, Vector2 Origin, float Rotation)
+        {
+            Position = (Position - RenderingPosition - this.Position) * Zoom - (RenderingSize / 2 * (Zoom - 1)) + RenderingPosition;
+            Engine.SpriteBatch.Draw(Texture, new RectangleF(Position, Size * Zoom), Frame, Color, Rotation, Origin, SpriteEffects.None, Z);
         }
     }
 }
