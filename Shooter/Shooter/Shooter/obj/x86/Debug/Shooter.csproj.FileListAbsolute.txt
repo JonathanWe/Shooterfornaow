@@ -73,7 +73,6 @@ C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\
 C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
 C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\AK.xnb
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Gun.xnb
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Shotgun.xnb
@@ -140,16 +139,6 @@ C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\De
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
 =======
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal0.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal1.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal2.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal3.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal4.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal5.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal6.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal7.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal8.png
-C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal9.png
 >>>>>>> sync commit
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal0.png
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal1.png
@@ -161,6 +150,7 @@ C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\De
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal7.png
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal8.png
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Modding\MapEditor\Textures\Metal9.png
-=======
 C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.csprojResolveAssemblyReference.cache
 >>>>>>> fied synk error shit
+C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
+C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
