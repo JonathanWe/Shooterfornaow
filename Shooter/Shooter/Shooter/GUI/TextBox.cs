@@ -12,7 +12,7 @@ namespace Shooter.GUI
         public Vector2 Position = new Vector2();
         public Vector2 Size = new Vector2(100, 40);
         public float Z = 0;
-        public string Text;
+        public string Text = "";
         public Color TextColor = Color.Black;
         public bool Active;
         public string TextBoxSheetName = "";

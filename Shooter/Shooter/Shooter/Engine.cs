@@ -24,8 +24,8 @@ namespace Shooter
         public static SpriteSheet BulletSheet;
         public static SpriteFont DefaultFont;
         public static float GameTimeInSec = 0;
-        public static int WindowWidth;
-        public static int WindowHeight;
+        public static int WindowWidth { get { return Device.Viewport.Width; } }
+        public static int WindowHeight { get { return Device.Viewport.Height; } }
         public static Vector2 MousePosition;
         public static bool MouseDown;
         public static bool MouseLastDown;

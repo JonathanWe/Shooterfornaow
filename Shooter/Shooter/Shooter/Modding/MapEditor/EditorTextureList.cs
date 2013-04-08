@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Shooter.GUI;
 
 namespace Shooter.Modding.MapEditor
 {
@@ -23,6 +24,10 @@ namespace Shooter.Modding.MapEditor
             } 
         }
 
+        Button btnBackground = new Button("LoadBG");
+        TextBox tbGridX = new TextBox("NumberTextBox");
+        TextBox tbGridY = new TextBox("NumberTextBox");
+
         float margin = 12;
         float textureDistance = 16;
         Vector2 textureSize = new Vector2(64, 64);
@@ -39,9 +44,15 @@ namespace Shooter.Modding.MapEditor
         {
             Textures.Add(Texture2D.FromStream(Engine.Device, new System.IO.MemoryStream(System.IO.File.ReadAllBytes(TexturePath))));
             TexturePaths.Add(TexturePath);
+
+            btnBackground.Position = new Vector2(10, Engine.WindowHeight - 100);
+            btnBackground.Size = new Vector2(80, 80);
         }
         public void Update() 
         {
+            btnBackground.Update();
+            tbGridX.Update();
+            tbGridY.Update();
             for (int i = 0; i < Textures.Count; i++)
             {
                 Vector2 position = getPositionFromindex(i);
@@ -64,6 +75,9 @@ namespace Shooter.Modding.MapEditor
                     Engine.SpriteBatch.Draw(Engine.WhiteTexture, new RectangleF(position - new Vector2(textureDistance / 2, textureDistance / 2), textureSize + new Vector2(textureDistance, textureDistance)), null, Color.CornflowerBlue, 0, Vector2.Zero, SpriteEffects.None, 0.521f);
                 Engine.SpriteBatch.Draw(Textures[i], new RectangleF(position, textureSize), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.522f);
             }
+            btnBackground.Draw();
+            tbGridX.Draw();
+            tbGridY.Draw();
         }
         Vector2 getPositionFromindex(int Index) 
         {

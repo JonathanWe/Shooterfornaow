@@ -23,8 +23,8 @@ namespace Shooter
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.PreferredBackBufferWidth = 900;
-            graphics.PreferredBackBufferHeight = 600;
+            graphics.PreferredBackBufferWidth = 1024;
+            graphics.PreferredBackBufferHeight = 768;
         }
 
         /// <summary>
@@ -45,12 +45,11 @@ namespace Shooter
         /// </summary>
         protected override void LoadContent()
         {
+            //graphics.ToggleFullScreen();
             Engine.Device = GraphicsDevice;
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Engine.Content = Content;
             Engine.SpriteBatch = spriteBatch;
-            Engine.WindowWidth = graphics.PreferredBackBufferWidth;
-            Engine.WindowHeight = graphics.PreferredBackBufferHeight;
             Engine.WhiteTexture = Content.Load<Texture2D>("White");
             Engine.GUISheet = new SpriteSheet("Content/GUISheet.sht");
             Engine.BulletSheet = new SpriteSheet("Content/BulletSheet.sht");

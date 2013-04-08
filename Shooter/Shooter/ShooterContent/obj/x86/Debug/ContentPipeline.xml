@@ -79,8 +79,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
       <Time>2013-04-08T11:53:04.3439667+02:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
+      <Time>2013-03-22T13:41:19.7366029+01:00</Time>
+>>>>>>> Changes in Map editor and new shiro and...
     </Item>
     <Item>
       <Source>Pl_Body.png</Source>
