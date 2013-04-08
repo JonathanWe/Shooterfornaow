@@ -335,6 +335,10 @@ namespace Shooter
         {
             return new Character("Content/Characters/Player/Shiro/Shiro.txt");
         }
+        public static Character Kuro()
+        {
+            return new Character("Content/Characters/Player/Kuro/Kuro.txt");
+        }
         public static Character Enemy1()
         {
             Character character = new Character(new SpriteSheet("Content/Characters/Player/Kuro/KuroSpriteSheet.sht"));

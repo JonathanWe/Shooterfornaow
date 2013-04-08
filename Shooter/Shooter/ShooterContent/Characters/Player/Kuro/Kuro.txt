@@ -1,4 +1,4 @@
-Texture = Content/Characters/Player/Kuro/KuroSpriteSheet.sht
+Texture = Content/Characters/Player/Kuro/KuroSpriteSheet.sht;
 
 BoundingBox = 90, 155; 
 
