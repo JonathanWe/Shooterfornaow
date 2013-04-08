@@ -16,11 +16,11 @@ namespace Shooter.Modding.MapEditor
         {
             for (int x = 0; x < GridSize.X; x++)
             {
-                Camer.Draw(Engine.WhiteTexture, new Vector2(0, GridElementSize.Y * x), new Vector2(GridElementSize.X * GridSize.X, 2 / Camer.Zoom), null, Color.Black, 0.9f);
+                Camer.Draw(Engine.WhiteTexture, new Vector2(0, GridElementSize.Y * x), new Vector2(GridElementSize.X * GridSize.X, 2 / Camer.Zoom), null, Color.Black, 0.51f);
             }
             for (int y = 0; y < GridSize.X; y++)
             {
-                Camer.Draw(Engine.WhiteTexture, new Vector2(GridElementSize.X * y, 0), new Vector2(2 / Camer.Zoom, GridElementSize.Y * GridSize.Y), null, Color.Black, 0.9f);
+                Camer.Draw(Engine.WhiteTexture, new Vector2(GridElementSize.X * y, 0), new Vector2(2 / Camer.Zoom, GridElementSize.Y * GridSize.Y), null, Color.Black, 0.51f);
             }
         }
     }

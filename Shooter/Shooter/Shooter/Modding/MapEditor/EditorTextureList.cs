@@ -53,16 +53,16 @@ namespace Shooter.Modding.MapEditor
         }
         public void Draw() 
         {
-            Engine.SpriteBatch.Draw(Engine.WhiteTexture, new RectangleF(Vector2.Zero, Size), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.1f);
-            Engine.SpriteBatch.Draw(Engine.WhiteTexture, new RectangleF(new Vector2(0, Engine.WindowHeight - BottomSize.Y), BottomSize), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.1f);
+            Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Vector2.Zero, Size), Engine.GUISheet.GetSprite("Y"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.52f);
+            Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(new Vector2(0, Engine.WindowHeight - BottomSize.Y), BottomSize), Engine.GUISheet.GetSprite("X"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.5201f);
             for (int i = 0; i < Textures.Count; i++)
             {
                 Vector2 position = getPositionFromindex(i);
                 if (i == SelectedIndex)
-                    Engine.SpriteBatch.Draw(Engine.WhiteTexture, new RectangleF(position - new Vector2(textureDistance / 2, textureDistance / 2), textureSize + new Vector2(textureDistance, textureDistance)), null, Color.Yellow, 0, Vector2.Zero, SpriteEffects.None, 0.101f);
+                    Engine.SpriteBatch.Draw(Engine.WhiteTexture, new RectangleF(position - new Vector2(textureDistance / 2, textureDistance / 2), textureSize + new Vector2(textureDistance, textureDistance)), null, new Color(1f, 1f, 0f, 0.00f), 0, Vector2.Zero, SpriteEffects.None, 0.521f);
                 else if (Engine.Collide(position, textureSize, Engine.MousePosition, Vector2.Zero))
-                    Engine.SpriteBatch.Draw(Engine.WhiteTexture, new RectangleF(position - new Vector2(textureDistance / 2, textureDistance / 2), textureSize + new Vector2(textureDistance, textureDistance)), null, Color.CornflowerBlue, 0, Vector2.Zero, SpriteEffects.None, 0.101f);
-                Engine.SpriteBatch.Draw(Textures[i], new RectangleF(position, textureSize), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
+                    Engine.SpriteBatch.Draw(Engine.WhiteTexture, new RectangleF(position - new Vector2(textureDistance / 2, textureDistance / 2), textureSize + new Vector2(textureDistance, textureDistance)), null, Color.CornflowerBlue, 0, Vector2.Zero, SpriteEffects.None, 0.521f);
+                Engine.SpriteBatch.Draw(Textures[i], new RectangleF(position, textureSize), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.522f);
             }
         }
         Vector2 getPositionFromindex(int Index) 
