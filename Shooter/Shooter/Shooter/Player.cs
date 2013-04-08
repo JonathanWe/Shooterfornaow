@@ -10,7 +10,6 @@ namespace Shooter
     public class Player
     {
         public int Healt = 100;
-        public Weapon Weapon;
         public Vector2 Position { get { return character.Position; } set { character.Position = value; } }
         public Vector2 Size;
 
@@ -35,6 +34,7 @@ namespace Shooter
             {
                 character.Jump();
             }
+            if (character.Weapon != null) character.Weapon.Update(Engine.MouseDown, Position, Engine.MousePosition);
 
             character.Update(true, false);
         }

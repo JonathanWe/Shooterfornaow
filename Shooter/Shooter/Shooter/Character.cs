@@ -248,8 +248,6 @@ namespace Shooter
 
             lookRight = AdamoMath.ToRadians(90) > degrees && AdamoMath.ToRadians(-90) < degrees;
 
-            if (Weapon != null) Weapon.Update(Engine.MouseDown);
-
             //Movement
             if (Acceleration.X > 0)
             {

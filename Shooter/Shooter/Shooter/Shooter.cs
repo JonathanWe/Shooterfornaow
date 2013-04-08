@@ -32,6 +32,7 @@ namespace Shooter
             {
                 Enemies[i].Update();
             }
+            Bullet.UpdateAllBullets();
             bgSound.Update();
         }
 
@@ -43,6 +44,7 @@ namespace Shooter
             {
                 Enemies[i].Draw();
             }
+            Bullet.DrawAllBullets();
         }
     }
 }

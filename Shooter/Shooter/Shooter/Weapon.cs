@@ -19,6 +19,7 @@ namespace Shooter
         public float RateOfFire;
         public float ReloadTime;
         public float Damage;
+        public float BulletSpeed;
         public bool Automatic = false;
         public SpriteSheet WeaponSheet;
         public Animation ShootAnimation = new Animation();
@@ -66,6 +67,10 @@ namespace Shooter
                 {
                     Damage = float.Parse(value, CultureInfo.InvariantCulture);
                 }
+                else if (name == "bulletspeed")
+                {
+                    BulletSpeed = float.Parse(value, CultureInfo.InvariantCulture);
+                }
                 else if (name == "shopprice")
                 {
                     ShopPrice = int.Parse(value);
@@ -104,6 +109,10 @@ namespace Shooter
             ShootAnimation.Animating = true;
             ShootAnimation.OnFinished += new EventHandler(ShootAnimation_OnFinished);
         }
+        public void CreateBullet(Vector2 Pos, Vector2 Dest)
+        {
+            new Bullet(Pos, Dest, BulletSpeed);
+        }
 
         void ShootAnimation_OnFinished(object sender, EventArgs e)
         {
@@ -113,7 +122,7 @@ namespace Shooter
 
         bool playShootAnimation = false;
         float timer = 0;
-        public void Update(bool Shooting) 
+        public void Update(bool Shooting, Vector2 Position, Vector2 Destination) 
         {
             if (Shooting) 
             {
@@ -126,6 +135,8 @@ namespace Shooter
 
                     //Test of gunfire sounds
                     M4A1.Play();
+
+                    CreateBullet(Position, Destination);
                 }
             }
             if (playShootAnimation) ShootAnimation.Update();
