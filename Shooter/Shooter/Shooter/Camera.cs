@@ -14,6 +14,11 @@ namespace Shooter
         public Vector2 RenderingPosition;
         public Vector2 RenderingSize;
 
+        public Vector2 MousePosition
+        {
+            get { return (Engine.MousePosition / Zoom) + Position; }
+        }
+
         public void Draw(Texture2D Texture, Vector2 Position, Vector2 Size, Rectangle? Frame, Color Color, float Z) 
         {
             Draw(Texture, Position, Size, Frame, Color, Z, Vector2.Zero, 0);

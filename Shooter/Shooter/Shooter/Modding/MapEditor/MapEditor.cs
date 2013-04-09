@@ -55,7 +55,7 @@ namespace Shooter.Modding.MapEditor
             //Placing blocks
             if (Engine.MouseClick && !dragging)
             {
-                int index = grid.ColideWithGrid(Engine.MousePosition);
+                int index = grid.ColideWithGrid(Engine.Camera.MousePosition);
                 if (index != -1) 
                 {
                     if (grid.GridTexture[index] != textureList.SelectedIndex)
@@ -70,9 +70,9 @@ namespace Shooter.Modding.MapEditor
             {
                 if (Engine.MouseLastDown == false)
                 {
-                    dragMountPoint = Engine.MousePosition;
+                    dragMountPoint = Engine.Camera.MousePosition;
                 }
-                if ((dragMountPoint - Engine.MousePosition).Length() > 3)
+                if ((dragMountPoint - Engine.Camera.MousePosition).Length() > 3)
                 {
                     dragging = true;
                 }
@@ -80,7 +80,7 @@ namespace Shooter.Modding.MapEditor
             else dragging = false;
             if (dragging)
             {
-                camera.Position = dragMountPoint - Engine.MousePosition;
+                camera.Position = dragMountPoint + dragMountPoint - Engine.Camera.MousePosition;
             }
 
             if (Engine.KeyClick(Keys.O))

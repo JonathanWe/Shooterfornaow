@@ -30,7 +30,7 @@ namespace Shooter
         }
         public void Draw() 
         {
-            character.Draw(Position);
+            character.Draw();
         }
     }
 }

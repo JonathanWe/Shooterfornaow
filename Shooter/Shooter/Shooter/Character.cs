@@ -276,7 +276,7 @@ namespace Shooter
             Position += Acceleration * Engine.GameTimeInSec;
             Engine.Map.UpdateCharacterCollision(this);
         }
-        public void Draw(Vector2 Position)
+        public void Draw()
         {
             if (Acceleration.X != 0)
             {
