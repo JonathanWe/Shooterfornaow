@@ -23,7 +23,7 @@ namespace Shooter.Modding.MapEditor
             int index = -1;
             for (int x = 0; x < GridSize.X; x++)
             {
-                if (AdamoMath.IsBetween(x * GridElementSize.X, x * GridElementSize.X + 1, Position.X))
+                if (AdamoMath.IsBetween(x * GridElementSize.X, (x + 1) * GridElementSize.X, Position.X))
                 {
                     index = x;
                     break;
@@ -31,7 +31,7 @@ namespace Shooter.Modding.MapEditor
             }
             for (int y = 0; y < GridSize.Y; y++)
             {
-                if (AdamoMath.IsBetween(y * GridElementSize.Y, y * GridElementSize.Y + 1, Position.Y))
+                if (AdamoMath.IsBetween(y * GridElementSize.Y, (y + 1) * GridElementSize.Y, Position.Y))
                 {
                     index = index + y * GridSize.X;
                 }

@@ -117,6 +117,7 @@
     <Compile Include="Enemy.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="GUI\Button.cs" />
+    <Compile Include="GUI\ChechBox.cs" />
     <Compile Include="GUI\TextBox.cs" />
     <Compile Include="IScene.cs" />
     <Compile Include="Map.cs" />
