@@ -22,7 +22,7 @@ namespace Shooter.GUI
             set 
             {
                 active = value;
-                if (OnActive != null)
+                if (value && OnActive != null)
                 {
                     OnActive(this, EventArgs.Empty);
                 }

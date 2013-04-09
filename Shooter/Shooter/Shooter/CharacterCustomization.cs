@@ -23,30 +23,40 @@ namespace Shooter
             background = Engine.Content.Load<Texture2D>("BGCharCuz");
 
             character = Character.Shiro();
-            character.Position = new Vector2(300,300);
+            character.Position = new Vector2(422,274);
             
             cbRed = new ChechBox(Engine.GUISheet, "RedButton");
-            cbRed.Position = new Vector2(200, 305);
-            cbRed.Size = new Vector2(35, 35);cbRed.Z = 1;
-            cbRed.OnActive += new EventHandler(cbRed_OnActive);
+            cbRed.Position = new Vector2(412, 245);
+            cbRed.Size = new Vector2(35, 35);
+            cbRed.Z = 0.1f;
+            cbRed.OnActive += new EventHandler(cb_OnActive);
 
             cbBlack = new ChechBox(Engine.GUISheet, "BlackButton");
-            cbBlack.Position = new Vector2(200, 345);
-            cbBlack.Size = new Vector2(35, 35); cbBlack.Z = 1;
+            cbBlack.Position = new Vector2(452, 245);
+            cbBlack.Size = new Vector2(35, 35); 
+            cbBlack.Z = 0.1f;
+            cbBlack.OnActive += new EventHandler(cb_OnActive);
 
             cbWhite = new ChechBox(Engine.GUISheet, "WhiteButton");
-            cbWhite.Position = new Vector2(200, 385);
-            cbWhite.Size = new Vector2(35, 35); cbWhite.Z = 1;
+            cbWhite.Position = new Vector2(492, 245);
+            cbWhite.Size = new Vector2(35, 35); 
+            cbWhite.Z = 0.1f;
+            cbWhite.OnActive += new EventHandler(cb_OnActive);
 
             cbPink = new ChechBox(Engine.GUISheet, "PinkButton");
-            cbPink.Position = new Vector2(200, 425);
-            cbPink.Size = new Vector2(35, 35); cbPink.Z = 1;
+            cbPink.Position = new Vector2(532, 245);
+            cbPink.Size = new Vector2(35, 35); 
+            cbPink.Z = 0.1f;
+            cbPink.OnActive += new EventHandler(cb_OnActive);
 
         }
 
-        void cbRed_OnActive(object sender, EventArgs e)
+        void cb_OnActive(object sender, EventArgs e)
         {
-
+            if((ChechBox)sender != cbRed) cbRed.Active = false;
+            if ((ChechBox)sender != cbBlack) cbBlack.Active = false;
+            if ((ChechBox)sender != cbWhite) cbWhite.Active = false;
+            if ((ChechBox)sender != cbPink) cbPink.Active = false;
         }
 
         public void Update()
@@ -60,7 +70,7 @@ namespace Shooter
         public void Draw()
         {
             Engine.SpriteBatch.Draw (background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);
-            //character.Draw();
+            character.Draw();
             cbRed.Draw();
             cbBlack.Draw();
             cbWhite.Draw();
