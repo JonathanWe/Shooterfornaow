@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\AK.xnb</Output>
-      <Time>2013-04-08T11:53:03.6875227+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\AK.xnb</Output>
+      <Time>2013-03-01T12:48:05.8131373+01:00</Time>
     </Item>
     <Item>
       <Source>Gun.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Gun.xnb</Output>
-      <Time>2013-04-08T11:53:04.2689253+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Gun.xnb</Output>
+      <Time>2013-03-01T12:48:05.9791729+01:00</Time>
     </Item>
     <Item>
       <Source>Shotgun.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Shotgun.xnb</Output>
-      <Time>2013-04-08T11:53:04.4200105+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Shotgun.xnb</Output>
+      <Time>2013-03-01T12:48:06.0614326+01:00</Time>
     </Item>
     <Item>
       <Source>Sniper.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sniper.xnb</Output>
-      <Time>2013-04-08T11:53:04.4300175+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sniper.xnb</Output>
+      <Time>2013-03-01T12:48:06.062425+01:00</Time>
     </Item>
     <Item>
       <Source>sub.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\sub.xnb</Output>
-      <Time>2013-04-08T11:53:04.7552331+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\sub.xnb</Output>
+      <Time>2013-03-01T12:48:06.1032951+01:00</Time>
     </Item>
     <Item>
       <Source>Menu2.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu2.xnb</Output>
-      <Time>2013-04-08T11:53:04.2949345+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu2.xnb</Output>
+      <Time>2013-03-01T12:48:05.998749+01:00</Time>
     </Item>
     <Item>
       <Source>bullethole.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bullethole.xnb</Output>
-      <Time>2013-04-08T11:53:04.7062086+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bullethole.xnb</Output>
+      <Time>2013-03-01T12:48:06.0836615+01:00</Time>
     </Item>
     <Item>
       <Source>Menu1.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu1.xnb</Output>
-      <Time>2013-04-08T11:53:04.2859277+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu1.xnb</Output>
+      <Time>2013-03-01T12:48:05.9899087+01:00</Time>
     </Item>
     <Item>
       <Source>MenuBackground.png</Source>
@@ -79,8 +79,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
       <Time>2013-04-08T11:53:04.3439667+02:00</Time>
+=======
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb</Output>
+      <Time>2013-03-22T13:41:19.7366029+01:00</Time>
+>>>>>>> 	modified:   Shooter/Shooter/Shooter/bin/x86/Debug/Content/Sounds/Background sounds/BackgroundSound.wma
     </Item>
     <Item>
       <Source>Pl_Body.png</Source>
@@ -88,8 +93,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Body.xnb</Output>
-      <Time>2013-04-08T11:53:04.34697+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Body.xnb</Output>
+      <Time>2013-03-01T12:48:06.0158793+01:00</Time>
     </Item>
     <Item>
       <Source>Pl_Feet.png</Source>
@@ -97,8 +102,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Feet.xnb</Output>
-      <Time>2013-04-08T11:53:04.3509726+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Feet.xnb</Output>
+      <Time>2013-03-01T12:48:06.0209185+01:00</Time>
     </Item>
     <Item>
       <Source>Pl_Head.png</Source>
@@ -106,8 +111,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Head.xnb</Output>
-      <Time>2013-04-08T11:53:04.3539661+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Head.xnb</Output>
+      <Time>2013-03-01T12:48:06.0261465+01:00</Time>
     </Item>
     <Item>
       <Source>En_Body.png</Source>
@@ -115,8 +120,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Body.xnb</Output>
-      <Time>2013-04-08T11:53:04.139839+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Body.xnb</Output>
+      <Time>2013-03-01T12:48:05.9553041+01:00</Time>
     </Item>
     <Item>
       <Source>En_Feet.png</Source>
@@ -124,8 +129,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Feet.xnb</Output>
-      <Time>2013-04-08T11:53:04.159845+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Feet.xnb</Output>
+      <Time>2013-03-01T12:48:05.9693313+01:00</Time>
     </Item>
     <Item>
       <Source>En_Head.png</Source>
@@ -133,8 +138,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Head.xnb</Output>
-      <Time>2013-04-08T11:53:04.162847+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Head.xnb</Output>
+      <Time>2013-03-01T12:48:05.9750114+01:00</Time>
     </Item>
     <Item>
       <Source>White.jpg</Source>
@@ -142,8 +147,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\White.xnb</Output>
-      <Time>2013-04-08T11:53:04.7002042+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\White.xnb</Output>
+      <Time>2013-03-01T12:48:06.0771278+01:00</Time>
     </Item>
     <Item>
       <Source>TestMap.png</Source>
@@ -151,8 +156,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestMap.xnb</Output>
-      <Time>2013-04-08T11:53:04.4950672+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestMap.xnb</Output>
+      <Time>2013-03-01T12:48:06.0731198+01:00</Time>
     </Item>
     <Item>
       <Source>TestBackground.png</Source>
@@ -160,8 +165,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestBackground.xnb</Output>
-      <Time>2013-04-08T11:53:04.4910569+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestBackground.xnb</Output>
+      <Time>2013-03-01T12:48:06.0686463+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Body.png</Source>
@@ -169,8 +174,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Body.xnb</Output>
-      <Time>2013-04-08T11:53:03.6925268+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Body.xnb</Output>
+      <Time>2013-03-01T12:48:05.8179476+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk1.png</Source>
@@ -178,8 +183,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk1.xnb</Output>
-      <Time>2013-04-08T11:53:03.7575693+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk1.xnb</Output>
+      <Time>2013-03-01T12:48:05.853791+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk2.png</Source>
@@ -187,8 +192,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk2.xnb</Output>
-      <Time>2013-04-08T11:53:03.7605713+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk2.xnb</Output>
+      <Time>2013-03-01T12:48:05.8579663+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk3.png</Source>
@@ -196,8 +201,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk3.xnb</Output>
-      <Time>2013-04-08T11:53:03.7635737+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk3.xnb</Output>
+      <Time>2013-03-01T12:48:05.8620199+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\leg_walk4.png</Source>
@@ -205,8 +210,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk4.xnb</Output>
-      <Time>2013-04-08T11:53:03.7665753+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk4.xnb</Output>
+      <Time>2013-03-01T12:48:05.8660275+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head1.png</Source>
@@ -214,8 +219,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head1.xnb</Output>
-      <Time>2013-04-08T11:53:03.7025331+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head1.xnb</Output>
+      <Time>2013-03-01T12:48:05.8266892+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head2.png</Source>
@@ -223,8 +228,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head2.xnb</Output>
-      <Time>2013-04-08T11:53:03.7105384+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head2.xnb</Output>
+      <Time>2013-03-01T12:48:05.8342194+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head3.png</Source>
@@ -232,8 +237,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head3.xnb</Output>
-      <Time>2013-04-08T11:53:03.7185608+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head3.xnb</Output>
+      <Time>2013-03-01T12:48:05.8404764+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\NPC_mob\Z_head4.png</Source>
@@ -241,8 +246,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head4.xnb</Output>
-      <Time>2013-04-08T11:53:03.7275493+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head4.xnb</Output>
+      <Time>2013-03-01T12:48:05.8490788+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run0.png</Source>
@@ -250,8 +255,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run0.xnb</Output>
-      <Time>2013-04-08T11:53:03.9376955+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run0.xnb</Output>
+      <Time>2013-03-01T15:20:02.3900384+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run1.png</Source>
@@ -259,8 +264,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run1.xnb</Output>
-      <Time>2013-04-08T11:53:03.9457008+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run1.xnb</Output>
+      <Time>2013-03-01T12:50:39.5262748+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run2.png</Source>
@@ -268,8 +273,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run2.xnb</Output>
-      <Time>2013-04-08T11:53:03.9537006+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run2.xnb</Output>
+      <Time>2013-03-01T12:50:39.5292771+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run3.png</Source>
@@ -277,8 +282,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run3.xnb</Output>
-      <Time>2013-04-08T11:53:03.9617047+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run3.xnb</Output>
+      <Time>2013-03-01T12:50:39.5332793+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Run4.png</Source>
@@ -286,8 +291,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run4.xnb</Output>
-      <Time>2013-04-08T11:53:03.9707252+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run4.xnb</Output>
+      <Time>2013-03-01T12:50:39.5362775+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head1.png</Source>
@@ -295,8 +300,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head1.xnb</Output>
-      <Time>2013-04-08T11:53:04.0747885+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head1.xnb</Output>
+      <Time>2013-03-01T12:48:05.9198079+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head2.png</Source>
@@ -304,8 +309,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head2.xnb</Output>
-      <Time>2013-04-08T11:53:04.0867879+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head2.xnb</Output>
+      <Time>2013-03-01T12:48:05.9297347+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head3.png</Source>
@@ -313,8 +318,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head3.xnb</Output>
-      <Time>2013-04-08T11:53:04.1008058+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head3.xnb</Output>
+      <Time>2013-03-01T12:48:05.9398074+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\Shiro_head4.png</Source>
@@ -322,8 +327,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head4.xnb</Output>
-      <Time>2013-04-08T11:53:04.1118135+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head4.xnb</Output>
+      <Time>2013-03-01T12:48:05.9506049+01:00</Time>
     </Item>
     <Item>
       <Source>Player Selec Screen1.png</Source>
@@ -331,8 +336,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen1.xnb</Output>
-      <Time>2013-04-08T11:53:04.3639796+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen1.xnb</Output>
+      <Time>2013-03-01T12:48:06.0339908+01:00</Time>
     </Item>
     <Item>
       <Source>Player Selec Screen2.png</Source>
@@ -340,8 +345,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen2.xnb</Output>
-      <Time>2013-04-08T11:53:04.3789917+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen2.xnb</Output>
+      <Time>2013-03-01T12:48:06.0439346+01:00</Time>
     </Item>
     <Item>
       <Source>Player Selec Screen3.png</Source>
@@ -349,8 +354,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen3.xnb</Output>
-      <Time>2013-04-08T11:53:04.3939932+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen3.xnb</Output>
+      <Time>2013-03-01T12:48:06.0531041+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\KuroHand.png</Source>
@@ -358,8 +363,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\KuroHand.xnb</Output>
-      <Time>2013-04-08T11:53:03.8436342+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\KuroHand.xnb</Output>
+      <Time>2013-03-04T17:00:19.1262726+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Kuro\Stand.png</Source>
@@ -367,8 +372,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Stand.xnb</Output>
-      <Time>2013-04-08T11:53:03.98472+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Stand.xnb</Output>
+      <Time>2013-03-01T12:50:29.9315308+01:00</Time>
     </Item>
     <Item>
       <Source>Characters\Player\Shiro\ShiroHand.png</Source>
@@ -376,8 +381,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\ShiroHand.xnb</Output>
-      <Time>2013-04-08T11:53:03.9927266+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\ShiroHand.xnb</Output>
+      <Time>2013-03-04T17:00:19.130967+01:00</Time>
     </Item>
     <Item>
       <Source>Cursor\MenuCursor.png</Source>
@@ -385,8 +390,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\MenuCursor.xnb</Output>
-      <Time>2013-04-08T11:53:04.1148074+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\MenuCursor.xnb</Output>
+      <Time>2013-03-07T18:28:10.5910946+01:00</Time>
     </Item>
     <Item>
       <Source>Cursor\cursor.png</Source>
@@ -394,8 +399,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\cursor.xnb</Output>
-      <Time>2013-04-08T11:53:04.1378218+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\cursor.xnb</Output>
+      <Time>2013-03-04T11:00:56.0083012+01:00</Time>
     </Item>
     <Item>
       <Source>Cursor\crosshair.png</Source>
@@ -403,8 +408,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb</Output>
-      <Time>2013-04-08T11:53:04.134837+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb</Output>
+      <Time>2013-03-04T11:00:56.0031593+01:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Background sounds\BackgroundSound.mp3</Source>
@@ -412,9 +417,9 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Background sounds\BackgroundSound.xnb</Output>
-      <Extra>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Background sounds\BackgroundSound.wma</Extra>
-      <Time>2013-04-08T11:53:04.474046+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Background sounds\BackgroundSound.xnb</Output>
+      <Extra>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Background sounds\BackgroundSound.wma</Extra>
+      <Time>2013-03-07T18:28:07.030623+01:00</Time>
     </Item>
     <Item>
       <Source>Font\DefaultFont.spritefont</Source>
@@ -422,8 +427,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Font\DefaultFont.xnb</Output>
-      <Time>2013-04-08T16:23:30.1065917+02:00</Time>
+      <Output>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Font\DefaultFont.xnb</Output>
+      <Time>2013-03-07T18:28:10.5930964+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -431,10 +436,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\ShooterContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\ShooterContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Rolf-Erik\Documents\Visual Studio 2010\Projects\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\ShooterContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\ShooterContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -463,7 +468,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-01-24T16:26:29.126602+01:00</Value>
+        <Value>2013-02-07T12:59:03.4393821+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
