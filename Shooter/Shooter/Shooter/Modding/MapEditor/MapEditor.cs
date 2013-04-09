@@ -24,7 +24,7 @@ namespace Shooter.Modding.MapEditor
             camera.RenderingPosition = mapPosition;
             camera.RenderingSize = mapSize;
 
-            grid.GridSize = new Vector2(20, 20);
+            grid.GridSize = new Point(20, 20);
 
             textureList.LoadTexture("Modding/MapEditor/Textures/Metal0.png");
             textureList.LoadTexture("Modding/MapEditor/Textures/Metal1.png");
@@ -43,6 +43,15 @@ namespace Shooter.Modding.MapEditor
         {
             textureList.Update();
 
+            if (Engine.MouseClick)
+            {
+                int index = grid.ColideWithGrid(Engine.MousePosition);
+                if (index != -1) 
+                {
+                    grid.GridTexture[index] = textureList.SelectedIndex;
+                }
+            }
+
             if (Engine.KeyClick(Keys.O))
             {
                 camera.Zoom *= 1.2f;
@@ -56,7 +65,7 @@ namespace Shooter.Modding.MapEditor
         {
             textureList.Draw();
             camera.Draw(background, mapPosition, mapSize, null, Color.White, 0);
-            grid.Draw(camera);
+            grid.Draw(camera, textureList.Textures);
         }
     }
 }
