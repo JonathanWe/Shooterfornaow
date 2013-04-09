@@ -15,12 +15,10 @@ RateOfFire = 0.14;
 ReloadTime = 2.0;
 
 Damage = 3;
-<<<<<<< HEAD
+
 BulletSpeed = 1500;
-=======
 BulletSpeed = 1000;
 BulletStartPosition = 180, 60;
->>>>>>> Fixed bullet
 
 Automatic = true;
 

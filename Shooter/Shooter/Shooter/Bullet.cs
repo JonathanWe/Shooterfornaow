@@ -55,13 +55,8 @@ namespace Shooter
 
         public void Draw()
         {
-<<<<<<< HEAD
-            Engine.SpriteBatch.Draw(Engine.BulletSheet.Texture, new Rectangle((int)position.X, (int)position.Y, 20, 10), Engine.BulletSheet.GetSprite("Bullet1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.5f);
-
-=======
             float rotation = (float)Math.Atan2(Dir.Y, Dir.X);
             Engine.SpriteBatch.Draw(Engine.BulletSheet.Texture, new Rectangle((int)position.X, (int)position.Y, 40, 10), Engine.BulletSheet.GetSprite("Bullet1"), Color.White, rotation, Vector2.Zero, SpriteEffects.None, 0.5f);
->>>>>>> Fixed bullet
         }
     }
 }
