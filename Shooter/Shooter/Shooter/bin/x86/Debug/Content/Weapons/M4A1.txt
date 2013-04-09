@@ -14,7 +14,7 @@ RateOfFire = 0.14;
 ReloadTime = 2.0;
 
 Damage = 3;
-BulletSpeed = 300;
+BulletSpeed = 1500;
 
 Automatic = true;
 
