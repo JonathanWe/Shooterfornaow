@@ -55,6 +55,17 @@ namespace Shooter
                 Engine.CurrentScene = new Modding.ModMenu();
                 Engine.CurrentScene.Load();
             }
+            if (Engine.KeyClick(Keys.F3))
+            {
+                Engine.CurrentScene = new CharacterSelection();
+                Engine.CurrentScene.Load();
+            }
+            if (Engine.KeyClick(Keys.F4))
+            {
+                Engine.CurrentScene = new CharacterCustomization();
+                Engine.CurrentScene.Load();
+            }
+
         }
         public void Draw() 
         {

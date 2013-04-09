@@ -259,6 +259,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BGCharCuz.jpg">
+      <Name>BGCharCuz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Content Include="Characters\Player\Kuro\Kuro.txt">
       <Name>Kuro</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
