@@ -34,7 +34,7 @@ namespace Shooter
             {
                 character.Jump();
             }
-            if (character.Weapon != null) character.Weapon.Update(Engine.MouseDown, Position, Engine.MousePosition);
+            if (character.Weapon != null) character.Weapon.Update(Engine.MouseDown, Position + character.WeaponMountPoint, Engine.MousePosition);
 
             character.Update(true, false);
         }

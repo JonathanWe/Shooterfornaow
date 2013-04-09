@@ -20,10 +20,12 @@ namespace Shooter
         public float ReloadTime;
         public float Damage;
         public float BulletSpeed;
+        public Vector2 BulletStartPosition;
         public bool Automatic = false;
         public SpriteSheet WeaponSheet;
         public Animation ShootAnimation = new Animation();
         public Vector2 GunPosition = new Vector2();
+        public Vector2 GunOffset = new Vector2();
         public Point GunSize = new Point(70, 40);
 
         //Test of GunEffect
@@ -58,6 +60,11 @@ namespace Shooter
                     string[] split = value.Split(',');
                     GunPosition = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
+                else if (name == "offset")
+                {
+                    string[] split = value.Split(',');
+                    GunOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                }
                 else if (name == "size")
                 {
                     string[] split = value.Split(',');
@@ -70,6 +77,11 @@ namespace Shooter
                 else if (name == "bulletspeed")
                 {
                     BulletSpeed = float.Parse(value, CultureInfo.InvariantCulture);
+                }
+                else if (name == "bulletstartposition")
+                {
+                    string[] split = value.Split(',');
+                    BulletStartPosition = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
                 }
                 else if (name == "shopprice")
                 {
@@ -109,10 +121,6 @@ namespace Shooter
             ShootAnimation.Animating = true;
             ShootAnimation.OnFinished += new EventHandler(ShootAnimation_OnFinished);
         }
-        public void CreateBullet(Vector2 Pos, Vector2 Dest)
-        {
-            new Bullet(Pos, Dest, BulletSpeed);
-        }
 
         void ShootAnimation_OnFinished(object sender, EventArgs e)
         {
@@ -136,7 +144,13 @@ namespace Shooter
                     //Test of gunfire sounds
                     M4A1.Play();
 
-                    CreateBullet(Position, Destination);
+                    Position = Position + GunPosition;
+
+                    float degrees = (float)Math.Atan2(Destination.Y - Position.Y, Destination.X - Position.X);
+                    Vector2 transBulletPos = Vector2.Transform(BulletStartPosition, Matrix.CreateRotationZ(degrees));
+                    Vector2 transOffset = Vector2.Transform(GunOffset, Matrix.CreateRotationZ(degrees));
+                    Position = Position + transBulletPos - transOffset;
+                    new Bullet(Position, Destination, BulletSpeed);
                 }
             }
             if (playShootAnimation) ShootAnimation.Update();
@@ -145,12 +159,11 @@ namespace Shooter
 
         public void Draw(Vector2 Position, float Degrees) 
         {
-            Position.Y += GunPosition.Y;
             Rectangle frame = ShootAnimation.GetFrame();
             SpriteEffects spriteEffect;
             if (AdamoMath.ToRadians(90) > Degrees && AdamoMath.ToRadians(-90) < Degrees) spriteEffect = SpriteEffects.None;
             else spriteEffect = SpriteEffects.FlipVertically;
-            Engine.SpriteBatch.Draw(WeaponSheet.Texture, new Rectangle((int)(Position.X), (int)(Position.Y), GunSize.X, GunSize.Y), frame, Color.White, Degrees, new Vector2(-GunPosition.X, GunSize.Y / 2) * (new Vector2(frame.Width, frame.Height) / new Vector2(GunSize.X, GunSize.Y)), spriteEffect, 0.2f);
+            Engine.SpriteBatch.Draw(WeaponSheet.Texture, new Rectangle((int)(Position.X + GunPosition.X), (int)(Position.Y + GunPosition.Y), GunSize.X, GunSize.Y), frame, Color.White, Degrees, new Vector2(GunOffset.X, GunOffset.Y) * (new Vector2(frame.Width, frame.Height) / new Vector2(GunSize.X, GunSize.Y)), spriteEffect, 0.2f);
         }
 
 

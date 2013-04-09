@@ -91,6 +91,11 @@ namespace Shooter
             Engine.keysDown.Clear();
             Engine.keysDown.AddRange(keyboard.GetPressedKeys());
 
+            if (Engine.KeyClick(Keys.F11))
+            {
+                graphics.ToggleFullScreen();
+            }
+
             Engine.CurrentScene.Update();
 
             base.Update(gameTime);

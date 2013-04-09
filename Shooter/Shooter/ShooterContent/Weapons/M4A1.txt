@@ -1,6 +1,7 @@
 Texture = Content/Weapons/M4A1.sht;
 Animation.ShootSpeed = 0.02;
-Position = -45, 10;
+Position = 0, 20;
+Offset = 45, 60;
 Size = 270, 120;
 
 ShopPrice = 1000;
@@ -14,7 +15,12 @@ RateOfFire = 0.14;
 ReloadTime = 2.0;
 
 Damage = 3;
+<<<<<<< HEAD
 BulletSpeed = 1500;
+=======
+BulletSpeed = 1000;
+BulletStartPosition = 180, 60;
+>>>>>>> Fixed bullet
 
 Automatic = true;
 

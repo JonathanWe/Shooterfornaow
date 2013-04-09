@@ -29,7 +29,7 @@ namespace Shooter
 
 
         Vector2 position;
-        Vector2 dir;
+        public Vector2 Dir;
         float speed;
         float speedY;
         float gravity = 100;
@@ -40,23 +40,28 @@ namespace Shooter
             position = StartPos;
 
             var tmp = EndPos - StartPos;
-            dir.X = tmp.X / tmp.Length();
-            dir.Y = tmp.Y / tmp.Length();
+            Dir.X = tmp.X / tmp.Length();
+            Dir.Y = tmp.Y / tmp.Length();
 
             ActiveBullets.Add(this);
         }
 
         public void Update()
         {
-            position.X += dir.X * speed * Engine.GameTimeInSec;
-            position.Y += dir.Y * speed * Engine.GameTimeInSec + (speedY * Engine.GameTimeInSec);
+            position.X += Dir.X * speed * Engine.GameTimeInSec;
+            position.Y += Dir.Y * speed * Engine.GameTimeInSec + (speedY * Engine.GameTimeInSec);
             speedY += gravity * Engine.GameTimeInSec;
         }
 
         public void Draw()
         {
+<<<<<<< HEAD
             Engine.SpriteBatch.Draw(Engine.BulletSheet.Texture, new Rectangle((int)position.X, (int)position.Y, 20, 10), Engine.BulletSheet.GetSprite("Bullet1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.5f);
 
+=======
+            float rotation = (float)Math.Atan2(Dir.Y, Dir.X);
+            Engine.SpriteBatch.Draw(Engine.BulletSheet.Texture, new Rectangle((int)position.X, (int)position.Y, 40, 10), Engine.BulletSheet.GetSprite("Bullet1"), Color.White, rotation, Vector2.Zero, SpriteEffects.None, 0.5f);
+>>>>>>> Fixed bullet
         }
     }
 }
