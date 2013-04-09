@@ -36,6 +36,11 @@ namespace Shooter.GUI
             ActiveFrame = Sheet.GetSprite(Name + "Active");
             Texture = Sheet.Texture;
         }
+
+        public ChechBox()
+        {
+            // TODO: Complete member initialization
+        }
         public void Update() 
         {
             if (Engine.Collide(Engine.MousePosition, Vector2.One, Position, Size))
