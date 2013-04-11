@@ -13,7 +13,9 @@ namespace Shooter.GUI
         public Vector2 Size;
         public float Z;
         public string ButtonSkinName = "";
+        public bool Flip = false;
         public event EventHandler OnClick;
+
 
         ButtunState state = ButtunState.Up;
 
@@ -46,7 +48,9 @@ namespace Shooter.GUI
                 frameName += "Over";
             else if (state == ButtunState.Down)
                 frameName += "Down";
-            Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position, Size), Engine.GUISheet.GetSprite(frameName), Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);
+            if(Flip)Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position, Size), Engine.GUISheet.GetSprite(frameName), Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.FlipHorizontally, Z);
+            else Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position, Size), Engine.GUISheet.GetSprite(frameName), Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);
+
         }
     }
 }

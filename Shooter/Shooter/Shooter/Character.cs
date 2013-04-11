@@ -46,6 +46,7 @@ namespace Shooter
         public float MaxSpeed = 300;
         public float JumpStrength = 700;
         public float Gravity = 1000;
+        public String CharacterColor = "Red";
 
         public Character(SpriteSheet Sheet)
         {
@@ -229,7 +230,7 @@ namespace Shooter
                     bodyStandLSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
             }
-            //Initializes animations and gives it a weapn
+            //Initializes animations and gives it a weapon
             runAnimationR.AddFrames(sheet.GetAnimationRectangles("RunR"));
             runAnimationR.Loop = true;
             runAnimationR.Animating = true;
@@ -238,7 +239,7 @@ namespace Shooter
             runAnimationL.Loop = true;
             runAnimationL.Animating = true;
 
-            Weapon = Weapon.DefaultWeapon();
+            Weapon = new Weapon("Content/Weapons/Sub.txt");
         }
 
         public void Update(bool Walking, bool Jumping) 
@@ -283,13 +284,13 @@ namespace Shooter
                 if (lookRight)
                 {
                     var runFrame = runAnimationR.GetFrame();
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR1Offset.X), (int)(Position.Y + headR1Offset.Y), headR1Size.X, headR1Size.Y), sheet.GetSprite("HeadR1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR1Offset.X), (int)(Position.Y + headR1Offset.Y), headR1Size.X, headR1Size.Y), sheet.GetSprite(CharacterColor + "HeadR1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
                     Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunROffset.X), (int)(Position.Y + bodyRunROffset.Y), bodyRunRSize.X, bodyRunRSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
                 }
                 else
                 {
                     var runFrame = runAnimationL.GetFrame();
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headL1Offset.X), (int)(Position.Y + headL1Offset.Y), headL1Size.X, headL1Size.Y), sheet.GetSprite("HeadL1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headL1Offset.X), (int)(Position.Y + headL1Offset.Y), headL1Size.X, headL1Size.Y), sheet.GetSprite(CharacterColor + "HeadL1"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
                     Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyRunLOffset.X), (int)(Position.Y + bodyRunLOffset.Y), bodyRunLSize.X, bodyRunLSize.Y), runFrame, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
                 }
             }
@@ -297,12 +298,12 @@ namespace Shooter
             {
                 if (lookRight)
                 {
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite("HeadR2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadR2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
                     Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandROffset.X), (int)(Position.Y + bodyStandROffset.Y), bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandR"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
                 }
                 else 
                 {
-                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite("HeadL2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
+                    Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + headR2Offset.X), (int)(Position.Y + headR2Offset.Y), headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadL2"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.2f);
                     Engine.SpriteBatch.Draw(sheet.Texture, new Rectangle((int)(Position.X + bodyStandROffset.X), (int)(Position.Y + bodyStandROffset.Y), bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandL"), Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);
                 }
             }
@@ -331,9 +332,11 @@ namespace Shooter
         {
             return new Character(new SpriteSheet("Content/Characters/Player/Kuro/KuroSpriteSheet.sht"));
         }
-        public static Character Shiro()
+        public static Character Shiro(String Color)
         {
-            return new Character("Content/Characters/Player/Shiro/Shiro.txt");
+            Character character = new Character("Content/Characters/Player/Shiro/Shiro.txt");
+            character.CharacterColor = Color;
+            return character;
         }
         public static Character Kuro()
         {

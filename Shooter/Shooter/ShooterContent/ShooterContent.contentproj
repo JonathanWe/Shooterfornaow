@@ -303,6 +303,14 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Content Include="Weapons\Ak-47.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Ak-47</Name>
+    </Content>
+    <Content Include="Weapons\Sub.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Sub</Name>
+    </Content>
     <Content Include="Weapons\Glock1.txt">
       <Name>Glock1</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -370,6 +378,16 @@
   <ItemGroup>
     <Content Include="BulletSheet.sht">
       <Name>BulletSheet</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Weapons\Ak-47.sht">
+      <Name>Ak-47</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Weapons\Sub.sht">
+      <Name>Sub</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

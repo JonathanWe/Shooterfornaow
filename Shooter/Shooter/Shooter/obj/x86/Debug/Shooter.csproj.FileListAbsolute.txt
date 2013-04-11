@@ -102,3 +102,7 @@ C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\De
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\BGCharCuz.xnb
+C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Ak-47.txt
+C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Ak-47.sht
+C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Sub.txt
+C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Sub.sht

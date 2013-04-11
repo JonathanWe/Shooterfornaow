@@ -50,6 +50,8 @@ Content\BGCharCuz.xnb
 Content\Characters\Player\Kuro\Kuro.txt
 Content\Characters\Player\Kuro\KuroSpriteSheet.sht
 Content\Sounds\Weapons\M4A1Fire.wav
+Content\Weapons\Ak-47.txt
+Content\Weapons\Sub.txt
 Content\Weapons\Glock1.txt
 Content\Weapons\M4A1.txt
 Content\Characters\Player\Shiro\Shiro.txt
@@ -59,3 +61,5 @@ Content\Weapons\M4A1.sht
 Content\Weapons\Glock1.sht
 Content\GUISheet.sht
 Content\BulletSheet.sht
+Content\Weapons\Sub.sht
+Content\Weapons\Ak-47.sht

@@ -43,7 +43,7 @@ namespace Shooter.GUI
         }
         public void Update() 
         {
-            if (Engine.Collide(Engine.MousePosition, Vector2.One, Position, Size))
+            if (Engine.MouseClick && Engine.Collide(Engine.MousePosition, Vector2.One, Position, Size))
             {
                 Active = true;
             }

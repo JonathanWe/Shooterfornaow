@@ -1,0 +1,26 @@
+Texture = Content/Weapons/Sub.sht;
+Animation.ShootSpeed = 0.01;
+Position = -10, 05;
+Offset = -25, 60;
+Size = 300, 130;
+
+ShopPrice = 1000;
+AmmoPrice = 30;
+
+MaxAmmo = 130;
+StartAmmo = 75;
+AmmoPerClip = 30;
+
+RateOfFire = 0.14;
+ReloadTime = 2.0;
+
+Damage = 1.5;
+
+BulletSpeed = 1500;
+BulletSpeed = 1000;
+BulletStartPosition = 180, 60;
+
+Automatic = true;
+
+
+
