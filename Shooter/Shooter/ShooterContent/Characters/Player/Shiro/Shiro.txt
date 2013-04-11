@@ -6,13 +6,13 @@ BoundingBox = 130, 215;
 // Head
 
 Head.Size = 80,80;
-Head.Position = 30,12; 
+Head.Position = 25,12; 
 
 HeadR1.Size = 80, 80;
-HeadR1.Position = 50,10;
+HeadR1.Position = 37,12;
 
-headL1 .Size= 50, 60;
-HeadL1.Position = 50,10;
+headL1 .Size= 80, 80;
+HeadL1.Position =55,12;
 
 // Body
 
