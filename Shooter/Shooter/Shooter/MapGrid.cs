@@ -106,11 +106,11 @@ namespace Shooter
                 //Draws grid
                 for (int x = 0; x < GridSize.X + 1; x++)
                 {
-                    Camer.Draw(Engine.WhiteTexture, new Vector2(0, GridElementSize.Y * x), new Vector2(GridElementSize.X * GridSize.X, 1 / Camer.Zoom), null, Color.Black, 0.51f);
+                    Camer.Draw(GameResources.WhiteTexture, new Vector2(0, GridElementSize.Y * x), new Vector2(GridElementSize.X * GridSize.X, 1 / Camer.Zoom), null, Color.Black, 0.51f);
                 }
                 for (int y = 0; y < GridSize.X + 1; y++)
                 {
-                    Camer.Draw(Engine.WhiteTexture, new Vector2(GridElementSize.X * y, 0), new Vector2(1 / Camer.Zoom, GridElementSize.Y * GridSize.Y), null, Color.Black, 0.51f);
+                    Camer.Draw(GameResources.WhiteTexture, new Vector2(GridElementSize.X * y, 0), new Vector2(1 / Camer.Zoom, GridElementSize.Y * GridSize.Y), null, Color.Black, 0.51f);
                 } 
             }
         }

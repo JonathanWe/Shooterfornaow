@@ -19,10 +19,6 @@ namespace Shooter
         public static ContentManager Content;
         public static SpriteBatch SpriteBatch;
         public static GraphicsDevice Device;
-        public static Texture2D WhiteTexture;
-        public static SpriteSheet GUISheet;
-        public static SpriteSheet BulletSheet;
-        public static SpriteFont DefaultFont;
         public static float GameTimeInSec = 0;
         public static int WindowWidth { get { return Device.Viewport.Width; } }
         public static int WindowHeight { get { return Device.Viewport.Height; } }

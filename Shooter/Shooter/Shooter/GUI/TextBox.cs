@@ -31,18 +31,18 @@ namespace Shooter.GUI
                 if (Engine.Collide(Position, Size, Engine.MousePosition, new Vector2(0, 0)))
                 {
                     Active = true;
-                    frame = Engine.GUISheet.GetSprite(TextBoxSheetName + "Active");
+                    frame = GameResources.GUISheet.GetSprite(TextBoxSheetName + "Active");
                     if (OnActive != null) OnActive(this, EventArgs.Empty);
                 }
                 else Active = false;
             }
             if (!Active)
             {
-                if (Engine.Collide(Position, Size, Engine.MousePosition, new Vector2(0, 0))) frame = Engine.GUISheet.GetSprite(TextBoxSheetName + "Over");
+                if (Engine.Collide(Position, Size, Engine.MousePosition, new Vector2(0, 0))) frame = GameResources.GUISheet.GetSprite(TextBoxSheetName + "Over");
             }
             else
             {
-                frame = Engine.GUISheet.GetSprite(TextBoxSheetName);
+                frame = GameResources.GUISheet.GetSprite(TextBoxSheetName);
                 if (Engine.keysDown.Count > 0)
                 {
 
@@ -51,9 +51,9 @@ namespace Shooter.GUI
         }
         public void Draw() 
         {
-            Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position.X, Position.Y, Size.X, Size.Y), frame, Color.White, 0, Vector2.Zero,
+            Engine.SpriteBatch.Draw(GameResources.GUISheet.Texture, new RectangleF(Position.X, Position.Y, Size.X, Size.Y), frame, Color.White, 0, Vector2.Zero,
                 SpriteEffects.None, Z);
-            Engine.SpriteBatch.DrawString(Engine.DefaultFont, Text, Position, TextColor, 0, Vector2.Zero, 1, SpriteEffects.None, Z + 0.0001f);
+            Engine.SpriteBatch.DrawString(GameResources.DefaultFont, Text, Position, TextColor, 0, Vector2.Zero, 1, SpriteEffects.None, Z + 0.0001f);
         }
     }
 }

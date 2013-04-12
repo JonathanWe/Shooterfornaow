@@ -51,9 +51,9 @@ namespace Shooter.GUI
         public void Draw() 
         {
             if (!Active)
-                Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position, Size), NormalFrame, Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);
+                Engine.SpriteBatch.Draw(GameResources.GUISheet.Texture, new RectangleF(Position, Size), NormalFrame, Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);
             else
-                Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position, Size), ActiveFrame, Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);  
+                Engine.SpriteBatch.Draw(GameResources.GUISheet.Texture, new RectangleF(Position, Size), ActiveFrame, Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);  
         }
     }
 }

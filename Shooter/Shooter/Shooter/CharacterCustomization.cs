@@ -29,27 +29,27 @@ namespace Shooter
 
             character = Character.Shiro("Red");
             character.Position = new Vector2(422,274);
-            
-            cbRed = new ChechBox(Engine.GUISheet, "RedButton");
+
+            cbRed = new ChechBox(GameResources.GUISheet, "RedButton");
             cbRed.Position = new Vector2(412, 245);
             cbRed.Size = new Vector2(35, 35);
             cbRed.Z = 0.1f;
             cbRed.Active = true;
             cbRed.OnActive += new EventHandler(cb_OnActive);
 
-            cbBlack = new ChechBox(Engine.GUISheet, "BlackButton");
+            cbBlack = new ChechBox(GameResources.GUISheet, "BlackButton");
             cbBlack.Position = new Vector2(452, 245);
             cbBlack.Size = new Vector2(35, 35); 
             cbBlack.Z = 0.1f;
             cbBlack.OnActive += new EventHandler(cb_OnActive);
 
-            cbWhite = new ChechBox(Engine.GUISheet, "WhiteButton");
+            cbWhite = new ChechBox(GameResources.GUISheet, "WhiteButton");
             cbWhite.Position = new Vector2(492, 245);
             cbWhite.Size = new Vector2(35, 35); 
             cbWhite.Z = 0.1f;
             cbWhite.OnActive += new EventHandler(cb_OnActive);
 
-            cbPink = new ChechBox(Engine.GUISheet, "PinkButton");
+            cbPink = new ChechBox(GameResources.GUISheet, "PinkButton");
             cbPink.Position = new Vector2(532, 245);
             cbPink.Size = new Vector2(35, 35); 
             cbPink.Z = 0.1f;
