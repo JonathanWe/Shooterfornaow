@@ -19,7 +19,7 @@ namespace Shooter
             PlayerScreen3 = Engine.Content.Load<Texture2D>("Player Selec Screen3");
             PlayerScreen1 = PlayerScreen2;
         }
-
+        
         public void Update()
         {
             if (Engine.WindowWidth / 2 > Engine.MousePosition.X)
