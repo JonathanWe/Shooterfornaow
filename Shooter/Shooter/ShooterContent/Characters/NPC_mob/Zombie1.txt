@@ -1,4 +1,4 @@
-Texture = Content/Characters/NPC_mob/ZombieSpriteSheet.sht;
+Texture = Content/Characters/NPC_mob/ZombieSpriteSheet1.sht;
 
 BoundingBox = 130, 235;
 

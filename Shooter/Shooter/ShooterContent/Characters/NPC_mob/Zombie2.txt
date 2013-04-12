@@ -1,4 +1,4 @@
-Texture = Content/Characters/Player/Kuro/KuroSpriteSheet.sht;
+Texture = Content/Characters/NPC_mob/ZombieSpriteSheet2.sht;
 
 BoundingBox = 130, 235;
 
