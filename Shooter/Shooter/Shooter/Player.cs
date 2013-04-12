@@ -17,10 +17,17 @@ namespace Shooter
 
         Character character;
 
+        /// <summary>
+        /// Loads the character you have selected
+        /// </summary>
         public void Load() 
         {
             character = SelectedPlayer;
         }
+
+        /// <summary>
+        /// Updates the position of the character depending on which button is pressed
+        /// </summary>
         public void Update() 
         {
             //Input
@@ -42,6 +49,10 @@ namespace Shooter
 
             Engine.Camera.Position = Position - new Vector2(Engine.WindowWidth / 2, Engine.WindowHeight / 2);
         }
+
+        /// <summary>
+        /// Draws the character
+        /// </summary>
         public void Draw() 
         {
             character.Draw();

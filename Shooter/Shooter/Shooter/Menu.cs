@@ -24,6 +24,9 @@ namespace Shooter
 
         const float fadeTime = 0.3f;
 
+        /// <summary>
+        /// loads everything that is used in the menu
+        /// </summary>
         public void Load() 
         {
             background = Engine.Content.Load<Texture2D>("MenuBackground");
@@ -41,17 +44,27 @@ namespace Shooter
             btnMapEditor.OnClick += new EventHandler(btnMapEditor_OnClick);
         }
 
+        /// <summary>
+        /// Starts the mapeditor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void btnMapEditor_OnClick(object sender, EventArgs e)
         {
             Engine.CurrentScene = new Modding.MapEditor.MapEditor();
             Engine.CurrentScene.Load();
         }
 
+
+        /// <summary>
+        /// Starts the game
+        /// </summary>
         void btnPlay_OnClick(object sender, EventArgs e)
         {
             timer += 0.1f;
             mouseClickPosition = Engine.MousePosition;
         }
+
         public void Update() 
         {
             if (timer > fadeTime)
@@ -67,6 +80,7 @@ namespace Shooter
                 btnMapEditor.Update();
             }
         }
+
         public void Draw() 
         {
             Engine.SpriteBatch.Draw(background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);

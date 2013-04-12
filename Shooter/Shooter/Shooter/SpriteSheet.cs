@@ -18,6 +18,10 @@ namespace Shooter
             LoadSpriteSheet(File);
         }
 
+        /// <summary>
+        /// Loads a spritesheet 
+        /// </summary>
+        /// <param name="File">Spritesheet path</param>
         public void LoadSpriteSheet(string File) 
         {
             byte[] bytes = System.IO.File.ReadAllBytes(File);
@@ -32,11 +36,18 @@ namespace Shooter
             LoadInfo(sheetInfo);
             Texture = Texture2D.FromStream(Engine.Device, new MemoryStream(bytes, 4 + infoLength, bytes.Length - (4 + infoLength)));
         }
+
+        /// <summary>
+        /// Loads a spritesheet with texture
+        /// </summary>
+        /// <param name="Texture">texture name</param>
+        /// <param name="SheetInfo">Sheet path</param>
         public void LoadSpriteSheet(Texture2D Texture, string SheetInfo) 
         {
             this.Texture = Texture;
             LoadInfo(SheetInfo);
         }
+
         void LoadInfo(string Info) 
         {
             Sprites.Clear();
@@ -54,10 +65,12 @@ namespace Shooter
                 }
             }
         }
+
         public RectangleF GetSprite(string SpriteName)
         {
             return Sprites[SpriteName];
         }
+
         public RectangleF[] GetAnimationRectangles(string AnimationName)
         {
             List<RectangleF> rects = new List<RectangleF>();
@@ -73,6 +86,11 @@ namespace Shooter
             }
             return rects.ToArray();
         }
+
+        /// <summary>
+        /// Returns the animation you are looking for when you input the name of the animation
+        /// </summary>
+        /// <returns>A new instance of animation with the name you provided</returns>
         public Animation GetAnimation(string AnimationName)
         {
             return new Animation(GetAnimationRectangles(AnimationName));
