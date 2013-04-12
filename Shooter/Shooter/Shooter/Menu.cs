@@ -14,8 +14,8 @@ namespace Shooter
         Texture2D background;
         Texture2D gunShoot;
         Texture2D fadeTexture;
-        Button btnPlay = new Button("PlayButton");
-        Button btnMapEditor = new Button("MapEditorButton");
+        Button btnPlay = new Button("Start");
+        Button btnMapEditor = new Button("MapEd");
         Vector2 buttonPlayPosition = new Vector2(300, 250);
         Vector2 buttonPlaySize = new Vector2(300, 100);
         Vector2 gunShootSize = new Vector2(100, 100);
@@ -33,13 +33,13 @@ namespace Shooter
             gunShoot = Engine.Content.Load<Texture2D>("bullethole");
             fadeTexture = Engine.Content.Load<Texture2D>("White");
 
-            btnPlay.Position = new Vector2(300, 250);
-            btnPlay.Size = new Vector2(300, 100);
+            btnPlay.Position = new Vector2(400, 250);
+            btnPlay.Size = new Vector2(250, 75);
             btnPlay.Z = 0.01f;
             btnPlay.OnClick += new EventHandler(btnPlay_OnClick);
 
-            btnMapEditor.Position = new Vector2(300, 400);
-            btnMapEditor.Size = new Vector2(300, 100);
+            btnMapEditor.Position = new Vector2(400, 400);
+            btnMapEditor.Size = new Vector2(250, 75);
             btnMapEditor.Z = 0.01f;
             btnMapEditor.OnClick += new EventHandler(btnMapEditor_OnClick);
         }

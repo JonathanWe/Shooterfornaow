@@ -60,9 +60,9 @@ namespace Shooter
             cbPink.Z = 0.1f;
             cbPink.OnActive += new EventHandler(cb_OnActive);
 
-            btnPlay = new Button("PlayButton");
-            btnPlay.Position = new Vector2(810,620);
-            btnPlay.Size = new Vector2(140,80);
+            btnPlay = new Button("Start");
+            btnPlay.Position = new Vector2(755,620);
+            btnPlay.Size = new Vector2(250,75);
             btnPlay.Z = 0.1f;
             btnPlay.OnClick += new EventHandler(btnPlay_OnClick);
 
