@@ -37,7 +37,7 @@ namespace Shooter
         public void Draw()
         {
             Engine.SpriteBatch.Draw(GameOverBackground, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight),null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);
-            Engine.SpriteBatch.DrawString(GameResources.DefaultFont, "This is where Highscore should have been, \n but we didn't have time :( But we imported Dynamic Text instead :O", new Vector2(200,400), Color.Yellow, 0,Vector2.Zero, 1 ,SpriteEffects.None, 0.1f);
+            Engine.SpriteBatch.DrawString(GameResources.DefaultFont, "Your Highscore: " + Player.PlayerScore, new Vector2(300, 350), Color.Yellow, 0,Vector2.Zero, 2 ,SpriteEffects.None, 0.1f);
             btnbacktoMenu.Draw();   
             
         }

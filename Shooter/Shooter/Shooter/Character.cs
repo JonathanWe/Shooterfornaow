@@ -239,16 +239,23 @@ namespace Shooter
                     bodyStandLSize = new Point(int.Parse(split[0]), int.Parse(split[1]));
                 }
             }
+
+            LoadRunAnimation();
+
+            Weapon = new Weapon("Content/Weapons/Sub.txt");
+        }
+        public void LoadRunAnimation() 
+        {
             //Initializes animations and gives it a weapon
+            runAnimationR.Clear();
             runAnimationR.AddFrames(sheet.GetAnimationRectangles(CharacterColor + "RunR"));
             runAnimationR.Loop = true;
             runAnimationR.Animating = true;
 
+            runAnimationL.Clear();
             runAnimationL.AddFrames(sheet.GetAnimationRectangles(CharacterColor + "RunL"));
             runAnimationL.Loop = true;
             runAnimationL.Animating = true;
-
-            Weapon = new Weapon("Content/Weapons/Sub.txt");
         }
 
         public void Update(bool Walking, bool Jumping) 

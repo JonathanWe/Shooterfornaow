@@ -38,6 +38,7 @@ namespace Shooter
             if (Healt <= 0) //If it has no more healt it is dead an should be removed
             {
                 ((Shooter)Engine.CurrentScene).Enemies.Remove(this);
+                Player.PlayerScore += 100;
             }
 
             //Take healt from player if close enough

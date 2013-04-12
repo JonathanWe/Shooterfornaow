@@ -46,8 +46,8 @@ namespace Shooter.Modding.MapEditor
             grid.LoadTexture("Modding/MapEditor/Textures/Metal8.png");
             grid.LoadTexture("Modding/MapEditor/Textures/Metal9.png");
 
-            grid.Background = Texture2D.FromStream(Engine.Device, new System.IO.MemoryStream(System.IO.File.ReadAllBytes("Content/TestBackground.png")));
             grid.BackgroundName = "Content/TestBackground.png";
+            grid.Background = Texture2D.FromStream(Engine.Device, new System.IO.MemoryStream(System.IO.File.ReadAllBytes(grid.BackgroundName)));
         }
         public void Update() 
         {

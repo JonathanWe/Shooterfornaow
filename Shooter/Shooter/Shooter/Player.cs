@@ -10,6 +10,7 @@ namespace Shooter
     public class Player
     {
         public static Character SelectedPlayer;
+        public static int PlayerScore = 0;
 
         float healt = 100;
         public float Healt 
@@ -43,6 +44,9 @@ namespace Shooter
             if (Healt <= 0)
             {
                 //GameOver
+                Engine.CurrentScene = new GameOver();
+                Engine.CurrentScene.Load();
+                Engine.Cursor = Cursor.MenuCursor();
             }
 
             //Input

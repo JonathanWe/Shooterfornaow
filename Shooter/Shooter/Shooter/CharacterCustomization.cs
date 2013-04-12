@@ -108,6 +108,7 @@ namespace Shooter
         void btnPlay_OnClick(object sender, EventArgs e)
         {
             Player.SelectedPlayer = character;
+            Player.SelectedPlayer.LoadRunAnimation();
             Engine.Game = new Shooter();
             Engine.CurrentScene = Engine.Game;
             Engine.CurrentScene.Load();
