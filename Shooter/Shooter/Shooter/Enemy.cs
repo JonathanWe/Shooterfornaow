@@ -15,7 +15,7 @@ namespace Shooter
 
         Character character;
 
-        public void Load() 
+        public Enemy() 
         {
             character = Character.Enemy1();
         }

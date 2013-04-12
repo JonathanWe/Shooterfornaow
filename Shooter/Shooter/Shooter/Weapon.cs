@@ -50,10 +50,16 @@ namespace Shooter
             while (script.NextCommand(out name, out value))
             {
                 name = name.ToLower();
-
+                
                 if (name == "texture") 
                 {
-                    WeaponSheet = new SpriteSheet(value);
+                    if (GameResources.CharacterSheets.ContainsKey(value))
+                        WeaponSheet = GameResources.CharacterSheets[value];
+                    else
+                    {
+                        WeaponSheet = new SpriteSheet(value);
+                        GameResources.CharacterSheets.Add(value, WeaponSheet);
+                    }
                 }
                 else if (name == "position")
                 {

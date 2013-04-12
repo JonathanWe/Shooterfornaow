@@ -50,10 +50,10 @@ namespace Shooter
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Engine.Content = Content;
             Engine.SpriteBatch = spriteBatch;
-            Engine.WhiteTexture = Content.Load<Texture2D>("White");
-            Engine.GUISheet = new SpriteSheet("Content/GUISheet.sht");
-            Engine.BulletSheet = new SpriteSheet("Content/BulletSheet.sht");
-            Engine.DefaultFont = Content.Load<SpriteFont>("Font/DefaultFont");
+            GameResources.WhiteTexture = Content.Load<Texture2D>("White");
+            GameResources.GUISheet = new SpriteSheet("Content/GUISheet.sht");
+            GameResources.BulletSheet = new SpriteSheet("Content/BulletSheet.sht");
+            GameResources.DefaultFont = Content.Load<SpriteFont>("Font/DefaultFont");
             Engine.Cursor = Cursor.MenuCursor();
 
             Engine.CurrentScene = new Menu();

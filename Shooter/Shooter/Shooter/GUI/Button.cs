@@ -48,8 +48,8 @@ namespace Shooter.GUI
                 frameName += "Over";
             else if (state == ButtunState.Down)
                 frameName += "Down";
-            if(Flip)Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position, Size), Engine.GUISheet.GetSprite(frameName), Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.FlipHorizontally, Z);
-            else Engine.SpriteBatch.Draw(Engine.GUISheet.Texture, new RectangleF(Position, Size), Engine.GUISheet.GetSprite(frameName), Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);
+            if (Flip) Engine.SpriteBatch.Draw(GameResources.GUISheet.Texture, new RectangleF(Position, Size), GameResources.GUISheet.GetSprite(frameName), Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.FlipHorizontally, Z);
+            else Engine.SpriteBatch.Draw(GameResources.GUISheet.Texture, new RectangleF(Position, Size), GameResources.GUISheet.GetSprite(frameName), Color.White, 0, Vector2.Zero, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, Z);
 
         }
     }

@@ -118,6 +118,7 @@
     <Compile Include="Cursor.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Engine.cs" />
+    <Compile Include="GameResources.cs" />
     <Compile Include="GUI\Button.cs" />
     <Compile Include="GUI\ChechBox.cs" />
     <Compile Include="GUI\TextBox.cs" />

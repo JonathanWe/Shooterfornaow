@@ -84,7 +84,13 @@ namespace Shooter
 
                 if (name == "texture")
                 {
-                    sheet = new SpriteSheet(value);
+                    if (GameResources.CharacterSheets.ContainsKey(value))
+                        sheet = GameResources.CharacterSheets[value];
+                    else
+                    {
+                        sheet = new SpriteSheet(value);
+                        GameResources.CharacterSheets.Add(value, sheet);
+                    }
                 }
                 if (name == "animation.runspeed")
                 {
@@ -346,8 +352,8 @@ namespace Shooter
         }
         public static Character Enemy1()
         {
-            Character character = new Character(new SpriteSheet("Content/Characters/Player/Kuro/KuroSpriteSheet.sht"));
-            character.MaxSpeed = 150;
+            Character character = new Character("Content/Characters/Player/Shiro/Shiro.txt");
+            character.CharacterColor = "Black";
             return character;
         }
     }

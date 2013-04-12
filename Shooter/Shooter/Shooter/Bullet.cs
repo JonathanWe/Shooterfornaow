@@ -56,7 +56,7 @@ namespace Shooter
         public void Draw()
         {
             float rotation = (float)Math.Atan2(Dir.Y, Dir.X);
-            Engine.Camera.Draw(Engine.BulletSheet.Texture, new Vector2(position.X, position.Y), new Vector2(40, 10), Engine.BulletSheet.GetSprite("Bullet1"), Color.White, 0.5f, Vector2.Zero, rotation);
+            Engine.Camera.Draw(GameResources.BulletSheet.Texture, new Vector2(position.X, position.Y), new Vector2(40, 10), GameResources.BulletSheet.GetSprite("Bullet1"), Color.White, 0.5f, Vector2.Zero, rotation);
         }
     }
 }
