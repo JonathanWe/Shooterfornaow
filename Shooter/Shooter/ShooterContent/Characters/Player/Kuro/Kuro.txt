@@ -8,11 +8,11 @@ BoundingBox = 90, 155;
 Head.Size = 60,60;
 Head.Position = 47,10; 
 
-Head1.Size = 50, 60;
-Head1.Position = 47,10;
+HeadR1.Size = 50, 60;
+HeadR1.Position = 47,10;
 
-head2 .Size= 50, 60;
-Head2.Position = 47,10;
+headL1 .Size= 50, 60;
+HeadL1.Position = 47,10;
 
 // Body
 Body.Size = 90,110;

@@ -338,9 +338,11 @@ namespace Shooter
             character.CharacterColor = Color;
             return character;
         }
-        public static Character Kuro()
+        public static Character Kuro(String Color)
         {
-            return new Character("Content/Characters/Player/Kuro/Kuro.txt");
+            Character character = new Character("Content/Characters/Player/Kuro/Kuro.txt");
+            character.CharacterColor = Color;
+            return character;
         }
         public static Character Enemy1()
         {

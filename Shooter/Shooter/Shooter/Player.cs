@@ -19,7 +19,7 @@ namespace Shooter
 
         public void Load() 
         {
-            character = Character.Shiro(PlayerColor);
+            character = Character.Kuro(PlayerColor);
         }
         public void Update() 
         {
