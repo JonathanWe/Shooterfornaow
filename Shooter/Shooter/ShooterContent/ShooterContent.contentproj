@@ -150,53 +150,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Characters\Player\Kuro\Run0.png">
-      <Name>Run0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Run1.png">
-      <Name>Run1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Run2.png">
-      <Name>Run2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Run3.png">
-      <Name>Run3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Kuro\Run4.png">
-      <Name>Run4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Shiro\Shiro_head1.png">
-      <Name>Shiro_head1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Shiro\Shiro_head2.png">
-      <Name>Shiro_head2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Shiro\Shiro_head3.png">
-      <Name>Shiro_head3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\Player\Shiro\Shiro_head4.png">
-      <Name>Shiro_head4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Player Selec Screen1.png">
       <Name>Player Selec Screen1</Name>
       <Importer>TextureImporter</Importer>
@@ -248,11 +201,6 @@
       <Name>KuroSpriteSheet</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Compile Include="Characters\Player\Kuro\Stand.png">
-      <Name>Stand</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Characters\Player\Shiro\ShiroHand.png">
       <Name>ShiroHand</Name>
       <Importer>TextureImporter</Importer>
