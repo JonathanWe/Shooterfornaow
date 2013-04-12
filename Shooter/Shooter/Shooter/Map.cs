@@ -13,6 +13,7 @@ namespace Shooter
         public void Load(string File) 
         {
             Grid.LoadMap(File);
+            Grid.DisplayGrid = false;
         }
 
         public void UpdateCharacterCollision(Character Character) 

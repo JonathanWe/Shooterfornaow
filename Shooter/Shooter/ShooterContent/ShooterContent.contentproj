@@ -143,11 +143,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestBackground.png">
+    <Content Include="TestBackground.png">
       <Name>TestBackground</Name>
       <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Characters\Player\Kuro\Run0.png">

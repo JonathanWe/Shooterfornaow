@@ -9,6 +9,7 @@ namespace Shooter.GUI
 {
     public class TextBox
     {
+        //Public varaiables
         public Vector2 Position = new Vector2();
         public Vector2 Size = new Vector2(100, 40);
         public float Z = 0;
@@ -18,12 +19,21 @@ namespace Shooter.GUI
         public string TextBoxSheetName = "";
         public event EventHandler OnActive;
 
+        //private varaibles
         Rectangle frame = new Rectangle();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="TextBoxName">The name of thee TextBox image in GUISheet.sht</param>
         public TextBox(string TextBoxName) 
         {
             TextBoxSheetName = TextBoxName;
         }
 
+        /// <summary>
+        /// Updates the textbox. Checks for input.
+        /// </summary>
         public void Update() 
         {
             if (Engine.MouseClick)
@@ -49,6 +59,10 @@ namespace Shooter.GUI
                 }
             }
         }
+
+        /// <summary>
+        /// Draws the TextBox
+        /// </summary>
         public void Draw() 
         {
             Engine.SpriteBatch.Draw(GameResources.GUISheet.Texture, new RectangleF(Position.X, Position.Y, Size.X, Size.Y), frame, Color.White, 0, Vector2.Zero,

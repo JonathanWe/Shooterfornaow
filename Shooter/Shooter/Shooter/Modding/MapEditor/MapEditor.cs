@@ -14,7 +14,6 @@ namespace Shooter.Modding.MapEditor
         EditorTextureList textureList = new EditorTextureList();
         MapGrid grid = new MapGrid();
 
-        Texture2D background;
         Vector2 mapPosition { get { return new Vector2(-textureList.Size.X, 0); } }
         Vector2 mapSize { get { return new Vector2(grid.GridElementSize.X * grid.GridSize.X, grid.GridElementSize.Y * grid.GridSize.Y); } }
 
@@ -47,7 +46,8 @@ namespace Shooter.Modding.MapEditor
             grid.LoadTexture("Modding/MapEditor/Textures/Metal8.png");
             grid.LoadTexture("Modding/MapEditor/Textures/Metal9.png");
 
-            background = Engine.Content.Load<Texture2D>("TestBackground");
+            grid.Background = Texture2D.FromStream(Engine.Device, new System.IO.MemoryStream(System.IO.File.ReadAllBytes("Content/TestBackground.png")));
+            grid.BackgroundName = "Content/TestBackground.png";
         }
         public void Update() 
         {
@@ -102,7 +102,6 @@ namespace Shooter.Modding.MapEditor
         public void Draw() 
         {
             textureList.Draw();
-            Engine.Camera.Draw(background, Vector2.Zero, mapSize, null, Color.White, 0);
             grid.Draw(Engine.Camera);
         }
     }

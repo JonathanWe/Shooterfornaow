@@ -15,7 +15,19 @@ Content\En_Feet.xnb
 Content\En_Head.xnb
 Content\White.xnb
 Content\TestMap.xnb
+<<<<<<< HEAD
 Content\TestBackground.xnb
+=======
+Content\Characters\NPC_mob\Body.xnb
+Content\Characters\NPC_mob\leg_walk1.xnb
+Content\Characters\NPC_mob\leg_walk2.xnb
+Content\Characters\NPC_mob\leg_walk3.xnb
+Content\Characters\NPC_mob\leg_walk4.xnb
+Content\Characters\NPC_mob\Z_head1.xnb
+Content\Characters\NPC_mob\Z_head2.xnb
+Content\Characters\NPC_mob\Z_head3.xnb
+Content\Characters\NPC_mob\Z_head4.xnb
+>>>>>>> Changes in menu, Added background to the game and more
 Content\Characters\Player\Kuro\Run0.xnb
 Content\Characters\Player\Kuro\Run1.xnb
 Content\Characters\Player\Kuro\Run2.xnb
@@ -38,10 +50,14 @@ Content\Cursor\crosshair.xnb
 Content\Sounds\Background sounds\BackgroundSound.xnb
 Content\Font\DefaultFont.xnb
 Content\Sounds\Background sounds\BackgroundSound.wma
+<<<<<<< HEAD
 Content\Characters\NPC_mob\Zombie1.txt
 Content\Characters\NPC_mob\Zombie2.txt
 Content\Characters\NPC_mob\Zombie4.txt
 Content\Characters\NPC_mob\Zombie3.txt
+=======
+Content\TestBackground.png
+>>>>>>> Changes in menu, Added background to the game and more
 Content\Characters\Player\Kuro\Kuro.txt
 Content\Characters\Player\Kuro\KuroSpriteSheet.sht
 Content\Sounds\Weapons\M4A1Fire.wav

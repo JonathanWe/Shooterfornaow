@@ -9,7 +9,7 @@ namespace Shooter
 {
     public class Player
     {
-        public static String PlayerColor = "Red";
+        public static Character SelectedPlayer;
 
         public int Healt = 100;
         public Vector2 Position { get { return character.Position; } set { character.Position = value; } }
@@ -19,7 +19,7 @@ namespace Shooter
 
         public void Load() 
         {
-            character = Character.Kuro(PlayerColor);
+            character = SelectedPlayer;
         }
         public void Update() 
         {

@@ -156,7 +156,7 @@ namespace Shooter
                     Vector2 transBulletPos = Vector2.Transform(BulletStartPosition, Matrix.CreateRotationZ(degrees));
                     Vector2 transOffset = Vector2.Transform(GunOffset, Matrix.CreateRotationZ(degrees));
                     Position = Position + transBulletPos - transOffset;
-                    new Bullet(Position, Destination, BulletSpeed);
+                    new Bullet(Position, Destination, BulletSpeed, Damage);
                 }
             }
             if (playShootAnimation) ShootAnimation.Update();

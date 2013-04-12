@@ -11,14 +11,14 @@ MaxAmmo = 130;
 StartAmmo = 75;
 AmmoPerClip = 30;
 
-RateOfFire = 0.14;
+RateOfFire = 0.07;
 ReloadTime = 2.0;
 
-Damage = 1.5;
+Damage = 2;
 
 BulletSpeed = 1500;
 BulletSpeed = 1000;
-BulletStartPosition = 180, 60;
+BulletStartPosition = 120, 60;
 
 Automatic = true;
 
