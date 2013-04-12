@@ -102,7 +102,60 @@ C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\De
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.exe
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.pdb
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\BGCharCuz.xnb
+<<<<<<< HEAD
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Ak-47.txt
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Ak-47.sht
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Sub.txt
 C:\Users\Eier\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Weapons\Sub.sht
+=======
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\AK.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Gun.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Shotgun.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sniper.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\sub.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu2.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\bullethole.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Menu1.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\MenuBackground.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Body.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Feet.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Pl_Head.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Body.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Feet.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\En_Head.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\White.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestMap.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\TestBackground.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Body.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk1.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk2.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk3.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\leg_walk4.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head1.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head2.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head3.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\NPC_mob\Z_head4.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run0.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run1.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run2.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run3.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Run4.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head1.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head2.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head3.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\Shiro_head4.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen1.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen2.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Player Selec Screen3.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\BGCharCuz.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\KuroHand.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Kuro\Stand.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Characters\Player\Shiro\ShiroHand.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\MenuCursor.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\cursor.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Cursor\crosshair.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Background sounds\BackgroundSound.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Font\DefaultFont.xnb
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\bin\x86\Debug\Content\Sounds\Background sounds\BackgroundSound.wma
+C:\Users\Henrik\Documents\GitHub\Shooterfornaow\Shooter\Shooter\Shooter\obj\x86\Debug\Shooter.csprojResolveAssemblyReference.cache
+>>>>>>> Improved map editor, Loads maps,...

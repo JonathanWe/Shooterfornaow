@@ -12,21 +12,22 @@ namespace Shooter.Modding.MapEditor
     public class MapEditor : IScene
     {
         EditorTextureList textureList = new EditorTextureList();
-        EditorGrid grid = new EditorGrid();
+        MapGrid grid = new MapGrid();
 
         Texture2D background;
-        Camera camera = new Camera();
-        Vector2 mapPosition { get { return new Vector2(textureList.Size.X, 0); } }
-        Vector2 mapSize { get { return new Vector2(Engine.WindowWidth - textureList.Size.X, Engine.WindowHeight - textureList.BottomSize.Y); } }
+        Vector2 mapPosition { get { return new Vector2(-textureList.Size.X, 0); } }
+        Vector2 mapSize { get { return new Vector2(grid.GridElementSize.X * grid.GridSize.X, grid.GridElementSize.Y * grid.GridSize.Y); } }
 
         //Used to navigate int the grid part of the editor
         Vector2 dragMountPoint;
+        Vector2 dragPosition;
         bool dragging;
 
         public void Load() 
         {
-            camera.RenderingPosition = mapPosition;
-            camera.RenderingSize = mapSize;
+            Engine.Camera.Position = mapPosition;
+
+            textureList.Grid = grid;
 
             grid.GridSize = new Point(20, 20);
             grid.GridTexture = new int[20 * 20];
@@ -35,16 +36,16 @@ namespace Shooter.Modding.MapEditor
                 grid.GridTexture[i] =  - 1;
             }
 
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal0.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal1.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal2.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal3.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal4.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal5.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal6.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal8.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal8.png");
-            textureList.LoadTexture("Modding/MapEditor/Textures/Metal9.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal0.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal1.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal2.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal3.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal4.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal5.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal6.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal8.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal8.png");
+            grid.LoadTexture("Modding/MapEditor/Textures/Metal9.png");
 
             background = Engine.Content.Load<Texture2D>("TestBackground");
         }
@@ -65,14 +66,15 @@ namespace Shooter.Modding.MapEditor
                     else grid.GridTexture[index] = -1;
                 }
             }
-            //Draging around the mapEditor
+            //Draging the mapEditor
             if (Engine.MouseDown && !dragging)
             {
                 if (Engine.MouseLastDown == false)
                 {
-                    dragMountPoint = Engine.Camera.MousePosition;
+                    dragPosition = Engine.Camera.Position;
+                    dragMountPoint = Engine.MousePosition;
                 }
-                if ((dragMountPoint - Engine.Camera.MousePosition).Length() > 3)
+                if ((dragMountPoint - Engine.MousePosition).Length() > 3)
                 {
                     dragging = true;
                 }
@@ -80,23 +82,28 @@ namespace Shooter.Modding.MapEditor
             else dragging = false;
             if (dragging)
             {
-                camera.Position = dragMountPoint + dragMountPoint - Engine.Camera.MousePosition;
+                Engine.Camera.Position = dragPosition + dragMountPoint - Engine.MousePosition;
             }
 
+            //Keyboard Input
             if (Engine.KeyClick(Keys.O))
             {
-                camera.Zoom *= 1.2f;
+                Engine.Camera.Zoom *= 1.2f;
             }
             if (Engine.KeyClick(Keys.P))
             {
-                camera.Zoom /= 1.2f;
+                Engine.Camera.Zoom /= 1.2f;
+            }
+            if (Engine.KeyClick(Keys.G))
+            {
+                grid.DisplayGrid = !grid.DisplayGrid;
             }
         }
         public void Draw() 
         {
             textureList.Draw();
-            camera.Draw(background, mapPosition, mapSize, null, Color.White, 0);
-            grid.Draw(camera, textureList.Textures);
+            Engine.Camera.Draw(background, Vector2.Zero, mapSize, null, Color.White, 0);
+            grid.Draw(Engine.Camera);
         }
     }
 }

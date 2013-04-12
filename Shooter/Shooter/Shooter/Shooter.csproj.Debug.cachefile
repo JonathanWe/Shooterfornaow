@@ -37,6 +37,7 @@ Content\Characters\Player\Shiro\Shiro_head4.xnb
 Content\Player Selec Screen1.xnb
 Content\Player Selec Screen2.xnb
 Content\Player Selec Screen3.xnb
+Content\BGCharCuz.xnb
 Content\Characters\Player\Kuro\KuroHand.xnb
 Content\Characters\Player\Kuro\Stand.xnb
 Content\Characters\Player\Shiro\ShiroHand.xnb
@@ -45,7 +46,6 @@ Content\Cursor\cursor.xnb
 Content\Cursor\crosshair.xnb
 Content\Sounds\Background sounds\BackgroundSound.xnb
 Content\Font\DefaultFont.xnb
-Content\BGCharCuz.xnb
 Content\Sounds\Background sounds\BackgroundSound.wma
 Content\Characters\Player\Kuro\Kuro.txt
 Content\Characters\Player\Kuro\KuroSpriteSheet.sht

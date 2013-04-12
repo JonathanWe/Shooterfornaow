@@ -126,7 +126,7 @@
     <Compile Include="Menu.cs" />
     <Compile Include="Modding\CreateWeaponStatusMenu.cs" />
     <Compile Include="Modding\CreateWeaponMenu.cs" />
-    <Compile Include="Modding\MapEditor\EditorGrid.cs" />
+    <Compile Include="MapGrid.cs" />
     <Compile Include="Modding\MapEditor\EditorTextureList.cs" />
     <Compile Include="Modding\MapEditor\MapEditor.cs" />
     <Compile Include="Modding\ModMenu.cs" />
