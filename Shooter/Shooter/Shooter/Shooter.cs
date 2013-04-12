@@ -51,6 +51,8 @@ namespace Shooter
             }
             Bullet.UpdateAllBullets();
             bgSound.Update();
+          
+            
         }
 
         public void Draw()

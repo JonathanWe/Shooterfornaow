@@ -66,6 +66,11 @@ namespace Shooter
                 btnPlay.Update();
                 btnMapEditor.Update();
             }
+            if (Engine.KeyClick(Keys.F2))
+            {
+                Engine.CurrentScene = new GameOver();
+                Engine.CurrentScene.Load();
+            }
         }
         public void Draw() 
         {
