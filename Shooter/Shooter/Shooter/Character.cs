@@ -284,27 +284,27 @@ namespace Shooter
                 if (lookRight)
                 {
                     var runFrame = runAnimationR.GetFrame();
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headR1Offset.X, (Position.Y + headR1Offset.Y)), new Vector2(headR1Size.X, headR1Size.Y), sheet.GetSprite(CharacterColor + "HeadR1"), Color.White, 0, Vector2.Zero, 0.2f);
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyRunROffset.X, Position.Y + bodyRunROffset.Y), new Vector2(bodyRunRSize.X, bodyRunRSize.Y), runFrame, Color.White, 0, Vector2.Zero, 0.11f);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headR1Offset.X, (Position.Y + headR1Offset.Y)), new Vector2(headR1Size.X, headR1Size.Y), sheet.GetSprite(CharacterColor + "HeadR1"), Color.White, 0.2f, Vector2.Zero, 0);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyRunROffset.X, Position.Y + bodyRunROffset.Y), new Vector2(bodyRunRSize.X, bodyRunRSize.Y), runFrame, Color.White, 0.11f, Vector2.Zero, 0);
                 }
                 else
                 {
                     var runFrame = runAnimationL.GetFrame();
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headL1Offset.X, Position.Y + headL1Offset.Y), new Vector2( headL1Size.X, headL1Size.Y), sheet.GetSprite(CharacterColor + "HeadL1"), Color.White, 0, Vector2.Zero, 0.2f);
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyRunLOffset.X, Position.Y + bodyRunLOffset.Y), new Vector2(bodyRunLSize.X, bodyRunLSize.Y), runFrame, Color.White, 0, Vector2.Zero, 0.11f);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headL1Offset.X, Position.Y + headL1Offset.Y), new Vector2( headL1Size.X, headL1Size.Y), sheet.GetSprite(CharacterColor + "HeadL1"), Color.White, 0.2f, Vector2.Zero, 0);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyRunLOffset.X, Position.Y + bodyRunLOffset.Y), new Vector2(bodyRunLSize.X, bodyRunLSize.Y), runFrame, Color.White, 0.11f, Vector2.Zero, 0);
                 }
             }
             else
             {
                 if (lookRight)
                 {
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headR2Offset.X, Position.Y + headR2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadR2"), Color.White, 0, Vector2.Zero, 0.2f);
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandR"), Color.White, 0, Vector2.Zero, 0.11f);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headR2Offset.X, Position.Y + headR2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadR2"), Color.White, 0.2f, Vector2.Zero, 0);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandR"), Color.White, 0.11f, Vector2.Zero, 0);
                 }
                 else 
                 {
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headL2Offset.X, Position.Y + headL2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadL2"), Color.White, 0, Vector2.Zero, 0.2f);
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandL"), Color.White, 0, Vector2.Zero, 0.11f);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headL2Offset.X, Position.Y + headL2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadL2"), Color.White, 0.2f, Vector2.Zero, 0);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandL"), Color.White, 0.11f, Vector2.Zero, 0);
                 }
             }
             Weapon.Draw(Position + WeaponMountPoint, degrees);

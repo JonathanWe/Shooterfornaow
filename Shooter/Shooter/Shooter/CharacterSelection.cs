@@ -25,8 +25,23 @@ namespace Shooter
             if (Engine.WindowWidth / 2 > Engine.MousePosition.X)
             {
                 PlayerScreen1 = PlayerScreen2;
+                if (Engine.MouseClick)
+                {
+                    Engine.CurrentScene = new CharacterCustomization(true);
+                    Engine.CurrentScene.Load();
+                }
             }
-            else { PlayerScreen1 = PlayerScreen3; }
+            else 
+            { 
+                PlayerScreen1 = PlayerScreen3;
+                if (Engine.MouseClick)
+                {
+                    Engine.CurrentScene = new CharacterCustomization(false);
+                    Engine.CurrentScene.Load();
+
+                        
+                }
+            }
         }
 
         public void Draw()

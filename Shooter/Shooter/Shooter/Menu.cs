@@ -62,7 +62,7 @@ namespace Shooter
             }
             if (Engine.KeyClick(Keys.F4))
             {
-                Engine.CurrentScene = new CharacterCustomization();
+                Engine.CurrentScene = new CharacterCustomization(true);
                 Engine.CurrentScene.Load();
             }
 

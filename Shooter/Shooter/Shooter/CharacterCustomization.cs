@@ -22,12 +22,17 @@ namespace Shooter
         List<Weapon> weapons = new List<Weapon>();
         int weaponID = 0;
 
+        public CharacterCustomization(bool Shiro) 
+        {
+            if (Shiro) character = Character.Shiro("Red");
+            else character = Character.Kuro("Red");
+        }
+
         public void Load()
         {
 
             background = Engine.Content.Load<Texture2D>("BGCharCuz");
 
-            character = Character.Shiro("Red");
             character.Position = new Vector2(422,274);
             
             cbRed = new ChechBox(Engine.GUISheet, "RedButton");
