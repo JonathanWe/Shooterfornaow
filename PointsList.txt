@@ -1,0 +1,43 @@
+Liste over punkter som er med i prosjektet vårt:
+
+- Spillet kan spille av lyder med SoundEffect.
+
+- Spilleren kan bevege en avatar rundt på et område som tar opp
+  mer enn en skjerm. "Kameraet" beveger seg for å holder spilleren innenfor vinduet.
+  
+- Spillet har tekst og grafikk-baserte menyer/GUI som holder seg på samme plass
+  i bildet selv om oppløsningen endres.
+  
+- Brukeren kan trykke på elementer med musen/touch gestures for å aktivere dem
+
+- Spillet støtter å skrive dynamisk tekst til skjer, altså tekst som ikke er kjent
+  når programmet ble bygget. Denne teksten skal holde seg innenfor bakgrunnsbilder
+  og ellers oppføre seg korrekt i hennhold til logisk oppførsel på slikt innhold.
+
+- Spillet kan kontrolleres med tastatur
+
+- Spillet benytter også input fra mus. Musen må være synlig med egen grafikk
+  (ikke hardware cursor).
+  
+- Spillet benytter seg av kollisjonshåndtering ved hjelp av Rectangle, 
+  eller sirkel kollisjon.
+  
+- Kollisjonssystemet sørger for at man ikke år overlappende entiteter som ender
+  opp med å kollidere hver frame, feks ved å sette dem tilbake til forrige
+  gjeldende tilstand.
+  
+- Systemet tar hensyn til framerate ved hjelp av GameTime.
+
+- Systemet har støtte for bevegelser i desimalform(Vector2).
+
+- Spiller har forskjellige bevegelseshastigheter, og akselerasjonsmengde benyttes
+  for å bytte mellom disse (vector2 acceleration).
+  
+- Spillet har et fungerende konfliktsystem. Med dette menes kampsystemer, logiske
+  problemer (puzzles) og andre utfordringer som gir spillet "mening".
+  
+- Spillet har en kunstig inteligens som oppfører seg på hensiktsmessig vis, og 
+  skaper innhold i spillet.
+  
+- Spillet har en fungerende Karteditor som generer kartfiler. Disse må igjen kunne
+  leses inn av spillet og kunne spilles igjennom på en hensiktsmessig måte.
