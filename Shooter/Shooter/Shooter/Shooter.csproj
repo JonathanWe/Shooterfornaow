@@ -130,7 +130,6 @@
     <Compile Include="MapGrid.cs" />
     <Compile Include="Modding\MapEditor\EditorTextureList.cs" />
     <Compile Include="Modding\MapEditor\MapEditor.cs" />
-    <Compile Include="Modding\ModMenu.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />

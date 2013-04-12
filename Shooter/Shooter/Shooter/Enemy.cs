@@ -28,6 +28,11 @@ namespace Shooter
         {
             character = Character.Enemy1();
         }
+
+        public Enemy(Character Character)
+        {
+            character = Character;
+        }
         public void Update() 
         {
             if (Healt <= 0) //If it has no more healt it is dead an should be removed
