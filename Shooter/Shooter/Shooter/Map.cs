@@ -16,6 +16,10 @@ namespace Shooter
             Grid.DisplayGrid = false;
         }
 
+        /// <summary>
+        /// Checks if the character (enemy or player) is colliding with any texture. If yes, it will put the character back to before it collided
+        /// </summary>
+        /// <param name="Character">Character instance (player or enemey)</param>
         public void UpdateCharacterCollision(Character Character) 
         {
             int gridIndex = Grid.ColideWithBlock(Character.Position, Character.Size);
@@ -23,82 +27,61 @@ namespace Shooter
             //If it does then it means that there is a collision here(and not empty space)
             if (gridIndex != -1 && Grid.GridTexture[gridIndex] != -1)
             {
+                //Collides with top
                 Vector2 pos2, size2;
                 pos2.X = Character.Position.X + Character.Size.X / 2;
                 pos2.Y = Character.Position.Y;
                 size2.X = 1;
                 size2.Y = Character.Size.Y / 6;
                 gridIndex = Grid.ColideWithBlock(pos2, size2);
-                if (gridIndex != -1 && Grid.GridTexture[gridIndex] != -1) //Collides with top
+                if (gridIndex != -1 && Grid.GridTexture[gridIndex] != -1)
                 {
                     Character.Acceleration.Y = -1f; //-1 instead of 0 so it wont be glued to the top if the system renders to fast
                     Character.Position.Y = Grid.GetPositionFromIndex(gridIndex).Y + Grid.GridElementSize.Y;
                 }
+                //Collides with bottom
                 pos2.X = Character.Position.X + (Character.Size.X / 2);
                 pos2.Y = Character.Position.Y + Character.Size.Y - (Character.Size.Y / 6);
                 size2.X = 1;
                 size2.Y = Character.Size.Y / 6;
                 gridIndex = Grid.ColideWithBlock(pos2, size2);
-                if (gridIndex != -1 && Grid.GridTexture[gridIndex] != -1) //Collides with bottom
+                if (gridIndex != -1 && Grid.GridTexture[gridIndex] != -1)
                 {
                     Character.Acceleration.Y = 0;
                     Character.Position.Y = Grid.GetPositionFromIndex(gridIndex).Y - Character.Size.Y;
                 }
+                //Collides with Left
+                pos2.X = Character.Position.X;
+                pos2.Y = Character.Position.Y + 20;
+                size2.X = 1;
+                size2.Y = Character.Size.Y -40;
+                gridIndex = Grid.ColideWithBlock(pos2, size2);
+                if (gridIndex != -1 && Grid.GridTexture[gridIndex] != -1)
+                {
+                    if (Character.Acceleration.X < 0) Character.Acceleration.X = 0;
+                    Character.Position.X = Grid.GetPositionFromIndex(gridIndex).X + Grid.GridElementSize.X + 0.5f;
+                }
+                //Collides with Right
+                pos2.X = Character.Position.X + Character.Size.X;
+                pos2.Y = Character.Position.Y + 20;
+                size2.X = 1;
+                size2.Y = Character.Size.Y - 40;
+                gridIndex = Grid.ColideWithBlock(pos2, size2);
+                if (gridIndex != -1 && Grid.GridTexture[gridIndex] != -1)
+                {
+                    if (Character.Acceleration.X > 0) Character.Acceleration.X = 0;
+                    Character.Position.X = Grid.GetPositionFromIndex(gridIndex).X - Character.Size.X;
+                }
             }
         }
+
+        /// <summary>
+        /// Draws the map 
+        /// </summary>
         public void Draw() 
         {
             Grid.Draw(Engine.Camera);
         }
 
-
-
-        //Texture2D background;
-        //Texture2D mapTexture;
-        //MapGrid grid = new MapGrid();
-
-        //public void Load(string Background, string MapTexture, Rectangle[] CollisionMap, Vector2 MapSize) 
-        //{
-        //    background = Engine.Content.Load<Texture2D>(Background);
-        //    mapTexture = Engine.Content.Load<Texture2D>(MapTexture);
-
-        //    this.CollisionMap = CollisionMap;
-        //    this.MapSize = MapSize;
-        //}
-        //public void Draw() 
-        //{
-        //    Engine.SpriteBatch.Draw(background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);
-        //    Engine.SpriteBatch.Draw(mapTexture, new Rectangle(0, 0, (int)MapSize.X, (int)MapSize.Y), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.01f);
-        //}
-
-        //public void UpdateCharacterCollision(Character Character) 
-        //{
-        //    Rectangle rect = new Rectangle((int)Character.Position.X, (int)Character.Position.Y, (int)Character.Size.X, (int)Character.Size.Y);
-        //    for (int i = 0; i < CollisionMap.Length; i++)
-        //    {
-        //        if (Rectangle.Intersect(CollisionMap[i], rect) != Rectangle.Empty) 
-        //        {
-        //            Rectangle rect2 = rect;
-        //            rect2.Height = rect2.Height / 6;
-        //            rect2.X += rect2.Width / 2;
-        //            rect2.Width = 1;
-        //            if (Rectangle.Intersect(CollisionMap[i], rect2) != Rectangle.Empty) //Collides with top
-        //            {
-        //                Character.Acceleration.Y = 0;
-        //                Character.Position.Y = CollisionMap[i].Y + CollisionMap[i].Height;
-        //            }
-        //            rect2 = rect;
-        //            rect2.Y += rect2.Height - (rect2.Height / 6);
-        //            rect2.Height = rect2.Height / 6;
-        //            rect2.X += rect2.Width / 2;
-        //            rect2.Width = 1;
-        //            if (Rectangle.Intersect(CollisionMap[i], rect2) != Rectangle.Empty) //Collides with bottom
-        //            {
-        //                Character.Acceleration.Y = 0;
-        //                Character.Position.Y = CollisionMap[i].Y - Character.Size.Y;
-        //            }
-        //        }
-        //    }
-        //}
     }
 }

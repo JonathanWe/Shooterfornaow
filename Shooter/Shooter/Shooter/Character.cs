@@ -59,8 +59,10 @@ namespace Shooter
 
             Weapon = Weapon.DefaultWeapon();
         }
-        public Character(string File)
+        public Character(string File, string Color)
         {
+            CharacterColor = Color;
+
             runAnimationR.AnimationSpeed = 0.1f;
             runAnimationL.AnimationSpeed = 0.1f;
 
@@ -345,38 +347,32 @@ namespace Shooter
         }
         public static Character Shiro(String Color)
         {
-            Character character = new Character("Content/Characters/Player/Shiro/Shiro.txt");
-            character.CharacterColor = Color;
+            Character character = new Character("Content/Characters/Player/Shiro/Shiro.txt", Color);
             return character;
         }
         public static Character Kuro(String Color)
         {
-            Character character = new Character("Content/Characters/Player/Kuro/Kuro.txt");
-            character.CharacterColor = Color;
+            Character character = new Character("Content/Characters/Player/Kuro/Kuro.txt", Color);
             return character;
         }
         public static Character Enemy1()
         {
-            Character character = new Character("Content/Characters/NPC_mob/Zombie1.txt");
-            character.CharacterColor = "Black";
+            Character character = new Character("Content/Characters/NPC_mob/Zombie1.txt", "Black");
             return character;
         }
         public static Character Enemy2()
         {
-            Character character = new Character("Content/Characters/NPC_mob/Zombie2.txt");
-            character.CharacterColor = "Black";
+            Character character = new Character("Content/Characters/NPC_mob/Zombie2.txt", "Black");
             return character;
         }
         public static Character Enemy3()
         {
-            Character character = new Character("Content/Characters/NPC_mob/Zombie3.txt");
-            character.CharacterColor = "Black";
+            Character character = new Character("Content/Characters/NPC_mob/Zombie3.txt", "Black");
             return character;
         }
         public static Character Enemy4()
         {
-            Character character = new Character("Content/Characters/NPC_mob/Zombie4.txt");
-            character.CharacterColor = "Black";
+            Character character = new Character("Content/Characters/NPC_mob/Zombie4.txt", "Black");
             return character;
         }
     }

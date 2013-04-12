@@ -16,17 +16,21 @@ namespace Shooter
         float timer = 0;
         Random rnd = new Random();
 
+        /// <summary>
+        /// Loads the map, the characters, music and cursor
+        /// </summary>
         public void Load()
         {
             Engine.Map = new Map();
             Engine.Map.Load("test.map");
             Player.Load();
-            //Enemies.Add(new Enemy());
-            //Enemies[0].Load();
             bgSound.Load();
             Engine.Cursor = Cursor.GameCursor();
         }
 
+        /// <summary>
+        /// Updatesthe players and enemies. Spawning a new enemy every 2 seconds
+        /// </summary>
         public void Update()
         {
             timer += Engine.GameTimeInSec;
@@ -55,6 +59,9 @@ namespace Shooter
             
         }
 
+        /// <summary>
+        /// Draw the maps, characters and bullets
+        /// </summary>
         public void Draw()
         {
             Engine.Map.Draw();

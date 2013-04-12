@@ -27,20 +27,26 @@ namespace Shooter
         public Vector2 GunPosition = new Vector2();
         public Vector2 GunOffset = new Vector2();
         public Point GunSize = new Point(70, 40);
+        public GameSoundEffect gunfire = new GameSoundEffect();
 
-        //Test of GunEffect
-        public GameSoundEffect M4A1 = new GameSoundEffect();
+        bool playShootAnimation = false;
+        float timer = 0;
 
 
         public Weapon(SpriteSheet Sheet)
         {
             this.WeaponSheet = Sheet;
         }
+
+        /// <summary>
+        /// Retrieves data from textfiles and creates values. Also sets gunfiresound and animationspeed
+        /// </summary>
+        /// <param name="File">weaponname</param>
         public Weapon(string File) 
         {
             
-            //Test of gunfire sounds
-            M4A1.Load("Content/Sounds/Weapons/M4A1Fire.wav");
+            //Temporary gunshot sound
+            gunfire.Load("Content/Sounds/Weapons/M4A1Fire.wav");
 
             ShootAnimation.AnimationSpeed = 0.1f;
 
@@ -134,8 +140,6 @@ namespace Shooter
             ShootAnimation.CurrentFrame = 0;
         }
 
-        bool playShootAnimation = false;
-        float timer = 0;
         public void Update(bool Shooting, Vector2 Position, Vector2 Destination) 
         {
             if (Shooting) 
@@ -148,7 +152,7 @@ namespace Shooter
                     ShootAnimation.Animating = true;
 
                     //Test of gunfire sounds
-                    M4A1.Play();
+                    gunfire.Play();
 
                     Position = Position + GunPosition;
 
@@ -171,7 +175,6 @@ namespace Shooter
             else spriteEffect = SpriteEffects.FlipVertically;
             Engine.Camera.Draw(WeaponSheet.Texture, new Vector2(Position.X + GunPosition.X, Position.Y + GunPosition.Y), new Vector2(GunSize.X, GunSize.Y), frame, Color.White, 0.2f, new Vector2(GunOffset.X, GunOffset.Y) * (new Vector2(frame.Width, frame.Height) / new Vector2(GunSize.X, GunSize.Y)), Degrees, spriteEffect);
         }
-
 
         public static Weapon DefaultWeapon() 
         {

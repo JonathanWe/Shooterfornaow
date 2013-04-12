@@ -9,6 +9,11 @@ namespace Shooter
     
     public struct RectangleF
     {
+
+        /// <summary>
+        /// RectangleF does the same as the rectangle function, only with float instead of int.
+        /// </summary>
+
         public static implicit operator Rectangle(RectangleF value) { return new Rectangle((int)value.X, (int)value.Y, (int)value.Width, (int)value.Height); }
         public static bool operator ==(RectangleF left, RectangleF right)
         {

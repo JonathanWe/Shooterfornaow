@@ -8,6 +8,9 @@ namespace Shooter
 {
     public class GameResources
     {
+        /// <summary>
+        /// Only used as storageplace for graphic content
+        /// </summary>
         public static Texture2D WhiteTexture;
         public static SpriteFont DefaultFont;
         public static SpriteSheet GUISheet;

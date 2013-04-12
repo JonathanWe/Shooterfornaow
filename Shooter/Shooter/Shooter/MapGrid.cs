@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,20 @@ namespace Shooter
         public List<Texture2D> Textures = new List<Texture2D>();
         public List<string> TextureNames = new List<string>();
 
+        /// <summary>
+        /// Adds textures into the Textures list
+        /// </summary>
+        /// <param name="TexturePath">Path to the texture in content</param>
         public void LoadTexture(string TexturePath)
         {
             Textures.Add(Texture2D.FromStream(Engine.Device, new System.IO.MemoryStream(System.IO.File.ReadAllBytes(TexturePath))));
             TextureNames.Add(TexturePath);
-
-            //btnBackground.Position = new Vector2(10, Engine.WindowHeight - 100);
-            //btnBackground.Size = new Vector2(80, 80);
         }
+
+        /// <summary>
+        /// Draws the map, using a map file
+        /// </summary>
+        /// <param name="Map">Path to the map file</param>
         public void LoadMap(string Map)
         {
             int offset = 0;
@@ -53,10 +60,8 @@ namespace Shooter
         }
 
         /// <summary>
-        /// Returns inedx of the grid square the position is in
+        /// Returns index of grid-square that the input position is in
         /// </summary>
-        /// <param name="Position"></param>
-        /// <returns></returns>
         public int ColideWithGrid(Vector2 Position) 
         {
             int index = -1;
@@ -77,6 +82,10 @@ namespace Shooter
             }
             return index;
         }
+
+        /// <summary>
+        /// Used to check if anything collides with the block. If it does, it will set the object back to the previous locations
+        /// </summary>
         public int ColideWithBlock(Vector2 Position, Vector2 Size) 
         {
             for (int y = 0; y < GridSize.Y; y++)
@@ -89,11 +98,21 @@ namespace Shooter
             }
             return -1;
         }
+
+        /// <summary>
+        /// Gets the position of value in the index
+        /// </summary>
+        /// <param name="Index"></param>
+        /// <returns></returns>
         public Vector2 GetPositionFromIndex(int Index) 
         {
             return new Vector2(Index % GridSize.X * GridElementSize.X, Index / GridSize.X * GridElementSize.Y);
         }
 
+        /// <summary>
+        /// Used to draw the blocks and background
+        /// </summary>
+        /// <param name="Camer"></param>
         public void Draw(Camera Camer) 
         {
             //Draw Background
@@ -123,6 +142,10 @@ namespace Shooter
                 } 
             }
         }
+
+        /// <summary>
+        /// Saves the custom map to a file
+        /// </summary>
         public void SaveMap()
         {
             List<byte> mapData = new List<byte>();

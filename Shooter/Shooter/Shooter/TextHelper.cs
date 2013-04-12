@@ -8,6 +8,7 @@ namespace Shooter
     public static class TextHelper
     {
         public static string[] Between(string Text, string Start, string End) { return Between(Text, Start, End, null); }
+        
         /// <summary>
         /// Returns the text between start and end text
         /// </summary>
@@ -56,10 +57,12 @@ namespace Shooter
             }
             return result.ToArray();
         }
+
         public static int FindFirst(string Text, string Value) 
         {
             return FindFirst(Text, Value, 0);
         }
+
         public static int FindFirst(string Text, string Value, int Offset) 
         {
             string tmp = "";
@@ -73,6 +76,7 @@ namespace Shooter
             }
             return -1;
         }
+
         /// <summary>
         /// Returns true if Value goes trougth Index 
         /// </summary>
@@ -90,15 +94,18 @@ namespace Shooter
             if (Text.Contains(Value)) return true;
             return false;
         }
+
         public static string BytesToString(byte[] Bytes) 
         {
             return BitConverter.ToString(Bytes);
         }
+
         public static string BytesToStringAndSplit(byte[] Bytes, string Split)
         {
             int i = 0;
             return BytesToStringAndSplit(Bytes, Split, out i);
         }
+
         public static string BytesToStringAndSplit(byte[] Bytes, string Split, out int SplitIndex)
         {
             string text = "";
@@ -114,6 +121,7 @@ namespace Shooter
             }
             return text;
         }
+
         public static int LetterCount(string Text, char Letter) 
         {
             int count = 0;
@@ -123,6 +131,7 @@ namespace Shooter
             }
             return count;
         }
+
         public static string RemoveDoubble(string Text, char Letter) 
         {
             string tmp = "";

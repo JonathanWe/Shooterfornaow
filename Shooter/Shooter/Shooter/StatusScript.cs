@@ -9,6 +9,7 @@ namespace Shooter
     {
         string[] Code;
         int i = 0;
+
         public StatusScript(string Code) 
         {
             string[] split = Code.Split('\n');
@@ -20,12 +21,13 @@ namespace Shooter
             }
             this.Code = Code.Split(';');
         }
+
         /// <summary>
         /// Returns the next command
         /// </summary>
         /// <param name="Name">The variable to assign</param>
         /// <param name="Value">The value to assign the variable</param>
-        /// <returns>Returns flase if there are no more commands left </returns>
+        /// <returns>Returns false if there are no more commands left </returns>
         public bool NextCommand(out string Name, out string Value) 
         {
             Name = "";
