@@ -150,51 +150,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Characters\NPC_mob\Body.png">
-      <Name>Body</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\leg_walk1.png">
-      <Name>leg_walk1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\leg_walk2.png">
-      <Name>leg_walk2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\leg_walk3.png">
-      <Name>leg_walk3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\leg_walk4.png">
-      <Name>leg_walk4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\Z_head1.png">
-      <Name>Z_head1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\Z_head2.png">
-      <Name>Z_head2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\Z_head3.png">
-      <Name>Z_head3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Characters\NPC_mob\Z_head4.png">
-      <Name>Z_head4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Characters\Player\Kuro\Run0.png">
       <Name>Run0</Name>
       <Importer>TextureImporter</Importer>
@@ -264,6 +219,22 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Content Include="Characters\NPC_mob\Zombie1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Zombie1</Name>
+    </Content>
+    <Content Include="Characters\NPC_mob\Zombie2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Zombie2</Name>
+    </Content>
+    <Content Include="Characters\NPC_mob\Zombie4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Zombie4</Name>
+    </Content>
+    <Content Include="Characters\NPC_mob\Zombie3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>Zombie3</Name>
+    </Content>
     <Content Include="Characters\Player\Kuro\Kuro.txt">
       <Name>Kuro</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -383,6 +354,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Characters\NPC_mob\ZombieSpriteSheet.sht">
+      <Name>ZombieSpriteSheet</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Weapons\Ak-47.sht">
       <Name>Ak-47</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

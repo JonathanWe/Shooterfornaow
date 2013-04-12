@@ -1,0 +1,36 @@
+Texture = Content/Characters/NPC_mob/ZombieSpriteSheet.sht;
+
+BoundingBox = 130, 235;
+
+
+// Head
+
+HeadR2.Size = 80,80;
+HeadR2.Position = -15,30; 
+
+HeadL2.Size = 80,80;
+HeadL2.Position = 15,30; 
+
+HeadR1.Size = 80, 80;
+HeadR1.Position = 40,30;
+
+headL1.Size= 80, 80;
+HeadL1.Position = -50,30;
+
+// Body
+BodyRunR.Size = 135, 155;
+BodyRunR.Position = -40,78;
+BodyRunL.Size = 135, 155;
+BodyRunL.Position = -25,78;
+
+BodyStandR.Size = 120, 155;
+BodyStandR.Position = -25, 80;
+BodyStandL.Size = 120, 155;
+BodyStandL.Position = -0, 80;
+
+//Weapon
+Weapon.MountPoint = 40, 85;
+Weapon.Distance = 60;
+
+
+
