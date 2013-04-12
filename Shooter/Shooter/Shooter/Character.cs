@@ -303,7 +303,7 @@ namespace Shooter
                 }
                 else 
                 {
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headR2Offset.X, Position.Y + headR2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadL2"), Color.White, 0, Vector2.Zero, 0.2f);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headL2Offset.X, Position.Y + headL2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadL2"), Color.White, 0, Vector2.Zero, 0.2f);
                     Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandL"), Color.White, 0, Vector2.Zero, 0.11f);
                 }
             }

@@ -1,28 +1,32 @@
 Texture = Content/Characters/Player/Kuro/KuroSpriteSheet.sht;
 
-BoundingBox = 90, 155; 
+BoundingBox = 130, 215;
 
 
 // Head
 
-Head.Size = 60,60;
-Head.Position = 47,10; 
+HeadR2.Size = 70,70;
+HeadR2.Position = -10,35; 
 
-HeadR1.Size = 50, 60;
-HeadR1.Position = 47,10;
+HeadL2.Size = 70,70;
+HeadL2.Position = 14,39; 
 
-headL1 .Size= 50, 60;
-HeadL1.Position = 47,10;
+HeadR1.Size = 70, 70;
+HeadR1.Position = 40,35;
+
+headL1.Size= 70, 70;
+HeadL1.Position = -30,28;
 
 // Body
-Body.Size = 90,110;
-Body.Position = 0,45;
+BodyRunR.Size = 130, 135;
+BodyRunR.Position = -40,78;
+BodyRunL.Size = 130, 135;
+BodyRunL.Position = -25,78;
 
-BodyRun.Size = 90, 110;
-BodyRun.Position = 0,45;
-
-BodyStand.Size = 60, 110;
-BodyStand.Position = 55, 47;
+BodyStandR.Size = 105, 135;
+BodyStandR.Position = -25, 80;
+BodyStandL.Size = 105, 135;
+BodyStandL.Position = -0, 80;
 
 //Weapon
 Weapon.MountPoint = 40, 85;
