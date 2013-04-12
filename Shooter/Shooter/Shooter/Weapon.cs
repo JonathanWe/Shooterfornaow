@@ -50,7 +50,7 @@ namespace Shooter
             while (script.NextCommand(out name, out value))
             {
                 name = name.ToLower();
-                Console.Write("dwef");
+                
                 if (name == "texture") 
                 {
                     if (GameResources.CharacterSheets.ContainsKey(value))
