@@ -15,6 +15,7 @@ namespace Shooter
         Texture2D gunShoot;
         Texture2D fadeTexture;
         Button btnPlay = new Button("PlayButton");
+        Button btnMapEditor = new Button("MapEditorButton");
         Vector2 buttonPlayPosition = new Vector2(300, 250);
         Vector2 buttonPlaySize = new Vector2(300, 100);
         Vector2 gunShootSize = new Vector2(100, 100);
@@ -33,6 +34,17 @@ namespace Shooter
             btnPlay.Size = new Vector2(300, 100);
             btnPlay.Z = 0.01f;
             btnPlay.OnClick += new EventHandler(btnPlay_OnClick);
+
+            btnMapEditor.Position = new Vector2(300, 400);
+            btnMapEditor.Size = new Vector2(300, 100);
+            btnMapEditor.Z = 0.01f;
+            btnMapEditor.OnClick += new EventHandler(btnMapEditor_OnClick);
+        }
+
+        void btnMapEditor_OnClick(object sender, EventArgs e)
+        {
+            Engine.CurrentScene = new Modding.MapEditor.MapEditor();
+            Engine.CurrentScene.Load();
         }
 
         void btnPlay_OnClick(object sender, EventArgs e)
@@ -49,23 +61,17 @@ namespace Shooter
                 Engine.CurrentScene.Load();
             }
             else if (timer != 0) timer += Engine.GameTimeInSec;
-            else btnPlay.Update();
-            if (Engine.KeyClick(Keys.F2))
+            else
             {
-                Engine.CurrentScene = new Modding.ModMenu();
-                Engine.CurrentScene.Load();
+                btnPlay.Update();
+                btnMapEditor.Update();
             }
-            if (Engine.KeyClick(Keys.F3))
-            {
-                Engine.CurrentScene = new CharacterSelection();
-                Engine.CurrentScene.Load();
-            }
-
         }
         public void Draw() 
         {
             Engine.SpriteBatch.Draw(background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);
             btnPlay.Draw();
+            btnMapEditor.Draw();
             if (timer != 0)
             {
                 Engine.SpriteBatch.Draw(gunShoot, new Rectangle((int)(mouseClickPosition.X - (gunShootSize.X / 2)), (int)(mouseClickPosition.Y - (gunShootSize.X / 2)), (int)gunShootSize.X, (int)gunShootSize.Y), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.11f);

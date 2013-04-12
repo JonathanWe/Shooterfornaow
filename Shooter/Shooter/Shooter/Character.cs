@@ -238,11 +238,11 @@ namespace Shooter
                 }
             }
             //Initializes animations and gives it a weapon
-            runAnimationR.AddFrames(sheet.GetAnimationRectangles("RunR"));
+            runAnimationR.AddFrames(sheet.GetAnimationRectangles(CharacterColor + "RunR"));
             runAnimationR.Loop = true;
             runAnimationR.Animating = true;
 
-            runAnimationL.AddFrames(sheet.GetAnimationRectangles("RunL"));
+            runAnimationL.AddFrames(sheet.GetAnimationRectangles(CharacterColor + "RunL"));
             runAnimationL.Loop = true;
             runAnimationL.Animating = true;
 
@@ -310,12 +310,12 @@ namespace Shooter
                 if (lookRight)
                 {
                     Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headR2Offset.X, Position.Y + headR2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadR2"), color, 0.2f, Vector2.Zero, 0);
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandR"), color, 0.11f, Vector2.Zero, 0);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite(CharacterColor + "StandR"), color, 0.11f, Vector2.Zero, 0);
                 }
                 else 
                 {
                     Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + headL2Offset.X, Position.Y + headL2Offset.Y), new Vector2(headR2Size.X, headR2Size.Y), sheet.GetSprite(CharacterColor + "HeadL2"), color, 0.2f, Vector2.Zero, 0);
-                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite("StandL"), color, 0.11f, Vector2.Zero, 0);
+                    Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite(CharacterColor + "StandL"), color, 0.11f, Vector2.Zero, 0);
                 }
             }
             Weapon.Draw(Position + WeaponMountPoint, degrees);
@@ -357,7 +357,25 @@ namespace Shooter
         }
         public static Character Enemy1()
         {
-            Character character = new Character("Content/Characters/Player/Shiro/Shiro.txt");
+            Character character = new Character("Content/Characters/NPC_mob/Zombie1.txt");
+            character.CharacterColor = "Black";
+            return character;
+        }
+        public static Character Enemy2()
+        {
+            Character character = new Character("Content/Characters/NPC_mob/Zombie2.txt");
+            character.CharacterColor = "Black";
+            return character;
+        }
+        public static Character Enemy3()
+        {
+            Character character = new Character("Content/Characters/NPC_mob/Zombie3.txt");
+            character.CharacterColor = "Black";
+            return character;
+        }
+        public static Character Enemy4()
+        {
+            Character character = new Character("Content/Characters/NPC_mob/Zombie4.txt");
             character.CharacterColor = "Black";
             return character;
         }

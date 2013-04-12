@@ -14,6 +14,7 @@ namespace Shooter
         public BackgroundSound bgSound = new BackgroundSound();
 
         float timer = 0;
+        Random rnd = new Random();
 
         public void Load()
         {
@@ -31,7 +32,15 @@ namespace Shooter
             timer += Engine.GameTimeInSec;
             if (timer > 2)
             {
-                Enemies.Add(new Enemy());
+                int enemyType = rnd.Next(4);
+                if (enemyType == 0)
+                    Enemies.Add(new Enemy(Character.Enemy1()));
+                else if (enemyType == 1)
+                    Enemies.Add(new Enemy(Character.Enemy2()));
+                else if (enemyType == 2)
+                    Enemies.Add(new Enemy(Character.Enemy3()));
+                else if (enemyType == 3)
+                    Enemies.Add(new Enemy(Character.Enemy4()));
                 timer = 0;
             }
 
