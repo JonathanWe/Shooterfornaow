@@ -36,9 +36,11 @@ namespace Shooter
             {
                 character.Jump();
             }
-            if (character.Weapon != null) character.Weapon.Update(Engine.MouseDown, Position + character.WeaponMountPoint, Engine.MousePosition);
+            if (character.Weapon != null) character.Weapon.Update(Engine.MouseDown, Position + character.WeaponMountPoint, Engine.Camera.MousePosition);
 
             character.Update(true, false);
+
+            Engine.Camera.Position = Position - new Vector2(Engine.WindowWidth / 2, Engine.WindowHeight / 2);
         }
         public void Draw() 
         {

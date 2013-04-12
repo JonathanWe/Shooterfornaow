@@ -30,5 +30,9 @@ namespace Shooter
         {
             Engine.SpriteBatch.Draw(Texture, new RectangleF((Position - this.Position) * Zoom, Size * Zoom), Frame, Color, Rotation, Origin, SpriteEffects.None, Z);
         }
+        public void Draw(Texture2D Texture, Vector2 Position, Vector2 Size, Rectangle? Frame, Color Color, float Z, Vector2 Origin, float Rotation, SpriteEffects Flip)
+        {
+            Engine.SpriteBatch.Draw(Texture, new RectangleF((Position - this.Position) * Zoom, Size * Zoom), Frame, Color, Rotation, Origin, Flip, Z);
+        }
     }
 }

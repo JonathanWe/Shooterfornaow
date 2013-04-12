@@ -71,13 +71,13 @@ namespace Shooter
             }
             return index;
         }
-        public int ColideWithGrid(Vector2 Position, Vector2 Size) 
+        public int ColideWithBlock(Vector2 Position, Vector2 Size) 
         {
             for (int y = 0; y < GridSize.Y; y++)
             {
                 for (int x = 0; x < GridSize.X; x++)
                 {
-                    if (Engine.Collide(new Vector2(x * GridElementSize.X, y * GridElementSize.Y), GridElementSize, Position, Size))
+                    if (Engine.Collide(new Vector2(x * GridElementSize.X, y * GridElementSize.Y), GridElementSize, Position, Size) && GridTexture[y * GridSize.X + x] != -1)
                         return y * GridSize.X + x;
                 }
             }
@@ -85,7 +85,7 @@ namespace Shooter
         }
         public Vector2 GetPositionFromIndex(int Index) 
         {
-            return new Vector2(Index % GridSize.X, Index / GridSize.X);
+            return new Vector2(Index % GridSize.X * GridElementSize.X, Index / GridSize.X * GridElementSize.Y);
         }
 
         public void Draw(Camera Camer) 

@@ -163,7 +163,7 @@ namespace Shooter
             SpriteEffects spriteEffect;
             if (AdamoMath.ToRadians(90) > Degrees && AdamoMath.ToRadians(-90) < Degrees) spriteEffect = SpriteEffects.None;
             else spriteEffect = SpriteEffects.FlipVertically;
-            Engine.SpriteBatch.Draw(WeaponSheet.Texture, new Rectangle((int)(Position.X + GunPosition.X), (int)(Position.Y + GunPosition.Y), GunSize.X, GunSize.Y), frame, Color.White, Degrees, new Vector2(GunOffset.X, GunOffset.Y) * (new Vector2(frame.Width, frame.Height) / new Vector2(GunSize.X, GunSize.Y)), spriteEffect, 0.2f);
+            Engine.Camera.Draw(WeaponSheet.Texture, new Vector2(Position.X + GunPosition.X, Position.Y + GunPosition.Y), new Vector2(GunSize.X, GunSize.Y), frame, Color.White, 0.2f, new Vector2(GunOffset.X, GunOffset.Y) * (new Vector2(frame.Width, frame.Height) / new Vector2(GunSize.X, GunSize.Y)), Degrees, spriteEffect);
         }
 
 
