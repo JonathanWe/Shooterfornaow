@@ -24,7 +24,6 @@ namespace Shooter
             //Enemies[0].Load();
             bgSound.Load();
             Engine.Cursor = Cursor.GameCursor();
-            Console.Write("");
         }
 
         public void Update()
