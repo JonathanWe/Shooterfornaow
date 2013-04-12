@@ -27,7 +27,6 @@ namespace Shooter
         public Vector2 GunPosition = new Vector2();
         public Vector2 GunOffset = new Vector2();
         public Point GunSize = new Point(70, 40);
-        public GameSoundEffect gunfire = new GameSoundEffect();
 
         bool playShootAnimation = false;
         float timer = 0;
@@ -46,7 +45,11 @@ namespace Shooter
         {
             
             //Temporary gunshot sound
-            gunfire.Load("Content/Sounds/Weapons/M4A1Fire.wav");
+            if (GameResources.Gunfire == null)
+            {
+                GameResources.Gunfire = new GameSoundEffect();
+                GameResources.Gunfire.Load("Content/Sounds/Weapons/M4A1Fire.wav");
+            }
 
             ShootAnimation.AnimationSpeed = 0.1f;
 
@@ -152,7 +155,7 @@ namespace Shooter
                     ShootAnimation.Animating = true;
 
                     //Test of gunfire sounds
-                    gunfire.Play();
+                    GameResources.Gunfire.Play();
 
                     Position = Position + GunPosition;
 

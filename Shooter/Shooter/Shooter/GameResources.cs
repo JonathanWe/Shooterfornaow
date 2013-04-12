@@ -17,5 +17,6 @@ namespace Shooter
         public static SpriteSheet BulletSheet;
         public static Dictionary<string, SpriteSheet> CharacterSheets = new Dictionary<string, SpriteSheet>();
         public static Dictionary<string, SpriteSheet> WeaponSheets = new Dictionary<string, SpriteSheet>();
+        public static GameSoundEffect Gunfire;
     }
 }

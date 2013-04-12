@@ -11,7 +11,17 @@ namespace Shooter
     {
         public static Character SelectedPlayer;
 
-        public int Healt = 100;
+        float healt = 100;
+        public float Healt 
+        {
+            get { return healt; }
+            set 
+            {
+                if (healt > value)
+                    character.IsHit = true;
+                healt = value;
+            }
+        }
         public Vector2 Position { get { return character.Position; } set { character.Position = value; } }
         public Vector2 Size;
 
@@ -30,6 +40,11 @@ namespace Shooter
         /// </summary>
         public void Update() 
         {
+            if (Healt <= 0)
+            {
+                //GameOver
+            }
+
             //Input
             if (Engine.KeyDown(Keys.Left) | Engine.KeyDown(Keys.A))
             {

@@ -320,7 +320,7 @@ namespace Shooter
                     Engine.Camera.Draw(sheet.Texture, new Vector2(Position.X + bodyStandROffset.X, Position.Y + bodyStandROffset.Y), new Vector2(bodyStandRSize.X, bodyStandRSize.Y), sheet.GetSprite(CharacterColor + "StandL"), color, 0.11f, Vector2.Zero, 0);
                 }
             }
-            Weapon.Draw(Position + WeaponMountPoint, degrees);
+            if(Weapon != null) Weapon.Draw(Position + WeaponMountPoint, degrees);
         }
 
         public void MoveLeft() 
@@ -358,21 +358,25 @@ namespace Shooter
         public static Character Enemy1()
         {
             Character character = new Character("Content/Characters/NPC_mob/Zombie1.txt", "Black");
+            character.Weapon = null;
             return character;
         }
         public static Character Enemy2()
         {
             Character character = new Character("Content/Characters/NPC_mob/Zombie2.txt", "Black");
+            character.Weapon = null;
             return character;
         }
         public static Character Enemy3()
         {
             Character character = new Character("Content/Characters/NPC_mob/Zombie3.txt", "Black");
+            character.Weapon = null;
             return character;
         }
         public static Character Enemy4()
         {
             Character character = new Character("Content/Characters/NPC_mob/Zombie4.txt", "Black");
+            character.Weapon = null;
             return character;
         }
     }

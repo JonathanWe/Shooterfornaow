@@ -40,6 +40,12 @@ namespace Shooter
                 ((Shooter)Engine.CurrentScene).Enemies.Remove(this);
             }
 
+            //Take healt from player if close enough
+            if (((Player.SelectedPlayer.Position + Player.SelectedPlayer.Size / 2) - (Position + Size / 2)).Length() < 100)
+            {
+                Engine.Game.Player.Healt -= 50 * Engine.GameTimeInSec;
+            }
+
             //Walk towards player
             float direction = Engine.Game.Player.Position.X - Position.X;
             if (direction > 0) character.MoveRight();

@@ -32,5 +32,8 @@ BodyStandL.Position = -0, 80;
 Weapon.MountPoint = 40, 85;
 Weapon.Distance = 60;
 
+//Speed
+Speed = 100;
+Animation.RunSpeed = 0.2;
 
 
