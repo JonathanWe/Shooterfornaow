@@ -13,6 +13,7 @@ namespace Shooter
         public List<Enemy> Enemies = new List<Enemy>();
         public BackgroundSound bgSound = new BackgroundSound();
 
+        float timer = 0;
 
         public void Load()
         {
@@ -27,6 +28,13 @@ namespace Shooter
 
         public void Update()
         {
+            timer += Engine.GameTimeInSec;
+            if (timer > 2)
+            {
+                Enemies.Add(new Enemy());
+                timer = 0;
+            }
+
             Player.Update();
             for (int i = 0; i < Enemies.Count; i++)
             {
