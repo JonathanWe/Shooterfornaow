@@ -14,6 +14,9 @@ namespace Shooter
         public int[] GridTexture; //This says what texture is rendered in the grid
         public bool DisplayGrid = true;
 
+        public Texture2D Background;
+        public string BackgroundName;
+
         public List<Texture2D> Textures = new List<Texture2D>();
         public List<string> TextureNames = new List<string>();
 
@@ -32,8 +35,11 @@ namespace Shooter
             GridSize.X = data[0];
             GridSize.Y = data[1];
             GridTexture = new int[GridSize.X * GridSize.Y];
-            int textures = data[2];
-            offset = 3;
+            int bgLength = BitConverter.ToInt32(data, 2);
+            BackgroundName = System.Text.ASCIIEncoding.Default.GetString(data, 6, bgLength);
+            Background = Texture2D.FromStream(Engine.Device, new System.IO.MemoryStream(System.IO.File.ReadAllBytes(BackgroundName)));
+            int textures = data[6 + bgLength];
+            offset = 7 + bgLength;
             for (int i = 0; i < textures; i++)
             {
                 int count = data[offset];
@@ -90,6 +96,9 @@ namespace Shooter
 
         public void Draw(Camera Camer) 
         {
+            //Draw Background
+            Engine.SpriteBatch.Draw(Background, new Rectangle(0, 0, Engine.WindowWidth, Engine.WindowHeight), null, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0);
+
             //Draw blocks
             for (int i = 0; i < GridTexture.Length; i++)
             {
@@ -119,6 +128,8 @@ namespace Shooter
             List<byte> mapData = new List<byte>();
             mapData.Add((byte)GridSize.X); //Stores the grids in the x axiss in [0] int he array as byte
             mapData.Add((byte)GridSize.Y);
+            mapData.AddRange(BitConverter.GetBytes(BackgroundName.Length)); //stores the length of the string
+            mapData.AddRange(System.Text.ASCIIEncoding.Default.GetBytes(BackgroundName)); //Stores the string data
             mapData.Add((byte)TextureNames.Count); //Store how many Textures to load. Max 256 textures
             for (int i = 0; i < TextureNames.Count; i++)
             {

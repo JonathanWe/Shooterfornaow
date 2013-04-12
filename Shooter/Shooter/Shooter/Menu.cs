@@ -45,7 +45,7 @@ namespace Shooter
             if (timer > fadeTime)
             {
                 Engine.Game = new Shooter();
-                Engine.CurrentScene = Engine.Game;
+                Engine.CurrentScene = new CharacterSelection();
                 Engine.CurrentScene.Load();
             }
             else if (timer != 0) timer += Engine.GameTimeInSec;
@@ -58,11 +58,6 @@ namespace Shooter
             if (Engine.KeyClick(Keys.F3))
             {
                 Engine.CurrentScene = new CharacterSelection();
-                Engine.CurrentScene.Load();
-            }
-            if (Engine.KeyClick(Keys.F4))
-            {
-                Engine.CurrentScene = new CharacterCustomization(true);
                 Engine.CurrentScene.Load();
             }
 

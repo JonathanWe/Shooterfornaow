@@ -9,12 +9,15 @@ namespace Shooter.GUI
 {
     public class ChechBox
     {
+        //Public variables
         public RectangleF NormalFrame;
         public RectangleF ActiveFrame;
         public Texture2D Texture;
         public Vector2 Position;
         public Vector2 Size;
         public float Z;
+
+        //privat variables
         bool active;
         public bool Active 
         {
@@ -30,6 +33,11 @@ namespace Shooter.GUI
         }
         public event EventHandler OnActive;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Sheet">The SpriteSheet that contains the CheckBox</param>
+        /// <param name="Name">The name of the image of the checkbox in the sheet</param>
         public ChechBox(SpriteSheet Sheet, string Name) 
         {
             NormalFrame = Sheet.GetSprite(Name);
@@ -37,10 +45,9 @@ namespace Shooter.GUI
             Texture = Sheet.Texture;
         }
 
-        public ChechBox()
-        {
-            // TODO: Complete member initialization
-        }
+        /// <summary>
+        /// Checks if the CheckBox has been clicked
+        /// </summary>
         public void Update() 
         {
             if (Engine.MouseClick && Engine.Collide(Engine.MousePosition, Vector2.One, Position, Size))
@@ -48,6 +55,9 @@ namespace Shooter.GUI
                 Active = true;
             }
         }
+        /// <summary>
+        /// Draws the CheckBox
+        /// </summary>
         public void Draw() 
         {
             if (!Active)

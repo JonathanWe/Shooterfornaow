@@ -10,7 +10,11 @@ using Microsoft.Xna.Framework.Input;
 namespace Shooter
 {
     public static class Engine
-    {
+    {   
+
+        /// <summary>
+        /// Engine contains most of the values used to load, draw and the contentmanager. It contains classes that are needed in most of the code.
+        /// </summary>
         public static IScene CurrentScene;
         public static Map Map;
         public static Shooter Game;
@@ -30,15 +34,30 @@ namespace Shooter
         static internal List<Keys> keysDown = new List<Keys>();
         static internal List<Keys> keysLastDown = new List<Keys>();
 
+        /// <summary>
+        /// Checks if a key is down
+        /// </summary>
+        /// <param name="Key">Which key you want to check</param>
+        /// <returns>Boolean value of true or false, depending on the key is down or not</returns>
         public static bool KeyDown(Keys Key) 
         {
             return keysDown.Contains(Key);
         }
+
+        /// <summary>
+        /// Checks for keyclick
+        /// </summary>
+        /// <param name="Key">which key has been clicked</param>
+        /// <returns>True or false wether the key has been clicked or not</returns>
         public static bool KeyClick(Keys Key) 
         {
             return !keysDown.Contains(Key) && keysLastDown.Contains(Key);
         }
 
+        /// <summary>
+        /// Collition checks objects
+        /// </summary>
+        /// <returns>True or false wether they collide or not</returns>
         public static bool Collide(Vector2 Position1, Vector2 Size1, Vector2 Position2, Vector2 Size2)
         {
             if (Position1.X + Size1.X >= Position2.X &&

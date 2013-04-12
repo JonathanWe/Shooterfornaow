@@ -88,8 +88,6 @@ namespace Shooter
                     weapons.Add(new Weapon(files[i]));
                 }
             }
-
-
         }
 
         void btnPrevWep_OnClick(object sender, EventArgs e)
@@ -109,7 +107,7 @@ namespace Shooter
 
         void btnPlay_OnClick(object sender, EventArgs e)
         {
-            Player.PlayerColor = character.CharacterColor;
+            Player.SelectedPlayer = character;
             Engine.Game = new Shooter();
             Engine.CurrentScene = Engine.Game;
             Engine.CurrentScene.Load();

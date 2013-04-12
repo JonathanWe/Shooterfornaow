@@ -9,6 +9,7 @@ namespace Shooter.GUI
     public enum ButtunState { Over, Down, Up}
     public class Button
     {
+        //Public variables
         public Vector2 Position;
         public Vector2 Size;
         public float Z;
@@ -16,14 +17,21 @@ namespace Shooter.GUI
         public bool Flip = false;
         public event EventHandler OnClick;
 
-
+        //Privat variables
         ButtunState state = ButtunState.Up;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ButtonSkinName">The name om the image of the button stored in GUISheet.sht</param>
         public Button(string ButtonSkinName) 
         {
             this.ButtonSkinName = ButtonSkinName;
         }
 
+        /// <summary>
+        /// Checks if the mouse is over and if it has been cicked
+        /// </summary>
         public void Update() 
         {
             if (!RectangleF.Intersect(new RectangleF(Position, Size), new RectangleF(Engine.MousePosition, Vector2.One)).IsNull)
@@ -39,6 +47,10 @@ namespace Shooter.GUI
             }
             else state = ButtunState.Up;
         }
+
+        /// <summary>
+        /// Draws the Button
+        /// </summary>
         public void Draw() 
         {
             string frameName = ButtonSkinName;

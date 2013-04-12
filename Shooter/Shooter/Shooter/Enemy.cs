@@ -8,10 +8,19 @@ namespace Shooter
 {
     public class Enemy
     {
-        public int Healt;
+        int healt = 30;
+        public int Healt 
+        {
+            get { return healt; }
+            set 
+            {
+                if (healt > value) character.IsHit = true;
+                healt = value;
+            }
+        }
         public Weapon Weapon;
         public Vector2 Position { get { return character.Position; } set { character.Position = value; } }
-        public Vector2 Size;
+        public Vector2 Size { get { return character.Size; } }
 
         Character character;
 
@@ -21,6 +30,11 @@ namespace Shooter
         }
         public void Update() 
         {
+            if (Healt <= 0) //If it has no more healt it is dead an should be removed
+            {
+                ((Shooter)Engine.CurrentScene).Enemies.Remove(this);
+            }
+
             //Walk towards player
             float direction = Engine.Game.Player.Position.X - Position.X;
             if (direction > 0) character.MoveRight();
