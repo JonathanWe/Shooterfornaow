@@ -7,6 +7,8 @@ Content\Menu1.xnb
 Content\MenuBackground.xnb
 Content\White.xnb
 Content\TestMap.xnb
+Content\Background.xnb
+Content\GameOver.xnb
 Content\Player Selec Screen1.xnb
 Content\Player Selec Screen2.xnb
 Content\Player Selec Screen3.xnb
@@ -18,8 +20,6 @@ Content\Cursor\cursor.xnb
 Content\Cursor\crosshair.xnb
 Content\Sounds\Background sounds\BackgroundSound.xnb
 Content\Font\DefaultFont.xnb
-Content\Background.xnb
-Content\GameOver.xnb
 Content\Sounds\Background sounds\BackgroundSound.wma
 Content\Characters\NPC_mob\Zombie1.txt
 Content\Characters\NPC_mob\Zombie2.txt
