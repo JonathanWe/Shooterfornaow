@@ -35,10 +35,11 @@ namespace Shooter
         float speedY;
         float gravity = 100;
         float damage = 1;
-        Shooter shooter = ((Shooter)Engine.CurrentScene);
+        Shooter shooter;
 
         public Bullet(Vector2 StartPos, Vector2 EndPos, float Speed, float Damage)
         {
+            if (Engine.CurrentScene.GetType() == typeof(Shooter)) shooter = ((Shooter)Engine.CurrentScene);
             this.speed = Speed;
             position = StartPos;
             this.damage = Damage;

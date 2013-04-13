@@ -47,6 +47,8 @@ namespace Shooter
                 Engine.CurrentScene = new GameOver();
                 Engine.CurrentScene.Load();
                 Engine.Cursor = Cursor.MenuCursor();
+                Engine.Camera = new Camera();
+                return;
             }
 
             //Input
