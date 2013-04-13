@@ -73,12 +73,12 @@ namespace Shooter
                 else if (name == "position")
                 {
                     string[] split = value.Split(',');
-                    GunPosition = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    GunPosition = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "offset")
                 {
                     string[] split = value.Split(',');
-                    GunOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    GunOffset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "size")
                 {
@@ -96,7 +96,7 @@ namespace Shooter
                 else if (name == "bulletstartposition")
                 {
                     string[] split = value.Split(',');
-                    BulletStartPosition = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    BulletStartPosition = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "shopprice")
                 {

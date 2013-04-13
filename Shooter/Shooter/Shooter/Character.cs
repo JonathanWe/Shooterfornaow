@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Globalization;
 
 namespace Shooter
 {
@@ -97,39 +98,39 @@ namespace Shooter
                 }
                 if (name == "animation.runspeed")
                 {
-                    runAnimationR.AnimationSpeed = float.Parse(value);
+                    runAnimationR.AnimationSpeed = float.Parse(value, CultureInfo.InvariantCulture);
                     runAnimationL.AnimationSpeed = runAnimationR.AnimationSpeed;
                 }
                 if (name == "animation.runspeedr") 
                 {
-                    runAnimationR.AnimationSpeed = float.Parse(value);
+                    runAnimationR.AnimationSpeed = float.Parse(value, CultureInfo.InvariantCulture);
                 }
                 if (name == "animation.runspeedl")
                 {
-                    runAnimationL.AnimationSpeed = float.Parse(value);
+                    runAnimationL.AnimationSpeed = float.Parse(value, CultureInfo.InvariantCulture);
                 }
                 if (name == "speed") 
                 {
-                    MaxSpeed = float.Parse(value);
+                    MaxSpeed = float.Parse(value, CultureInfo.InvariantCulture);
                 }
                 if (name == "jumpstrength")
                 {
-                    JumpStrength = float.Parse(value);
+                    JumpStrength = float.Parse(value, CultureInfo.InvariantCulture);
                 }
                 if (name == "boundingbox")
                 {
                     split = value.Split(',');
-                    boundingBox = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    boundingBox = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "weapon.mountpoint")
                 {
                     split = value.Split(',');
-                    WeaponMountPoint = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    WeaponMountPoint = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "head.position")
                 {
                     split = value.Split(',');
-                    headR1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headR1Offset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                     headL1Offset = headR1Offset;
                     headR2Offset = headR1Offset;
                     headL2Offset = headR1Offset;
@@ -137,7 +138,7 @@ namespace Shooter
                 else if (name == "head.size")
                 {
                     split = value.Split(',');
-                    headR1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    headR1Size = new Point(int.Parse(split[0], CultureInfo.InvariantCulture), int.Parse(split[1], CultureInfo.InvariantCulture));
                     headL1Size = headR1Size;
                     headR2Size = headR1Size;
                     headL2Size = headR1Size;
@@ -145,17 +146,17 @@ namespace Shooter
                 else if (name == "headr1.position")
                 {
                     split = value.Split(',');
-                    headR1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headR1Offset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "headr1.size")
                 {
                     split = value.Split(',');
-                    headR1Size = new Point(int.Parse(split[0]), int.Parse(split[1]));
+                    headR1Size = new Point(int.Parse(split[0], CultureInfo.InvariantCulture), int.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "headl1.position")
                 {
                     split = value.Split(',');
-                    headL1Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headL1Offset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "headl1.size")
                 {
@@ -165,7 +166,7 @@ namespace Shooter
                 else if (name == "headr2.position")
                 {
                     split = value.Split(',');
-                    headR2Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headR2Offset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "headr2.size")
                 {
@@ -175,7 +176,7 @@ namespace Shooter
                 else if (name == "headl2.position")
                 {
                     split = value.Split(',');
-                    headL2Offset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    headL2Offset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "headl2.size")
                 {
@@ -185,7 +186,7 @@ namespace Shooter
                 else if (name == "body.position")
                 {
                     split = value.Split(',');
-                    bodyRunROffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyRunROffset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                     bodyStandROffset = bodyRunROffset;
                     bodyRunLOffset = bodyRunROffset;
                     bodyStandLOffset = bodyRunROffset;
@@ -201,7 +202,7 @@ namespace Shooter
                 else if (name == "bodyrunr.position")
                 {
                     split = value.Split(',');
-                    bodyRunROffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyRunROffset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "bodyrunr.size")
                 {
@@ -211,7 +212,7 @@ namespace Shooter
                 else if (name == "bodystandr.position")
                 {
                     split = value.Split(',');
-                    bodyStandROffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyStandROffset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "bodystandr.size")
                 {
@@ -221,7 +222,7 @@ namespace Shooter
                 else if (name == "bodyrunl.position")
                 {
                     split = value.Split(',');
-                    bodyRunLOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyRunLOffset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "bodyrunl.size")
                 {
@@ -231,7 +232,7 @@ namespace Shooter
                 else if (name == "bodystandl.position")
                 {
                     split = value.Split(',');
-                    bodyStandLOffset = new Vector2(float.Parse(split[0]), float.Parse(split[1]));
+                    bodyStandLOffset = new Vector2(float.Parse(split[0], CultureInfo.InvariantCulture), float.Parse(split[1], CultureInfo.InvariantCulture));
                 }
                 else if (name == "bodystandl.size")
                 {
