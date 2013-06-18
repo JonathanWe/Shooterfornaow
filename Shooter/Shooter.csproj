@@ -31,10 +31,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Adamo">
-      <HintPath>..\..\..\..\..\..\..\media\peach\9A56B6E756B6C375\Users\Henrik\My Documents\Projects\Adamo\Adamo\bin\Debug\Adamo.dll</HintPath>
+      <HintPath>..\API\Adamo.dll</HintPath>
     </Reference>
     <Reference Include="AdamoOpenGL">
-      <HintPath>..\..\..\..\..\..\..\media\peach\9A56B6E756B6C375\Users\Henrik\My Documents\Projects\Adamo\AdamoOpenGL\bin\Debug\AdamoOpenGL.dll</HintPath>
+      <HintPath>..\API\AdamoOpenGL.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
