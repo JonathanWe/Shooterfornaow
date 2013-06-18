@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50607616-E854-44F6-84ED-07163951C8CD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Shooter</RootNamespace>
+    <AssemblyName>Shooter</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Adamo">
+      <HintPath>..\..\..\..\..\..\..\media\peach\9A56B6E756B6C375\Users\Henrik\My Documents\Projects\Adamo\Adamo\bin\Debug\Adamo.dll</HintPath>
+    </Reference>
+    <Reference Include="AdamoOpenGL">
+      <HintPath>..\..\..\..\..\..\..\media\peach\9A56B6E756B6C375\Users\Henrik\My Documents\Projects\Adamo\AdamoOpenGL\bin\Debug\AdamoOpenGL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shooter\BackgroundSound.cs" />
+    <Compile Include="Shooter\Bullet.cs" />
+    <Compile Include="Shooter\Camera.cs" />
+    <Compile Include="Shooter\Character.cs" />
+    <Compile Include="Shooter\CharacterCustomization.cs" />
+    <Compile Include="Shooter\CharacterSelection.cs" />
+    <Compile Include="Shooter\Cursor.cs" />
+    <Compile Include="Shooter\Enemy.cs" />
+    <Compile Include="Shooter\Engine.cs" />
+    <Compile Include="Shooter\GameOver.cs" />
+    <Compile Include="Shooter\GameResources.cs" />
+    <Compile Include="Shooter\GameSoundEffect.cs" />
+    <Compile Include="Shooter\IScene.cs" />
+    <Compile Include="Shooter\Map.cs" />
+    <Compile Include="Shooter\MapGrid.cs" />
+    <Compile Include="Shooter\Menu.cs" />
+    <Compile Include="Shooter\Player.cs" />
+    <Compile Include="Shooter\Program.cs" />
+    <Compile Include="Shooter\Shooter.cs" />
+    <Compile Include="Shooter\StatusScript.cs" />
+    <Compile Include="Shooter\TextHelper.cs" />
+    <Compile Include="Shooter\Weapon.cs" />
+    <Compile Include="Shooter\GUI\Button.cs" />
+    <Compile Include="Shooter\GUI\ChechBox.cs" />
+    <Compile Include="Shooter\GUI\TextBox.cs" />
+    <Compile Include="Shooter\Modding\CreateWeaponMenu.cs" />
+    <Compile Include="Shooter\Modding\CreateWeaponStatusMenu.cs" />
+    <Compile Include="Shooter\Modding\MapEditor\EditorTextureList.cs" />
+    <Compile Include="Shooter\Modding\MapEditor\MapEditor.cs" />
+    <Compile Include="Shooter\Game1.cs" />
+    <Compile Include="Shooter\CharacterData.cs" />
+    <Compile Include="Shooter\WeaponData.cs" />
+    <Compile Include="Shooter\Map\Map2.cs" />
+    <Compile Include="Shooter\Map\MapObject.cs" />
+    <Compile Include="Shooter\Map\MapObjectData.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Shooter\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Modding\" />
+    <Folder Include="Content\Modding\MapEditor\" />
+    <Folder Include="Shooter\Map\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\AK.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\BGCharCuz.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\BulletSheet.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\GUISheet.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\GameOver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Menu1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Menu2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\MenuBackground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Player Selec Screen1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Player Selec Screen2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Player Selec Screen3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Rifle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SMG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Shotgun3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sniper2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\TestBackground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Thumbs.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\White.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\bullethole.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\sub.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\Zombie1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\Zombie2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\Zombie3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\Zombie4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\ZombieSpriteSheet1.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\ZombieSpriteSheet2.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\ZombieSpriteSheet3.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\Player\Kuro\Kuro.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\Player\Kuro\KuroHand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\Player\Kuro\KuroSpriteSheet.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\Player\Shiro\Shiro.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\Player\Shiro\ShiroHand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\Player\Shiro\ShiroSpriteSheet.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\Player\Shiro\ShiroSpriteSheet.sht.bup">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Cursor\MenuCursor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Cursor\Thumbs.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Cursor\crosshair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Cursor\cursor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\Background sounds\BackgroundSound.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sounds\Weapons\M4A1Fire.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\Ak-47.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\Ak-47.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\Glock1.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\Glock1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\Guns.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\M4A1.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\M4A1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\Sub.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Weapons\Sub.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Font\DefaultFont.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Modding\MapEditor\Textures\Metal9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Characters\NPC_mob\ZombieSpriteSheet4.sht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
